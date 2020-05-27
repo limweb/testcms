@@ -1,0 +1,539 @@
+//**** Audio call***//
+.audiocall1,.audiocall2,.videocall,.videocallhang,.conferencecall{
+    &.call-modal{
+        min-height: 655px;
+        .title2{
+            margin-bottom : 10px;
+        }
+        h6{
+            text-transform: uppercase;
+            font-family:$font-1;
+            font-weight: 600;
+            color:$white;
+            margin-bottom : 15px;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                &+li{
+                    margin-left:30px;
+                }
+            }
+        }
+        .center-con{
+            position: absolute;
+            bottom: 100px;
+            width: 100%;
+            .pause,.mic{
+                box-shadow: none;
+                &.active{
+                    box-shadow: 0 0 3px 2px #eff1f2;
+                }
+            }
+        }
+    }
+}
+.audiorcvcall{
+    .modal-body {
+        padding: 10px 0px;
+    }
+}
+.dynemic-sidebar{
+    .search-form{
+     .form-group{
+         input{
+            height: 60px;
+            border-radius: 10px;
+        }
+    }
+}
+}
+.viddiolog{
+    &.modal{
+        &.fade{
+            .modal-dialog{
+                max-width: 850px;
+            }
+        }
+        &.active{
+            .modal-dialog{
+                width: 90vw;
+                max-width: unset;
+            }
+        }
+    }
+    .videocall{
+        &.call-modal{
+            min-height: 90vh !important;
+        }
+    }
+}
+.conferencecall{
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.52);
+    p{
+        color:$white;
+    }
+    h3{
+        margin-bottom : 20px;
+        color: $white;
+    }
+    .usersprof{
+        display: flex;
+        justify-content: center;
+        .profile{
+            border-radius:$radious100;
+            border: 2px solid white;
+            margin-bottom : 10px;
+            +.profile{
+                margin-left: -20px;
+            }
+        }
+    }
+}
+#basicUsage{
+    font-size: 16px;
+    color: $black;
+    font-family:$font-1;
+    font-weight: 700;
+}
+
+//**** Receive Audio call***//
+.call-modal{
+    .mute{
+        i{
+            &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 24px;
+                top: 19px;
+                left: 11px;
+                opacity: 0;
+                background-color: $dark-color;
+                transform: rotate(45deg);
+                transition: opacity 0.3s ease;
+            }
+            &.off{
+                &::after{
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                }
+            }
+        }
+    }
+    .mic{
+        i{
+            &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 24px;
+                top: 19px;
+                left: 11px;
+                opacity: 0;
+                background-color: $dark-color;
+                transform: rotate(45deg);
+                transition: opacity 0.3s ease;
+            }
+            &.off{
+                &::after{
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                }
+            }
+        }
+    }
+
+}
+//***No Internet Modal**//
+
+.no-internet{
+    background-color:$white;
+    position: relative;
+    height : 600px;
+}
+.no-internet,.right-login,.login-page2,.rightchat{
+    &.animat-rate{
+        .bg_circle{
+            >div{
+                width: 20px;
+                height: 20px;
+                border: 3px solid $cross-color;
+                border-radius: 50%;
+                position: absolute;
+                z-index: 9;
+            }
+            div:nth-of-type(1){
+                right: 50%;
+                animation: animationFramesOne 25s infinite linear;
+            }
+            div:nth-of-type(2){
+                right: 5%;
+                top : 5%;
+                animation: animationFramesOne 35s infinite linear;
+            }
+            div:nth-of-type(3){
+                bottom: 35%;
+                left: 20%;
+                animation: animationFramesOne 65s infinite linear;
+            }
+            div:nth-of-type(4){
+                bottom: 26%;
+                right: 35%;
+                animation: animationFramesOne 100s infinite linear;
+            }
+            div:nth-of-type(5){
+                bottom: 35%;
+                right: 5%;
+                animation: animationFramesOne 45s infinite linear;
+            }
+            div:nth-of-type(6){
+                bottom: 60%;
+                left: 10%;
+                animation: animationFramesOne 90s infinite linear;
+            }
+            div:nth-of-type(7){
+                top: 40%;
+                right: 40%;
+                animation: animationFramesOne 25s infinite linear;
+            }
+            div:nth-of-type(8){
+                bottom: 30%;
+                left: 3%;
+                animation: animationFramesOne 80s infinite linear;
+            }
+            div:nth-of-type(9){
+                top: 25%;
+                right: 35%;
+                animation: animationFramesOne 35s infinite linear;
+            }
+            div:nth-of-type(10){
+                top: 40%;
+                right: 25%;
+                animation: animationFramesOne 55s infinite linear;
+            }
+            div:nth-of-type(11){
+                bottom: 20%;
+                right: 14%;
+                animation: animationFramesOne 10s infinite linear;
+            }
+        }
+        .cross{
+            position: absolute;
+            background: $cross-color;
+            height: 15px;
+            width: 2px;
+            top: 175px;
+            right: 50px;
+            animation: rotatedTwo 22s infinite linear;
+            &::after{
+                position: absolute;
+                background:$cross-color;
+                content: "";
+                height: 2px;
+                left: -6px;
+                top: 7px;
+                width: 15px;
+                animation: rotated 25s infinite linear;
+            }
+        }
+        .cross1{
+            position: absolute;
+            background:$cross-color;
+            bottom: 10%;
+            height:15px;
+            left: 50%;
+            width:2px;
+            animation: rotatedTwo 50s infinite linear;
+            &::after{
+                position: absolute;
+                background:$cross-color;
+                content: "";
+                height: 2px;
+                left: -6px;
+                top: 7px;
+                width: 15px;
+                animation: rotated 50s infinite linear;
+            }
+        }
+        .cross2{
+            position: absolute;
+            background:$cross-color;
+            top:65%;
+            height:15px;
+            left:200px;
+            width:2px;
+            animation: rotatedTwo 50s infinite linear;
+            &::after{
+                position: absolute;
+                background:$cross-color;
+                content: "";
+                height: 2px;
+                left: -6px;
+                top: 7px;
+                width: 15px;
+                animation: rotated 50s infinite linear;
+            }
+        }
+        .dot{
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            background-color:$cross-color;
+            border-radius: 50%;
+            display: inline-block;
+            animation: animationFramesOne 50s infinite linear;
+            top:10%;
+        }
+        .dot1{
+            left : 15%;
+            position  :absolute;
+            height: 5px;
+            width: 5px;
+            background-color:$cross-color;
+            animation: animationFramesOne 90s infinite linear;
+            border-radius: 50%;
+        }
+    }
+}
+.quarterCircle{
+    width:75px;
+    height:75px;
+    background:#f81f58;
+    border-radius: 0 0 0 90px;
+    position:absolute;
+    right: 0;
+    top: 0;
+    .close-btn{
+        span{
+            color:$white;
+            opacity:1;
+            font-size: 35px;
+            font-weight: 600;
+            top: 5px;
+            right: 20px;
+            cursor: pointer;
+            position:absolute;
+        }
+    }
+}
+.connection-img{
+    position  :absolute;
+    top: 75px;
+    display: flex;
+    overflow:hidden;
+    width: 100%;
+    justify-content: center;
+}
+.content{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    .icon-btn{
+        margin-bottom : 20px;
+    }
+    .title2{
+        color:$dark-color;
+        margin-bottom : 15px;
+    }
+    .reconnect-btn{
+        border-radius :$radious25;
+        color: $white;
+        font-family:$font-1;
+        font-weight: 700;
+        background-color:#f81f58;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    h5{
+        font-weight: 400;
+        font-family: $font-2;
+        color: #f81f58;
+        margin-bottom : 20px;
+    }
+}
+
+@keyframes animationFramesOne {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+    60% {
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+@keyframes rotatedTwo{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+//******video call*****//
+.videocall,.videocallhang{
+    &.call-modal{
+        position  :relative;
+        .videocall-details{
+            position : absolute;
+            top: 0;
+            padding: 35px;
+            right: 0;
+            left: 0;
+            align-items: center;
+            h6 {
+                color: $muted-font ;
+                margin-top: 5px;
+                margin-bottom: 0 ;
+                font-size: 9px;
+            }
+            .usersprof{
+                margin-right:15px;
+                display : flex;
+                .profile{
+                    border-radius:$radious100;
+                    margin-left : -15px;
+                }
+            }
+            #basicUsage{
+                font-size: 16px;
+                font-family:$font-1;
+                font-weight: 700;
+                margin-right: 20px;
+            }
+            .zoomcontent{
+                border-radius: 50%;
+                background-color:$white;
+                padding: 7px;
+            }
+            .red-notification{
+                h6{
+                    color:red;
+                    margin-right: 20px;
+                }
+                .dot-btn{
+                    &::before{
+                        top: 17px;
+                        right: 7px;
+                    }
+                    &.grow{
+                        &::after{
+                            top: 11px;
+                            right: 1.8px;
+                        }
+                    }
+                }
+            }
+        }
+        .small-image{
+            height: 300px;
+            width: 220px;
+            position: absolute;
+            left: 40px;
+            bottom: 5%;
+        }
+
+    }
+}
+
+//******video call second*****//
+.panel-actions {
+    margin-top: -20px;
+    margin-bottom: 0;
+    text-align: right;
+    a {
+        color:red;
+    }
+}
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.panel.panel-default{
+    i{
+        margin: 0 5px;
+        color: #c25e7f;
+        line-height: 20px;
+        cursor: pointer;
+    }
+}
+
+/***video conference call**/
+.confimg{
+    .vclimg{
+
+        height: 200px;
+        width: auto;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+
+    }
+    .col-6 {
+        padding:0px;
+    }
+}
+.clfooter{
+    text-align: center;
+    ul{
+        margin-left: 0;
+        text-align: center;
+        display: inline-flex;
+        li{
+            +li{
+                margin-left: 10px;
+            }
+        }
+    }
+    .icon-btn{
+        svg{
+            stroke-width: 2px;
+        }
+    }
+    #basicUsage3 {
+        font-size: 16px;
+        color:$black;
+        font-family: $font-1;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+.modal-footer{
+    border-top : unset;
+    display  :unset;
+}
+.modal-body{
+    padding: 10px 15px;
+}
+.close{
+    &:focus {
+        outline: none !important;
+    }
+}
+/***video call***/

@@ -1,0 +1,100 @@
+.theme-tab{
+	.nav-tabs{
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding-bottom: 20px;
+		.nav-item{
+			.nav-link{
+				font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+				font-weight: 700;
+				padding: 7px 30px;
+				min-height: 30px;
+				border-radius: 10px;
+				min-width: 140px;
+				background-color: $light-color !important;
+				border: none !important;
+				color: $dark-color !important;
+				text-align: center;
+				transition: all 0.3s ease;
+				justify-content:center;
+				&.active{
+					background-color: rgba($primary-color ,0.15)!important;
+					color: $primary-color !important;
+					transition: all 0.3s ease;
+				}
+			}
+		}
+	}
+	&.chat-tabs{
+		#myTab1{
+			.nav-tabs{
+				justify-content: center;
+				.nav-link{
+					margin: 0 10px;
+
+				}
+
+			}
+		}
+	}
+	&.tab-sm{
+		> .nav-tabs{
+			>.nav-item{
+				.nav-link{
+					border-radius: 25px;
+					padding: 0px 14px;
+					font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
+					line-height: 2.2;
+					min-width: unset;
+					color: $dark-color;
+					background-color: $light-color;
+					display: flex;
+					align-items: center;
+					svg{
+						height: 16px;
+						fill: $dark-color !important;
+						transition: all 0.3s ease;
+						stroke-width: 1px;
+					}
+					&.active{
+						color: $white !important;
+						background-color: $primary-color !important;
+						transition: all 0.3s ease;
+						box-shadow: -1px 10px 16px -10px $primary-color;
+						svg{
+							fill: $white !important;
+							transition: all 0.3s ease;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.tab-icon{
+		.nav-tabs{
+			.nav-item{
+				.nav-link{
+					padding: 10px 25px;
+					min-width: auto;
+					display: flex;
+					font-size: 13px;
+					svg{
+						height: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+.tab-card{
+	text-align: center;
+	padding: 20px;
+	border: 1px solid $border-color;
+	border-radius: $radious15;
+	+ .tab-card {
+		margin-top : 15px;
+	}
+}

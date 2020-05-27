@@ -1,0 +1,53 @@
+- var feathericon             = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+  // login page start //
+  body
+    .login-page2.animat-rate
+      .login-content-main 
+        .login-content2
+           .theme-tab        
+                ul#myTab.nav.nav-tabs(role='tablist')
+                  li.nav-item
+                     a#login-tab.nav-link(data-toggle='tab' href='login-2.html' role='tab' aria-selected='false') login
+                  li.nav-item
+                     a#signup-tab.nav-link.active(data-toggle='tab' href='signup-2.html' role='tab' aria-selected='true') Signup
+        .login-content
+              .login-content-header
+                img.img-fluid(src='../assets/images/logo/landing-logo.png' alt='images')
+              h3 Hello Everyone , We are Chitchat
+              h4 Wellcome to chitchat please, login to your account.
+              form.form2
+                .form-group
+                 label.col-form-label(for='inputEmail3') Email Address
+                 input#inputEmail3.form-control(type='email' placeholder='Demo@123gmail.com')
+                .form-group
+                  label.col-form-label(for='inputPassword3') Password
+                  span 
+                  input#inputPassword3.form-control(type='password' placeholder='Password')
+                .form-group
+                  .rememberchk
+                    .form-check
+                      input#gridCheck1.form-check-input(type='checkbox')
+                      label.form-check-label(for='gridCheck1')
+                        | Remember Me.
+                      h6 Forgot Password?
+                ul.medialogo
+                 li
+                   a.icon-btn.btn-facebook.button-effect.rouded15(href='#')
+                     i.fa.fa-facebook-f
+                 li
+                   a.icon-btn.btn-danger.button-effect.rouded15(href='#')
+                     i.fa.fa-google
+                 li
+                   a.icon-btn.btn-primary.button-effect.rouded15(href='#')
+                     i.fa.fa-twitter
+                .form-group.mb-0
+                  .buttons
+                    a.btn.button-effect.btn-primary(href='#') Login
+              
+      .animation-block
+       +animation2

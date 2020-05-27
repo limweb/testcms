@@ -1,0 +1,2280 @@
+mixin content
+    .chitchat-main.small-sidebar(id='content')
+        .chat-content.tabto.active
+          .messages.custom-scroll.active#chating
+            .contact-details
+              .row
+                form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search    
+                .col-7
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                          h5 Josephin water
+                          .badge.badge-success Active
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search-right(href='#')
+                                i(data-feather='search')
+                        
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Audio Call' data-toggle='modal' data-target='#audiocall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Video Call' data-toggle='modal' data-target='#videocall')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                          i(data-feather='more-vertical')
+                               
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 Profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 Archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 Delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 Block
+            .contact-chat
+                ul.chatappend
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:40 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              h5 Hi I am Alan,
+                            li.msg-setting-main
+                              h5  your personal assistant to help you &#128512; 
+                              .badge.badge-success.sm.ml-2  R
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.sent
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Josephin water
+                          h6 01:35 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 Hi I am Josephin, can you help me to find best chat app?. 
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                            li.msg-setting-main
+                              h5  it should from elite auther &#128519;
+                              .badge.badge-success.sm.ml-2  R
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:40 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              h5 Sure, chitchat is best theme for chating project, you can it check
+                                a.ml-1(href="https://themeforest.net/user/pixelstrap/portfolio" , target="_blank") here.
+                            li.msg-setting-main
+                              .document
+                                i.fa.fa-file-excel-o.font-primary
+                                .details
+                                  h5 Document.xlsx
+                                  h6 25mb Seprate file
+                                .icon-btns
+                                      a.icon-btn.btn-outline-light(href='../assets/doc/Document.xlsx',target='_blank')
+                                        i(data-feather='download')  
+                              .badge.badge-dark.sm.ml-2  D
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.sent
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Josephin water
+                          h6 01:42 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 I think it's best for my project.
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                            li.msg-setting-main
+                              ul.auto-gallery
+                                  li
+                                    img.bg-img(src='../assets/images/media/1.jpg' alt='Avatar')
+                                  li    
+                                    img.bg-img(src='../assets/images/media/2.jpg' alt='Avatar')
+                                  li    
+                                    img.bg-img(src='../assets/images/media/3.jpg' alt='Avatar')
+                              .refresh-block
+                                .badge.badge-outline-primary.refresh.sm.ml-2 
+                                  i(data-feather='rotate-cw')
+                                .badge.badge-danger.sm.ml-2 F
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:45 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 If you have any other query then feel free to ask us.
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete                  
+          .messages.custom-scroll#blank
+            .contact-details
+              .row
+                .col
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                          h5 Josephin water
+                          h6 Last Seen 5 hours
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search.search-right(href='#') 
+                                i(data-feather='search')
+                              form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search 
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col  
+
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Audio Call',data-toggle='modal' data-target='#audiocall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Video Call',data-toggle='modal' data-target='#videocall')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                          i(data-feather='more-vertical')
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 block
+
+            .contact-chat
+                .rightchat.animat-rate
+                       .bg_circle
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                       .cross
+                       .cross1
+                       .cross2
+                       .dot
+                       .dot1 
+            .call-list-center
+                 img(src='../assets/images/chat.png' alt="")
+                 .animated-bg
+                    i
+                    i
+                    i
+                 p Select a chat to read messages
+          .messages.custom-scroll#group_chat
+            .contact-details
+              .row
+                .col
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/avtar/teq.jpg' alt='Avatar')
+                      .media-body
+                          h5 Tech Ninjas
+                          .badge.badge-success Active
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search.search-right(href='#') 
+                                i(data-feather='search')
+                              form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search 
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col  
+
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Start Audio Conference' data-toggle='modal' data-target='#confercall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Start Video Conference' data-toggle='modal' data-target='#confvideocl')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 block
+
+            .contact-chat
+                ul.chatappend
+                  li.groupuser
+                    h4 Jewellery project
+                    .gr-chat-friend-toggle
+                        a.icon-btn.btn-sm.pull-right.add-grbtn.outside(href='#',data-tippy-content='Add User')
+                          i(data-feather='plus')
+                        .gr-chat-frind-content
+                          ul.chat-main
+                            li
+                              .chat-box
+                                .media
+                                  .profile.offline
+                                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                  .details
+                                    h5 Josephin water
+                                    h6 Alabma , USA
+                                  .media-body
+                                    a.icon-btn.btn-outline-primary.btn-sm(href='#',data-tippy-content='Add User')
+                                      i.fa.fa-plus
+                            li
+                              .chat-box
+                                .media
+                                  .profile
+                                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                  .details
+                                    h5 Josephin water
+                                    h6 Alabma , USA
+                                  .media-body
+                                    a.icon-btn.btn-outline-primary.btn-sm(href='#',data-tippy-content='Add User')
+                                      i.fa.fa-plus
+                            li
+                              .chat-box
+                                .media
+                                  .profile
+                                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                                  .details
+                                    h5 Josephin water
+                                    h6 Alabma , USA
+                                  .media-body
+                                    a.icon-btn.btn-outline-primary.btn-sm(href='#',data-tippy-content='Add User')
+                                      i.fa.fa-plus
+                            li
+                              .chat-box
+                                .media
+                                  .profile.unreachable
+                                      img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                                  .details
+                                    h5 Josephin water
+                                    h6 Alabma , USA
+                                  .media-body
+                                    a.icon-btn.btn-outline-primary.btn-sm(href='#',data-tippy-content='Add User')
+                                      i.fa.fa-plus
+                    .gr-profile.dot-btn.dot-success.grow
+                        img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                    .gr-profile.dot-btn.dot-success.grow
+                        img.bg-img(src='../assets/images/avtar/5.jpg' alt='Avatar')
+                              
+                  li.sent
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Josephin water
+                          h6 01:35 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 Hi I am Josephin, can you help me to find best chat app?. 
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                            li.msg-setting-main
+                              h5  it should from elite auther &#128519;
+                              .badge.badge-success.sm.ml-2  R
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:40 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              h5 Sure, chitchat is best theme for chating project, you can it check
+                                a.ml-1(href="https://themeforest.net/user/pixelstrap/portfolio" , target="_blank") here.
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              .document
+                                i.fa.fa-file-excel-o.font-primary
+                                .details
+                                  h5 Document.xlsx
+                                  h6 25mb Seprate file
+                                .icon-btns
+                                      a.icon-btn.btn-outline-light(href='../assets/doc/Document.xlsx',target='_blank')
+                                        i(data-feather='download')  
+                              .badge.badge-dark.sm.ml-2  D
+                              
+                  li.sent
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Josephin water
+                          h6 01:42 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 I think it's best for my project.
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                            li.msg-setting-main
+                              ul.auto-gallery
+                                  li
+                                    img.bg-img(src='../assets/images/media/1.jpg' alt='Avatar')
+                                  li    
+                                    img.bg-img(src='../assets/images/media/2.jpg' alt='Avatar')
+                                  li    
+                                    img.bg-img(src='../assets/images/media/3.jpg' alt='Avatar')
+                              .badge.badge-danger.sm.ml-2
+                              .badge.badge-outline-primary.refresh.sm.ml-2 
+                                i(data-feather='rotate-cw')
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:45 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              h5 If you have any other query then feel free to ask us.
+          .messages.custom-scroll#group_blank
+            .contact-details
+              .row
+                .col
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/avtar/family.jpg' alt='Avatar')
+                      .media-body
+                          h5 Family Ties
+                          h6 Last Seen 2 hours
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search.search-right(href='#') 
+                                i(data-feather='search')
+                              form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search 
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col  
+
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Audio Call',data-toggle='modal' data-target='#confercall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Video Call',data-toggle='modal' data-target='#confvideocl')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                          i(data-feather='more-vertical')
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 block
+
+            .contact-chat
+                .rightchat.animat-rate
+                       .bg_circle
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                       .cross
+                       .cross1
+                       .cross2
+                       .dot
+                       .dot1 
+            .call-list-center
+                 img(src='../assets/images/chat.png' alt="")
+                 .animated-bg
+                    i
+                    i
+                    i
+                 p Select a chat to read messages
+          
+          .message-input
+            .wrap.emojis-main
+              a.icon-btn.btn-outline-primary.button-effect.mr-3.toggle-sticker.outside(href='#')
+                svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='2158px' height='2148px' viewbox='0 0 2158 2148' enable-background='new 0 0 2158 2148' xml:space='preserve')
+                  path(fill-rule='evenodd' clip-rule='evenodd' fill='none' stroke='#000000' stroke-width='60' stroke-miterlimit='10' d='M699,693                        c0,175.649,0,351.351,0,527c36.996,0,74.004,0,111,0c18.058,0,40.812-2.485,57,1c11.332,0.333,22.668,0.667,34,1                        c7.664,2.148,20.769,14.091,25,20c8.857,12.368,6,41.794,6,62c0,49.329,0,98.672,0,148c175.649,0,351.351,0,527,0                        c0-252.975,0-506.025,0-759C1205.692,693,952.308,693,699,693z')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M886,799c59.172-0.765,93.431,25.289,111,66c6.416,14.867,14.612,39.858,9,63                        c-2.391,9.857-5.076,20.138-9,29c-15.794,35.671-47.129,53.674-90,63c-20.979,4.563-42.463-4.543-55-10                        c-42.773-18.617-85.652-77.246-59-141c10.637-25.445,31.024-49,56-60c7.999-2.667,16.001-5.333,24-8                        C877.255,799.833,882.716,801.036,886,799z')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M1258,799c59.172-0.765,93.431,25.289,111,66c6.416,14.867,14.612,39.858,9,63                        c-2.391,9.857-5.076,20.138-9,29c-15.794,35.671-47.129,53.674-90,63c-20.979,4.563-42.463-4.543-55-10                        c-42.773-18.617-85.652-77.246-59-141c10.637-25.445,31.024-49,56-60c7.999-2.667,16.001-5.333,24-8                        C1249.255,799.833,1254.716,801.036,1258,799z')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M1345,1184c-0.723,18.71-11.658,29.82-20,41c-18.271,24.489-50.129,37.183-83,47                        c-7.333,1-14.667,2-22,3c-12.013,2.798-33.636,5.15-44,3c-11.332-0.333-22.668-0.667-34-1c-15.332-3-30.668-6-46-9                        c-44.066-14.426-80.944-31.937-110-61c-22.348-22.353-38.992-45.628-37-90c0.667,0,1.333,0,2,0c9.163,5.585,24.723,3.168,36,6                        c26.211,6.583,54.736,7.174,82,14c34.068,8.53,71.961,10.531,106,19c9.999,1.333,20.001,2.667,30,4c26.193,6.703,54.673,7.211,82,14                        C1304.894,1178.445,1325.573,1182.959,1345,1184z')
+                  polygon(fill-rule='evenodd' clip-rule='evenodd' points='668.333,1248.667 901.667,1482 941.667,1432 922.498,1237.846                         687,1210.667 ')
+              .dot-btn.dot-primary.mr-3
+                a.icon-btn.btn-outline-primary.button-effect.toggle-emoji(href='#')
+                  i(data-feather='smile')
+              .contact-poll
+                a.icon-btn.btn-outline-primary.mr-4.outside(href='#')
+                  i.fa.fa-plus
+                .contact-poll-content
+                  ul
+                    li
+                      a(href='#')
+                        i(data-feather='image')
+                        | gallery
+                    li
+                      a(href='#')
+                        i(data-feather='camera')
+                        | camera
+                    li
+                      a(data-toggle='modal' data-target='#snippetModal')
+                        i(data-feather='code')                        
+                        | Code Snippest
+                    li
+                      a(href='#')
+                        i(data-feather='user')                               
+                        | contact
+                    li
+                      a(href='#')
+                        i(data-feather='map-pin')                        
+                        | location
+                    li
+                      a(href='#')
+                        i(data-feather='clipboard') 
+                        | document
+                    li
+                      a(data-toggle='modal' data-target='#pollModal')
+                        i(data-feather='bar-chart-2')                        
+                        | poll
+                    li
+                      a(href='#')
+                        i(data-feather='paperclip')                        
+                        | attach
+              input#setemoj.setemoj(type='text' placeholder='Write your message...')
+              a.icon-btn.btn-outline-primary.button-effect.mr-3.ml-3(href='#')
+                i(data-feather='mic')                 
+              button#send-msg.submit.icon-btn.btn-primary.disabled(disabled='disabled')
+                i(data-feather='send')                
+              .emojis-contain
+                .emojis-sub-contain.custom-scroll
+                  ul
+                    li &#128512;
+                    li &#128513;
+                    li &#128514;
+                    li &#128515;
+                    li &#128516;
+                    li &#128517;
+                    li &#128518;
+                    li &#128519;
+                    li &#128520;
+
+                    li &#128521;
+                    li &#128522;
+                    li &#128523;
+                    li &#128524;
+                    li &#128525;
+                    li &#128526;
+                    li &#128527;
+                    li &#128528;
+                    li &#128529;
+
+
+                    li &#128530;
+                    li &#128531;
+                    li &#128532;
+                    li &#128533;
+                    li &#128534;
+                    li &#128535;
+                    li &#128536;
+                    li &#128537;
+                    li &#128538;
+
+                    li &#128539;
+                    li &#128540;
+                    li &#128541;
+                    li &#128542;
+                    li &#128543;
+                    li &#128544;
+                    li &#128545;
+                    li &#128546;
+                    li &#128547;
+
+                    
+                    li &#128549;
+                    li &#128550;
+                    li &#128551;
+                    li &#128552;
+                    li &#128553;
+                    li &#128554;
+                    li &#128555;
+  
+                    li &#128557;
+                    li &#128558;
+                    li &#128559;
+                    li &#128560;
+                    li &#128561;
+                    li &#128562;
+                    li &#128563;
+                    li &#128564;
+                    li &#128565;
+                    li &#128566;
+                    li &#128567;
+                    li &#128568;
+                    li &#128569;
+                    li &#128570;
+                    li &#128571;
+                    li &#128572;
+                    li &#128573;
+                    li &#128574;
+                    li &#128576;                    
+                    li &#128579;                    
+       
+                
+              .sticker-contain
+                .sticker-sub-contain.custom-scroll
+                  ul
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/1.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/2.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/3.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/3.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/4.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/5.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/6.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/7.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/8.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/9.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/10.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/11.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/12.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/13.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/14.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/15.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/16.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/17.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/18.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/19.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/20.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/21.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/22.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/23.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/24.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/25.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/26.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/27.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/28.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/29.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/30.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/31.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/32.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/33.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/34.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/35.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/36.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/37.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/38.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/39.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/40.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/41.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/42.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/43.gif' alt='sticker')
+
+        .call-content.tabto
+          a.icon-btn.btn-outline-primary.button-effect.mobile-back.mb-3(href='#')
+              i.ti-angle-left                        
+          .row
+            .col-sm-5
+              .user-profile.mb-3
+                .user-content
+                  img.img-fluid(src="../assets/images/contact/2.jpg" alt="user-img")
+                  h3 Josephin water
+                  h4.mt-2 +0 1800 76855
+                  ul 
+                    li
+                      i.fa.fa-twitch
+                      | massage
+                    li
+                      i.fa.fa-phone(data-toggle='modal' data-target='#audiocall')
+                      | voice call
+                      
+                    li 
+                      i.fa.fa-video-camera(data-toggle='modal' data-target='#videocall')
+                      | video call
+              .user-profile
+                  .document
+                    .filter-block
+                      .collapse-block.open
+                        h5.block-title Shared Document 
+                            label.badge.badge-success.sm.ml-2 3
+                        .block-content
+                            ul.document-list
+                              li
+                               i.ti-folder.font-danger
+                               h5 Simple_practice_project-zip
+                              li
+                               i.ti-write.font-success
+                               h5 Word_Map-jpg
+                              li
+                               i.ti-zip.font-primary
+                               h5 Latest_Design_portfolio.pdf
+            .col-sm-7
+              .call-log-main.custom-scroll
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-incoming')
+                      .media-body
+                          h5 incoming call                      
+                  .log-content-right
+                    h6 15 Minutes ago 5:10 &nbsp;(22/10/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-incoming')
+                      .media-body
+                          h5 outgoing call
+                  .log-content-right
+                    h6 30 Minutes ago 10:30 &nbsp;(12/09/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 1 Minutes ago 8:30 &nbsp; (28/08/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 10 Minutes ago 9:10 &nbsp; (18/01/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 35 Minutes ago 9:10 &nbsp; (17/01/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 80 Minutes ago 12:05 &nbsp; (17/01/19)
+
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-incoming')
+                      .media-body
+                          h5 incoming call
+                  .log-content-right
+                    h6 15 Minutes ago 15:20 &nbsp; (28/02/20)
+
+                .coll-log-group
+                  .log-content-left                
+                      .media
+                          i(data-feather='phone-incoming')
+                          .media-body
+                              h5 incoming call
+                  .log-content-right 
+                    h6 10 Minutes ago 20m 26s &nbsp; 10/3/20  
+              .call-log-clear 
+                  i.ti-trash.font-danger
+                  span.font-danger Delete call log
+        .contact-content.tabto
+          .contact-sub-content
+            a.icon-btn.btn-outline-primary.button-effect.mobile-back.mb-3(href='#')
+               i.ti-angle-left
+            .row
+              .col-sm-5
+                .user-profile
+                  .user-content
+                    img.img-fluid.bg-icon(src='../assets/images/contact/2.jpg' alt='user-img')
+                    h3 Josephin water
+                    ul 
+                      li
+                        i.fa.fa-twitch 
+                        | massage
+                      li
+                        i.fa.fa-phone 
+                        | voice call
+                      li 
+                        i.fa.fa-video-camera 
+                        | video call
+                                    
+                .personal-info-group
+                      .social-info-group
+                        ul.integratin.mt-0
+                          li
+                            .media
+                              .media-left
+                                a.fb(href='https://www.facebook.com/login' target='_blank')
+                                  i.fa.fa-facebook
+                                  h5 Facebook   
+                              .media-right
+                                .profile.bg-size
+                                  img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                          li
+                            .media
+                              .media-left
+                                a.twi(href='https://twitter.com/login' target='_blank')
+                                  i.fa.fa-twitter
+                                  h5 twitter   
+                              .media-right
+                                .profile.bg-size
+                                  img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                          li
+                            .media
+                              .media-left
+                                a.ggl(href='https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin' target='_blank')
+                                  i.fa.fa-google
+                                  h5 google   
+                              .media-right
+                                .profile.bg-size
+                                  img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+              .col-sm-7
+                .personal-info-group 
+                  h3 contact info
+                  ul.basic-info
+                    li
+                      h5 name
+                      h5.details Nick
+                    li
+                      h5 gender
+                      h5.details male
+                    li
+                      h5 Birthday
+                      h5.details 9 april 1994
+                    li
+                      h5 Favorite Book
+                      h5.details Perfect Chemistry
+                    li
+                      h5 Personality
+                      h5.details Cool
+                    li
+                      h5 City
+                      h5.details Moline Acres
+                    li
+                      h5 mobile no
+                      h5.details +0 1800 76855
+                    li
+                      h5 email
+                      h5.details pixelstrap@test.com
+                    li
+                      h5 Website
+                      h5.details www.test.com
+                    li
+                      h5.m-0 Interest
+                      h5.details Photography
+mixin content_chat_blank
+    .chitchat-main.small-sidebar(id='content')
+        .chat-content.tabto.active
+          .messages.custom-scroll#chating
+            .contact-details
+              .row
+                .col-7
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                          h5 Josephin water
+                          .badge.badge-success Active
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search.search-right(href='#')
+                                i(data-feather='search')
+                              form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search                            
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Audio Call' data-toggle='modal' data-target='#audiocall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Video Call' data-toggle='modal' data-target='#videocall')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                          i(data-feather='more-vertical')
+                               
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 Profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 Archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 Delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 Block
+            .contact-chat
+                ul.chatappend
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:40 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              h5 Hi I am Alan,
+                            li.msg-setting-main
+                              h5  your personal assistant to help you &#128512; 
+                              .badge.badge-success.sm.ml-2  R
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.sent
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Josephin water
+                          h6 01:35 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 Hi I am Josephin, can you help me to find best chat app?. 
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                            li.msg-setting-main
+                              h5  it should from elite auther &#128519;
+                              .badge.badge-success.sm.ml-2  R
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:40 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                              h5 Sure, chitchat is best theme for chating project, you can it check
+                                a.ml-1(href="https://themeforest.net/user/pixelstrap/portfolio" , target="_blank") here.
+                            li.msg-setting-main
+                              .document
+                                i.fa.fa-file-excel-o.font-primary
+                                .details
+                                  h5 Document.xlsx
+                                  h6 25mb Seprate file
+                                .icon-btns
+                                      a.icon-btn.btn-outline-light(href='../assets/doc/Document.xlsx',target='_blank')
+                                        i(data-feather='download')  
+                              .badge.badge-dark.sm.ml-2  D
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.sent
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Josephin water
+                          h6 01:42 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 I think it's best for my project.
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                            li.msg-setting-main
+                              ul.auto-gallery
+                                  li
+                                    img.bg-img(src='../assets/images/media/1.jpg' alt='Avatar')
+                                  li    
+                                    img.bg-img(src='../assets/images/media/2.jpg' alt='Avatar')
+                                  li    
+                                    img.bg-img(src='../assets/images/media/3.jpg' alt='Avatar')
+                              .refresh-block
+                                .badge.badge-outline-primary.refresh.sm.ml-2 
+                                  i(data-feather='rotate-cw')
+                                .badge.badge-danger.sm.ml-2 F
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete
+                  li.replies
+                    .media
+                      .profile.mr-4
+                        img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                      .media-body
+                        .contact-name
+                          h5 Alan josheph
+                          h6 01:45 AM
+                          ul.msg-box
+                            li.msg-setting-main
+                              h5 If you have any other query then feel free to ask us.
+                              .msg-dropdown-main
+                                .msg-setting
+                                  i.ti-more-alt
+                                .msg-dropdown 
+                                  ul
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-share
+                                        | forward
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-clone
+                                        | copy
+                                    li
+                                      a(href="#")
+                                        i.fa.fa-star-o
+                                        | rating
+                                    li
+                                      a(href="#")
+                                        i.ti-trash
+                                        | delete                  
+          .messages.custom-scroll.active#blank
+            .contact-details
+              .row
+                .col
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                      .media-body
+                          h5 Josephin water
+                          h6 Last Seen 5 hours
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search.search-right(href='#') 
+                                i(data-feather='search')
+                              form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search 
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col  
+
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Audio Call',data-toggle='modal' data-target='#audiocall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Video Call',data-toggle='modal' data-target='#videocall')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                          i(data-feather='more-vertical')
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 block
+
+            .contact-chat
+                .rightchat.animat-rate
+                       .bg_circle
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                       .cross
+                       .cross1
+                       .cross2
+                       .dot
+                       .dot1 
+            .call-list-center
+                 img(src='../assets/images/chat.png' alt="")
+                 .animated-bg
+                    i
+                    i
+                    i
+                 p Select a chat to read messages
+          .messages.custom-scroll#group_chat
+            .contact-details
+              .row
+                .col
+                    .media.left
+                      .media-left.mr-3
+                        .profile.online.menu-trigger
+                          img.bg-img(src='../assets/images/avtar/family.jpg' alt='Avatar')
+                      .media-body
+                          h5 Family Ties
+                          h6 Last Seen 2 hours
+                      .media-right
+                         ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href="#")
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-light.search.search-right(href='#') 
+                                i(data-feather='search')
+                              form.form-inline.search-form
+                                .form-group
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                                  .icon-close.close-search 
+                            li
+                              a.icon-btn.btn-light.button-effect.mobile-sidebar(href="#")
+                                i(data-feather='chevron-left')
+
+                .col  
+
+                    ul.calls.text-right
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Audio Call',data-toggle='modal' data-target='#confercall')
+                          i(data-feather='phone')
+                      li
+                        a.icon-btn.btn-light.button-effect(href="#", data-tippy-content='Quick Video Call',data-toggle='modal' data-target='#confvideocl')
+                          i(data-feather='video')
+                      li
+                        a.icon-btn.btn-light.button-effect.apps-toggle(href="#", data-tippy-content='All Apps')
+                          i.ti-layout-grid2
+                      li.chat-friend-toggle
+                        a.icon-btn.btn-light.bg-transparent.button-effect.outside(href="#", data-tippy-content='Quick action')
+                          i(data-feather='more-vertical')
+                        .chat-frind-content
+                          ul
+                            li
+                              a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                                i(data-feather='user')
+                              h5 profile
+                            li
+                                a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                                  i(data-feather='plus-circle')
+                                h5 archive
+                            li
+                                a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                                  i(data-feather='trash-2')
+                                h5 delete
+                            li
+                                a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                                  i(data-feather='slash')
+                                h5 block
+
+            .contact-chat
+                .rightchat.animat-rate
+                       .bg_circle
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                         div
+                       .cross
+                       .cross1
+                       .cross2
+                       .dot
+                       .dot1 
+            .call-list-center
+                 img(src='../assets/images/chat.png' alt="")
+                 .animated-bg
+                    i
+                    i
+                    i
+                 p Select a chat to read messages
+          
+          .message-input
+            .wrap.emojis-main
+              a.icon-btn.btn-outline-primary.button-effect.mr-3.toggle-sticker.outside(href='#')
+                svg#Layer_1(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='2158px' height='2148px' viewbox='0 0 2158 2148' enable-background='new 0 0 2158 2148' xml:space='preserve')
+                  path(fill-rule='evenodd' clip-rule='evenodd' fill='none' stroke='#000000' stroke-width='60' stroke-miterlimit='10' d='M699,693                        c0,175.649,0,351.351,0,527c36.996,0,74.004,0,111,0c18.058,0,40.812-2.485,57,1c11.332,0.333,22.668,0.667,34,1                        c7.664,2.148,20.769,14.091,25,20c8.857,12.368,6,41.794,6,62c0,49.329,0,98.672,0,148c175.649,0,351.351,0,527,0                        c0-252.975,0-506.025,0-759C1205.692,693,952.308,693,699,693z')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M886,799c59.172-0.765,93.431,25.289,111,66c6.416,14.867,14.612,39.858,9,63                        c-2.391,9.857-5.076,20.138-9,29c-15.794,35.671-47.129,53.674-90,63c-20.979,4.563-42.463-4.543-55-10                        c-42.773-18.617-85.652-77.246-59-141c10.637-25.445,31.024-49,56-60c7.999-2.667,16.001-5.333,24-8                        C877.255,799.833,882.716,801.036,886,799z')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M1258,799c59.172-0.765,93.431,25.289,111,66c6.416,14.867,14.612,39.858,9,63                        c-2.391,9.857-5.076,20.138-9,29c-15.794,35.671-47.129,53.674-90,63c-20.979,4.563-42.463-4.543-55-10                        c-42.773-18.617-85.652-77.246-59-141c10.637-25.445,31.024-49,56-60c7.999-2.667,16.001-5.333,24-8                        C1249.255,799.833,1254.716,801.036,1258,799z')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M1345,1184c-0.723,18.71-11.658,29.82-20,41c-18.271,24.489-50.129,37.183-83,47                        c-7.333,1-14.667,2-22,3c-12.013,2.798-33.636,5.15-44,3c-11.332-0.333-22.668-0.667-34-1c-15.332-3-30.668-6-46-9                        c-44.066-14.426-80.944-31.937-110-61c-22.348-22.353-38.992-45.628-37-90c0.667,0,1.333,0,2,0c9.163,5.585,24.723,3.168,36,6                        c26.211,6.583,54.736,7.174,82,14c34.068,8.53,71.961,10.531,106,19c9.999,1.333,20.001,2.667,30,4c26.193,6.703,54.673,7.211,82,14                        C1304.894,1178.445,1325.573,1182.959,1345,1184z')
+                  polygon(fill-rule='evenodd' clip-rule='evenodd' points='668.333,1248.667 901.667,1482 941.667,1432 922.498,1237.846                         687,1210.667 ')
+              .dot-btn.dot-primary.mr-3
+                a.icon-btn.btn-outline-primary.button-effect.toggle-emoji(href='#')
+                  i(data-feather='smile')
+              .contact-poll
+                a.icon-btn.btn-outline-primary.mr-4.outside(href='#')
+                  i.fa.fa-plus
+                .contact-poll-content
+                  ul
+                    li
+                      a(href='#')
+                        i(data-feather='image')
+                        | gallery
+                    li
+                      a(href='#')
+                        i(data-feather='camera')
+                        | camera
+                    li
+                      a(data-toggle='modal' data-target='#snippetModal')
+                        i(data-feather='code')                        
+                        | Code Snippest
+                    li
+                      a(href='#')
+                        i(data-feather='user')                               
+                        | contact
+                    li
+                      a(href='#')
+                        i(data-feather='map-pin')                        
+                        | location
+                    li
+                      a(href='#')
+                        i(data-feather='clipboard') 
+                        | document
+                    li
+                      a(data-toggle='modal' data-target='#pollModal')
+                        i(data-feather='bar-chart-2')                        
+                        | poll
+                    li
+                      a(href='#')
+                        i(data-feather='paperclip')                        
+                        | attach
+              input#setemoj.setemoj(type='text' placeholder='Write your message...')
+              a.icon-btn.btn-outline-primary.button-effect.mr-3.ml-3(href='#')
+                i(data-feather='mic')                 
+              button#send-msg.submit.icon-btn.btn-primary.disabled(disabled='disabled')
+                i(data-feather='send')                
+              .emojis-contain
+                .emojis-sub-contain.custom-scroll
+                  ul
+                    li &#128512;
+                    li &#128513;
+                    li &#128514;
+                    li &#128515;
+                    li &#128516;
+                    li &#128517;
+                    li &#128518;
+                    li &#128519;
+                    li &#128520;
+
+                    li &#128521;
+                    li &#128522;
+                    li &#128523;
+                    li &#128524;
+                    li &#128525;
+                    li &#128526;
+                    li &#128527;
+                    li &#128528;
+                    li &#128529;
+
+
+                    li &#128530;
+                    li &#128531;
+                    li &#128532;
+                    li &#128533;
+                    li &#128534;
+                    li &#128535;
+                    li &#128536;
+                    li &#128537;
+                    li &#128538;
+
+                    li &#128539;
+                    li &#128540;
+                    li &#128541;
+                    li &#128542;
+                    li &#128543;
+                    li &#128544;
+                    li &#128545;
+                    li &#128546;
+                    li &#128547;
+
+                    
+                    li &#128549;
+                    li &#128550;
+                    li &#128551;
+                    li &#128552;
+                    li &#128553;
+                    li &#128554;
+                    li &#128555;
+  
+                    li &#128557;
+                    li &#128558;
+                    li &#128559;
+                    li &#128560;
+                    li &#128561;
+                    li &#128562;
+                    li &#128563;
+                    li &#128564;
+                    li &#128565;
+                    li &#128566;
+                    li &#128567;
+                    li &#128568;
+                    li &#128569;
+                    li &#128570;
+                    li &#128571;
+                    li &#128572;
+                    li &#128573;
+                    li &#128574;
+                    li &#128576;                    
+                    li &#128579;                    
+       
+                
+              .sticker-contain
+                .sticker-sub-contain.custom-scroll
+                  ul
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/1.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/2.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/3.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/3.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/4.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/5.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/6.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/7.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/8.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/9.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/10.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/11.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/12.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/13.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/14.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/15.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/16.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/17.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/18.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/19.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/20.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/21.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/22.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/23.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/24.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/25.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/26.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/27.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/28.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/29.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/30.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/31.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/32.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/33.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/34.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/35.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/36.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/37.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/38.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/39.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/40.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/41.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/42.gif' alt='sticker')
+                    li
+                      a(href='#')
+                        img.img-fluid(src='../assets/images/sticker/43.gif' alt='sticker')
+
+        .call-content.tabto
+          a.icon-btn.btn-outline-primary.button-effect.mobile-back.mb-3(href='#')
+              i.ti-angle-left                        
+          .row
+            .col-sm-5
+              .user-profile.mb-3
+                .user-content
+                  img.img-fluid(src="../assets/images/contact/2.jpg" alt="user-img")
+                  h3 Josephin water
+                  h4.mt-2 +0 1800 76855
+                  ul 
+                    li
+                      i.fa.fa-twitch
+                      | massage
+                    li
+                      i.fa.fa-phone(data-toggle='modal' data-target='#audiocall')
+                      | voice call
+                      
+                    li 
+                      i.fa.fa-video-camera(data-toggle='modal' data-target='#videocall')
+                      | video call
+              .user-profile
+                  .document
+                    .filter-block
+                      .collapse-block.open
+                        h5.block-title Shared Document 
+                            label.badge.badge-success.sm.ml-2 3
+                        .block-content
+                            ul.document-list
+                              li
+                               i.ti-folder.font-danger
+                               h5 Simple_practice_project-zip
+                              li
+                               i.ti-write.font-success
+                               h5 Word_Map-jpg
+                              li
+                               i.ti-zip.font-primary
+                               h5 Latest_Design_portfolio.pdf
+            .col-sm-7
+              .call-log-main.custom-scroll
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-incoming')
+                      .media-body
+                          h5 incoming call                      
+                  .log-content-right
+                    h6 15 Minutes ago 5:10 &nbsp;(22/10/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-incoming')
+                      .media-body
+                          h5 outgoing call
+                  .log-content-right
+                    h6 30 Minutes ago 10:30 &nbsp;(12/09/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 1 Minutes ago 8:30 &nbsp; (28/08/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 10 Minutes ago 9:10 &nbsp; (18/01/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 35 Minutes ago 9:10 &nbsp; (17/01/19)
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-missed')
+                      .media-body
+                          h5 missed call
+                  .log-content-right
+                    h6 80 Minutes ago 12:05 &nbsp; (17/01/19)
+
+                .coll-log-group
+                  .log-content-left
+                    .media
+                      i(data-feather='phone-incoming')
+                      .media-body
+                          h5 incoming call
+                  .log-content-right
+                    h6 15 Minutes ago 15:20 &nbsp; (28/02/20)
+
+                .coll-log-group
+                  .log-content-left                
+                      .media
+                          i(data-feather='phone-incoming')
+                          .media-body
+                              h5 incoming call
+                  .log-content-right 
+                    h6 10 Minutes ago 20m 26s &nbsp; 10/3/20  
+              .call-log-clear 
+                  i.ti-trash.font-danger
+                  span.font-danger Delete call log
+        .contact-content.tabto
+          .contact-sub-content
+            a.icon-btn.btn-outline-primary.button-effect.mobile-back.mb-3(href='#')
+               i.ti-angle-left
+            .row
+              .col-sm-5
+                .user-profile
+                  .user-content
+                    img.img-fluid.bg-icon(src='../assets/images/contact/2.jpg' alt='user-img')
+                    h3 Josephin water
+                    ul 
+                      li
+                        i.fa.fa-twitch 
+                        | massage
+                      li
+                        i.fa.fa-phone 
+                        | voice call
+                      li 
+                        i.fa.fa-video-camera 
+                        | video call
+                                    
+                .personal-info-group
+                      .social-info-group
+                        ul.integratin.mt-0
+                          li
+                            .media
+                              .media-left
+                                a.fb(href='https://www.facebook.com/login' target='_blank')
+                                  i.fa.fa-facebook
+                                  h5 Facebook   
+                              .media-right
+                                .profile.bg-size
+                                  img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                          li
+                            .media
+                              .media-left
+                                a.twi(href='https://twitter.com/login' target='_blank')
+                                  i.fa.fa-twitter
+                                  h5 twitter   
+                              .media-right
+                                .profile.bg-size
+                                  img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                          li
+                            .media
+                              .media-left
+                                a.ggl(href='https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin' target='_blank')
+                                  i.fa.fa-google
+                                  h5 google   
+                              .media-right
+                                .profile.bg-size
+                                  img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+              .col-sm-7
+                .personal-info-group 
+                  h3 contact info                    
+                  ul.basic-info
+                    li
+                      h5 name
+                      h5.details Nick
+                    li
+                      h5 gender
+                      h5.details male
+                    li
+                      h5 Birthday
+                      h5.details 9 april 1994
+                    li
+                      h5 Favorite Book
+                      h5.details Perfect Chemistry
+                    li
+                      h5 Personality
+                      h5.details Cool
+                    li
+                      h5 City
+                      h5.details Moline Acres
+                    li
+                      h5 mobile no
+                      h5.details +0 1800 76855
+                    li
+                      h5 email
+                      h5.details pixelstrap@test.com
+                    li
+                      h5 Website
+                      h5.details www.test.com
+                    li
+                      h5.m-0 Interest
+                      h5.details Photography

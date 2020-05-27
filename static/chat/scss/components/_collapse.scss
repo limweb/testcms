@@ -1,0 +1,23 @@
+.collapse-block{
+	&.open{
+		.block-title{
+			padding-bottom: 25px;
+			transition: all 0.3s ease;
+		}
+	}
+	.block-title{
+		position:relative;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:after{
+			position: absolute;
+			display:inline-block;
+			content: "\f107";
+			font-family: FontAwesome;
+			color: $dark-color;
+			right:0;
+			top: -4px;
+			font-size:20px;
+		}
+	}
+}

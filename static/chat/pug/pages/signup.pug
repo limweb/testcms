@@ -1,0 +1,54 @@
+- var feathericon             = true;
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+  body
+    .login-page1
+      .container-fluid.p-0
+      .row
+        .col-12
+          .login-contain-main
+            .left-page
+              .login-content
+                .login-content-header
+                  img(src='../assets/images/logo/landing-logo.png' alt='images')
+                h3 Hello Everyone , We are Chitchat
+                h4 Wellcome to chitchat please login to your account.
+                form.form1
+                      .form-group
+                        label.col-form-label(for='uname') Username
+                        input#uname.form-control(type='text' placeholder='Demo@123')
+                      .form-group
+                        label.col-form-label(for='inputEmail3') Email Address
+                        input#inputEmail3.form-control(type='email' placeholder='Demo@123gmail.com')
+                      .form-group
+                        label.col-form-label(for='inputPassword3') Password
+                        span 
+                        input#inputPassword3.form-control(type='password' placeholder='Password')
+                      .form-group
+                        .buttons
+                          a.btn.btn-primary.button-effect.signpbtn(href='#') Signup
+                      .medialogo
+                        ul
+                          li
+                            a.icon-btn.btn-danger.button-effect(href='#')
+                              i.fa.fa-google
+                          li
+                            a.icon-btn.btn-primary.button-effect(href='#')
+                              i.fa.fa-twitter
+                          li
+                            a.icon-btn.btn-facebook.button-effect(href='#')
+                              i.fa.fa-facebook-f
+                .line
+                  h6 OR Connect with
+              
+                .termscondition
+                  h4
+                    span *
+                    | Terms and condition
+                    b &amp;
+                    | Privacy policy
+            .right-page
+              .right-login.animat-rate
+                   +animation

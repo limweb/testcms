@@ -1,0 +1,13 @@
+.tippy-tooltip{
+  &.tooltiprad-theme{
+    border-radius : 0px 50px 50px 50px;
+    margin-left:70px;
+    margin-top: 50px;
+  }
+  &.gradienttooltip-theme{
+    border-radius : 0px 50px 50px 50px;
+    background-image: linear-gradient(to right,#1589FF, #82CAFA);
+    margin-left:70px;
+    margin-top: 50px;
+  }
+}

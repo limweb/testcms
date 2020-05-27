@@ -1,0 +1,219 @@
+body {
+	background-color: #fff;
+	margin: 0;
+}
+
+
+
+
+.clear {
+	clear: both;
+}
+
+.inner {
+	width: 1000px;
+	margin: 0 auto;
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.inner.over {
+	margin-top: 6px;
+}
+
+#main-menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+#main-menu a {
+	color: #bbb;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#main-menu a:hover {
+	color: #666;
+}
+
+/* Logo */
+
+#logo {
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	width: 140px;
+	height: 42px;
+}
+
+.button {
+	background-color: #f56b7e;
+	border-radius: 3px;
+	color: #fff !important;
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 12px 0 12px 16px;
+}
+
+.button span {
+	background-color: rgba(0, 0, 0, 0.08);
+	border-radius: 0 3px 3px 0;
+	font-weight: bold;
+	margin-left: 24px;
+	padding: 12px 16px 12px 8px;
+	position: relative;
+	transition: padding 0.2s;
+}
+
+.button:hover span {
+	padding: 12px 24px 12px 16px;
+}
+
+.button span::before {
+	width: 14px;
+	height: 42px;
+	content: '';
+	background-image: url(../images/button-divider.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -14px;
+	top: 0;
+}
+
+#map-section {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Editor */
+
+/* Map */
+
+.map-container {
+	margin: 0 auto;
+	margin-bottom: 0px;
+}
+
+/* Examples */
+
+#examples {
+	font-size: 0;
+	padding: 0;
+	margin: 0 80px;
+	display: block;
+	text-align: center;
+}
+
+#examples li {
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+#examples a {
+	border-radius: 3px;
+	border: 2px solid #fff;
+	color: #bbb;
+	font-size: 16px;
+	display: block;
+	padding: 10px;
+	margin: 0 10px;
+	transition: border-color 0.2s, color 0.2s;
+}
+
+#examples a:hover {
+	color: #666;
+	border: 2px solid #eee;
+}
+
+#examples .active a {
+	border: 2px solid #ddd;
+	color: #666;
+}
+
+/* WordPress */
+
+#wordpress {
+	color: #fff;
+	display: block;
+	font-size: 28px;
+	text-align: center;
+}
+
+#wordpress strong {
+	margin-left: 20px;
+}
+
+#wordpress img {
+	vertical-align: middle;
+}
+
+/* Contact por*/
+
+/* #contact {
+	background-image: url(../images/mail.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 auto 30px auto;
+} */
+
+/* Icons */
+
+.icon {
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	padding-top: 60px;
+}
+
+.icon.landmark {
+	background-image: url(../images/icon-landmark.png);
+}
+
+.icon.layer {
+	background-image: url(../images/icon-layer.png);
+}
+
+.icon.link {
+	background-image: url(../images/icon-link.png);
+}
+
+.icon.browser {
+	background-image: url(../images/icon-browser.png);
+}
+
+.icon.responsive {
+	background-image: url(../images/icon-responsive.png);
+}
+
+.icon.mobile {
+	background-image: url(../images/icon-mobile.png);
+}
+
+.container:after {
+	clear: both;
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	font-size: 0;
+}
+
+.one-third {
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 29%;
+}
+
+.features {
+	text-align: center;
+}
+
+.mapplic-coordinates {
+	display: none;
+}

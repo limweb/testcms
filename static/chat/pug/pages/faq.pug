@@ -1,0 +1,40 @@
+- var feathericon  = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+  body
+    .inner-page
+      +header
+      +breadcrumb('FAQ','home')    
+    section.section-py-space.faq-section
+      ul.page-decore
+        li.top
+          img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+        li.bottom
+          img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+
+      .container
+        .row.faq-block
+          .col-sm-12
+            .media
+              div
+                h2 Frequently Asked Questions
+                p Discover you question from underneath or present your inquiry fromt tahe submit box.
+              .media-body
+                a.icon-btn.btn-outline-primary.btn-sm.search.contact-search.float-right(href='#')
+                    i(data-feather='search')
+
+                form.form-inline.search-form
+                  .form-group
+                    input.form-control-plaintext(type='search', placeholder='Search..')
+                    .icon-close.close-search
+          .col-md-12
+            #accordionExample1.accordion.theme-accordion
+              +faq          
+
+    //-footer start //
+    +footer
+    +taptop
+    include ../components/footer-files

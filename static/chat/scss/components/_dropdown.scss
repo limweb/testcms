@@ -1,0 +1,282 @@
+.custom-dropdown{
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 0;
+  background-color: $white;
+  z-index: 99;
+  opacity: 0;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  top: 85px;
+  transition: all 0.3s ease;
+  &.open{
+    opacity: 1;
+    transition: all 0.3s ease;
+    height: 200px;
+    width: 300px;
+  }
+}
+.onclick-dropdown{
+  cursor: pointer;
+}
+// emojis start //
+.emojis-main {
+  position: relative;
+  display: flex;
+  .toggle-sticker{
+    img{
+      height: 30px;
+    }
+  }
+  .toggle-sticker{
+    svg{
+      height: 50px;
+      width: 50px;
+      fill: $primary-color;
+      path{
+        stroke: $primary-color;
+      }
+    }
+    &.active{
+      svg{
+        fill: $white;
+        path{
+          stroke: $white;
+        }
+      }
+    }
+  }
+  .emojis-contain,.sticker-contain  {
+    width: 0;
+    height: 0;
+    background-color: $white;
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    padding: 35px;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    &.open{
+      bottom: 85px;
+      transform: scale(1);
+      transition: all 0.3s ease;
+      width: 420px;
+      height: 280px;
+    }
+    .emojis-sub-contain {
+      height: 100%;
+      overflow: overlay ;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid $white;
+        bottom: -12px;
+        left: 70px;
+        z-index: 1;
+      }
+      ul {
+        li {
+          display: inline-block;
+          font-size: 24px;
+          padding: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .sticker-sub-contain {
+      height: 100%;
+      overflow: overlay ;
+      ul {
+        li {
+          display: inline-block;
+          img {
+            width: 45px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .contact-poll {
+    transition: all 1s ease;
+    .contact-poll-content {
+      position: absolute;
+      bottom: 85px;
+      left: 90px;
+      background-color: white;
+      padding: 30px;
+      transition: all 1s ease;
+      display: none;
+      ul {
+        li {
+          margin-bottom: 15px;
+          position: relative;
+          text-transform: capitalize;
+          font-size: 16px;
+          font-weight: 600;
+          padding-left: 30px;
+          transition: all 0.5s ease;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            color: $dark-color;
+            transition: all 0.3s ease;
+            svg{
+              width: 18px;
+              margin-right: 15px;
+              position: absolute;
+              left: 0;
+            }
+          }
+          &:hover {
+            a {
+              color: $primary-color;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid $white;
+        bottom: -12px;
+        left: 40px;
+        z-index: 1;
+      }
+    }
+  }
+}
+// sticker gif //
+.main-nav{
+  .status{
+    > div{
+      &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $primary-color;
+        left: 0;
+        z-index: -1;
+        top: 0;
+        border-radius: 100%;
+      }
+    }
+  }
+  .user-popup{
+    height: 43px;
+    width: 43px;
+    padding: 3px;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    &.two{
+      > div{
+        &:after{
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background-color: $white;
+          left: 0;
+          z-index: -1;
+          top: 22px;
+        }
+      }
+    }
+    &.three{
+      > div{
+        &:after{
+          content: "";
+          position: absolute;
+          left: -6px;
+          z-index: -1;
+          top: -5px;
+          width: 0;
+          height: 0;
+          border-left: 33px solid transparent;
+          border-right: 28px solid transparent;
+          border-bottom: 43px solid $white;
+        }
+      }
+    }
+    > div{
+      height: 37px;
+      width: 37px;
+      border-radius: $radious100;
+      margin: 0 auto;
+    }
+  }
+}
+
+// chat frind popup //
+.chat-friend-toggle {
+  position: relative;
+  .chat-frind-content {
+    position: absolute;
+    top: 80px;
+    right:0;
+    padding: 25px;
+    background-color: $white;
+    text-align: left;
+    display: none;
+    text-transform: capitalize;
+    ul {
+      li {
+        margin-bottom: 15px;
+        padding-left: 50px !important;
+        position: relative;
+        display: inline-flex !important;
+        align-items: center;
+        height: 30px;
+        a {
+          position: absolute;
+          left: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+          padding-top:20px;
+          border-top: 1px solid $border-color;
+          height: 34px;
+
+        }
+        &:before {
+          border-left:5px solid $primary-color;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+.user-status{
+  position: relative;
+  padding: 4px;
+  &:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $primary-color;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    border-radius: 100%;
+  }
+}

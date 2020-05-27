@@ -1,0 +1,1448 @@
+mixin sidebar
+    nav.main-nav.on.custom-scroll
+       
+        .logo-warpper
+          a(href="messenger.html")
+            img(src="../assets/images/logo/logo.png" , alt="logo")
+        .sidebar-main
+            ul.sidebar-top
+                li
+                    a.button-effect(href='status',data-tippy-content='status',data-intro='Check Status here')
+                      .user-popup.status.one
+                         div 
+                          img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')     
+                li
+                    a.icon-btn.btn-light.button-effect(href='favourite',data-tippy-content='Favourite')
+                        i.fa.fa-star                
+                li
+                    a.icon-btn.btn-light.button-effect(href='document',data-tippy-content='Document') 
+                        i.fa.fa-file-text        
+                li
+                    a.icon-btn.btn-light.button-effect(href='contact-list',data-tippy-content='Contact List') 
+                        i.fa.fa-users   
+                                    
+                li
+                    .dot-btn.dot-danger.grow
+                        a.icon-btn.btn-light.button-effect(href='notification',data-tippy-content='Notification') 
+                          i.fa.fa-bell
+                li
+                    a.icon-btn.btn-light.button-effect(href='settings',data-tippy-content='Setting',data-intro='You can change settings by clicking here') 
+                        i.fa.fa-cog
+            ul.sidebar-bottom          
+                li
+                    a.icon-btn.btn-light.button-effect.mode(href='#',data-tippy-content='Theme Mode' ,data-intro='Change mode')
+                        i.fa.fa-moon-o
+                li
+                    a.icon-btn.btn-light(href='login.html',data-tippy-content=' SignOut') 
+                        i.fa.fa-power-off   
+          
+
+    aside.chitchat-left-sidebar.left-disp
+        .recent-default.dynemic-sidebar.active
+            .recent
+                .theme-title
+                  .media
+                    div 
+                      h2 Recent
+                      h4 Chat from your friends &#128536;
+                    .media-body
+                      a.icon-btn.btn-outline-light.button-effect.pull-right.mobile-back(href='#')
+                        i.ti-angle-right
+                          
+                      a.icon-btn.btn-outline-light.button-effect.pull-right.mainnav(href='#')
+                        i.ti-layout-grid2
+                          
+                .recent-slider.recent-chat.owl-carousel.owl-theme
+                    .item
+                        .recent-box
+                            .dot-btn.dot-danger.grow
+                            .recent-profile
+                                img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                                h6  John deo
+                    .item
+                        .recent-box
+                            .dot-btn.dot-success.grow
+                            .recent-profile.online
+                                img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                                h6  John 
+                    .item
+                        .recent-box
+                            .dot-btn.dot-warning.grow
+                            .recent-profile
+                                img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                                h6  Jpny
+   
+            .chat.custom-scroll
+                ul.chat-cont-setting
+                  li 
+                    a(href="#" data-toggle="modal" data-target="#msgchatModal")
+                      span new chat
+                      .icon-btn.btn-outline-primary.button-effect.btn-sm
+                        i(data-feather='message-square')
+                  li
+                    a(href="#" data-toggle="modal" data-target="#msgcallModal")
+                      span new call
+                      .icon-btn.btn-outline-success.button-effect.btn-sm
+                        i(data-feather='phone')
+                  li
+                    a(href="#" data-toggle="modal" data-target="#exampleModalCenter")
+                      span new Contact
+                      .icon-btn.btn-outline-danger.button-effect.btn-sm
+                        i(data-feather='users')
+                .theme-title
+                    .media
+                        div 
+                            h2 Chat
+                            h4 Start New Conversation
+                        .media-body.text-right    
+                            a.icon-btn.btn-outline-light.btn-sm.search.contact-search(href='#') 
+                                i(data-feather='search')
+                            form.form-inline.search-form
+                              .form-group
+                                input.form-control-plaintext(type='search', placeholder='Search..')
+                                .icon-close.close-search                  
+
+                            a.icon-btn.btn-primary.btn-fix.chat-cont-toggle.outside(href="#")
+                              i(data-feather='plus')
+                .theme-tab.tab-sm.chat-tabs      
+                    ul#myTab.nav.nav-tabs(role='tablist')
+                      li.nav-item(data-to='chat-content')
+                        a#chat-tab.nav-link.button-effect.active(data-toggle='tab' href='#chat' role='tab' aria-controls='chat' ,aria-selected='true',data-intro='Start chat')
+                            i(data-feather='message-square') 
+                            | Chat
+                      li.nav-item(data-to='call-content')
+                        a#call-tab.nav-link.button-effect(data-toggle='tab' href='#call' role='tab' aria-controls='call' aria-selected='false')
+                            i(data-feather='phone') 
+                            | Call
+                      li.nav-item(data-to='contact-content')
+                        a#contact-tab.nav-link.button-effect(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') 
+                            i(data-feather='users') 
+                            | Contact
+
+                    #myTabContent.tab-content
+                      #chat.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='chat-tab') 
+                        .theme-tab        
+                            ul#myTab1.nav.nav-tabs(role='tablist')
+                              li.nav-item
+                                a#direct-tab.nav-link.button-effect.active(data-toggle='tab' href='#direct' role='tab' aria-controls='direct' aria-selected='false' data-to='chating') Direct
+                              li.nav-item
+                                a#group-tab.nav-link.button-effect(data-toggle='tab' href='#group' role='tab' aria-controls='group' aria-selected='true' data-to='group_chat') Group
+                            #myTabContent1.tab-content
+                              #direct.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='direct-tab') 
+                                ul.chat-main
+                                  li(data-to='blank')
+                                    .chat-box
+                                      .profile.offline
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Josephin water
+                                        h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                                      .date-status
+                                        i.ti-pin2
+                                        h6 22/10/19
+                                        h6.font-success.status  Seen
+                                  li.active(data-to='chating')
+                                    .chat-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6 Typing................
+                                      .date-status
+                                        i.ti-pin2
+                                        h6 30/11/19
+                                        .badge.badge-primary.sm 8
+                                  li(data-to='blank')
+                                    .chat-box
+                                      .profile.unreachable
+                                          img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                                      .details
+                                        h5 Sufiya Elija
+                                        h6 I need job, please help me.
+                                      .date-status
+                                        i.ti-pin2
+                                        h6 15/06/19
+                                        h6.font-dark.status  Sending
+                                  li(data-to='blank')
+                                    .chat-box
+                                      .profile.busy
+                                          img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                                      .details
+                                        h5 Mukrani Pabelo
+                                        h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                                      .date-status
+                                        i.ti-pin2
+                                        h6 04/06/19
+                                        h6.font-danger.status  Failed
+                                  li(data-to='blank')
+                                    .chat-box
+                                      .profile.busy
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jhon Deo
+                                        h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                                      .date-status
+                                        i.ti-pin2
+                                        h6 04/06/19
+                                        h6.font-danger.status  Failed
+                                  li(data-to='blank')
+                                    .chat-box
+                                      .profile.busy
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Pabelo Mukrani
+                                        h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                                      .date-status
+                                        i.ti-pin2
+                                        h6 04/06/19
+                                        h6.font-danger.status  Failed
+
+                              #group.tab-pane.fade(role='tabpanel' aria-labelledby='group-tab') 
+                                .search2
+                                  div
+                                    .input-group
+                                      .input-group-append
+                                        span.input-group-text
+                                          i.fa.fa-search
+                                      input.form-control(type='text' placeholder='Start Chat')
+                                ul.group-main
+                                  li.active(data-to='group_chat')
+                                    .group-box
+                                      .profile
+                                          img.bg-img(src='../assets/images/avtar/teq.jpg' alt='Avatar')
+                                      .details
+                                        h5 Tech Ninjas
+                                        h6 Lorem Ipsum is simply dummy text the printing and typesetting industry.
+                                      .date-status
+                                        ul.grop-icon
+                                          li
+                                            a.group-tp(href='#',data-tippy-content='Josephin') 
+                                              img(src="../assets/images/contact/1.jpg" alt="group-icon-img")
+                                          li
+                                            a.group-tp(href='#',data-tippy-content='Jony ') 
+                                              img(src="../assets/images/contact/2.jpg" alt="group-icon-img")
+                                          li
+                                            a.group-tp(href='#',data-tippy-content='Pabelo') 
+                                              img(src="../assets/images/contact/3.jpg" alt="group-icon-img")
+                                          li + 35
+
+                                  li(data-to='group_blank')
+                                    .group-box
+                                      .profile
+                                          img.bg-img(src='../assets/images/avtar/family.jpg' alt='Avatar')
+                                      .details
+                                        h5 Family Ties
+                                        h6 Lorem Ipsum is simply dummy text the printing and typesetting industry.
+                                      .date-status
+                                        ul.grop-icon
+                                          li
+                                            a.group-tp(href='#',data-tippy-content='Josephin') 
+                                              img(src="../assets/images/contact/1.jpg" alt="group-icon-img")
+                                          li
+                                            a.group-tp(href='#',data-tippy-content='Jony ') 
+                                              img(src="../assets/images/contact/2.jpg" alt="group-icon-img")
+                                          li
+                                            a.group-tp(href='#',data-tippy-content='Pabelo') 
+                                              img(src="../assets/images/contact/3.jpg" alt="group-icon-img")
+                                          li + 12
+                                        .badge.badge-primary
+                                  li(data-to='group_blank')
+                                    .group-box
+                                      .profile.bg-danger
+                                          span HT
+                                      .details
+                                        h5 Hungry for Trouble
+                                        h6 Lorem Ipsum is simply dummy text the printing and typesetting industry.
+                                  li(data-to='group_blank')
+                                    .group-box
+                                      .profile
+                                          img.bg-img(src='../assets/images/avtar/girls.jpg' alt='Avatar')
+                                      .details
+                                        h5 Staunch Ladies
+                                        h6 Lorem Ipsum is simply dummy text the printing and typesetting industry.
+                                  li(data-to='group_blank')
+                                    .group-box
+                                      .profile.bg-success
+                                          span CE
+                                      .details
+                                        h5 Crazy Engineers
+                                        h6 Lorem Ipsum is simply dummy text the printing and typesetting industry.
+                                      .date-status
+                      #call.tab-pane.fade(role='tabpanel' aria-labelledby='call-tab') 
+                        .theme-tab.tab-icon
+                          ul#contactTab.nav.nav-tabs(role='tablist')
+                            li.nav-item
+                              a#con1-tab.nav-link.active(data-toggle='tab' href='#con1' role='tab' aria-controls='con1' aria-selected='true') All
+
+                            li.nav-item
+                              a#con3-tab.nav-link(data-toggle='tab' href='#con3' role='tab' aria-controls='con3' aria-selected='false') 
+                                i(data-feather='phone-incoming')
+
+                            li.nav-item
+                              a#con4-tab.nav-link(data-toggle='tab' href='#con4' role='tab' aria-controls='con4' aria-selected='false') 
+                                i(data-feather='phone-outgoing')
+
+                            li.nav-item
+                              a#con2-tab.nav-link(data-toggle='tab' href='#con2' role='tab' aria-controls='con2' aria-selected='false') 
+                                i(data-feather='phone-missed')
+
+                          #contactTabContent.tab-content
+                            #con1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='con1-tab') 
+                               ul.call-log-main
+                                  li.active
+                                    .call-box
+                                      .profile.offline
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-down-left')
+                                          | 3:30 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='phone')
+                                  li
+                                    .call-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-down-right')
+                                          | 3:10 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='video')
+
+                                  li
+                                    .call-box
+                                      .profile.offline
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='corner-left-down').missed
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                          i(data-feather='phone')
+                                  li
+                                    .call-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-down-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='video')
+
+                                  li
+                                    .call-box
+                                      .profile.offline
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-down-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='phone')
+                                  li
+                                    .call-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-down-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='video')
+                            #con2.tab-pane.fade(role='tabpanel' aria-labelledby='con2-tab') 
+                                ul.call-log-main
+                                      li.active
+                                        .call-box
+                                          .profile.offline
+                                              img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                          .details
+                                            h5 Jony Lynetin
+                                            h6  
+                                              i(data-feather='corner-left-down').missed
+                                              | 3:30 pm
+                                          .call-status
+                                            .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                              i(data-feather='phone')
+                                      li
+                                        .call-box
+                                          .profile.online
+                                              img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                          .details
+                                            h5 Jony Lynetin
+                                            h6  
+                                              i(data-feather='corner-left-down').missed
+                                              | 3:10 pm
+                                          .call-status
+                                            .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                              i(data-feather='video')
+
+                                      li
+                                        .call-box
+                                          .profile.offline
+                                              img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                          .details
+                                            h5 Jony Lynetin
+                                            h6  
+                                              i(data-feather='corner-left-down').missed
+                                              | 3:00 pm
+                                          .call-status
+                                            .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                              i(data-feather='phone')
+                                      li
+                                        .call-box
+                                          .profile.online
+                                              img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                          .details
+                                            h5 Jony Lynetin
+                                            h6  
+                                              i(data-feather='corner-left-down').missed
+                                              | 3:00 pm
+                                          .call-status
+                                            .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                              i(data-feather='video')
+
+                                      li
+                                        .call-box
+                                          .profile.offline
+                                              img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                          .details
+                                            h5 Jony Lynetin
+                                            h6  
+                                              i(data-feather='corner-left-down').missed
+                                              | 3:00 pm
+                                          .call-status
+                                            .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                              i(data-feather='phone')
+                                      li
+                                        .call-box
+                                          .profile.online
+                                              img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                          .details
+                                            h5 Jony Lynetin
+                                            h6  
+                                              i(data-feather='corner-left-down').missed
+                                              | 3:00 pm
+                                          .call-status
+                                            .icon-btn.btn-outline-danger.button-effect.btn-sm
+                                              i(data-feather='video')
+                            
+                            #con3.tab-pane.fade(role='tabpanel' aria-labelledby='con3-tab') 
+
+                              ul.call-log-main
+                                    li
+                                      .call-box
+                                        .profile.online
+                                            img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                        .details
+                                          h5 Jony Lynetin
+                                          h6  
+                                            i(data-feather='arrow-down-right')
+                                            | 3:10 pm
+                                        .call-status
+                                          .icon-btn.btn-outline-success.button-effect.btn-sm
+                                            i(data-feather='video')
+
+                                    li
+                                      .call-box
+                                        .profile.offline
+                                            img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                        .details
+                                          h5 Jony Lynetin
+                                          h6  
+                                            i(data-feather='arrow-down-right')
+                                            | 3:00 pm
+                                        .call-status
+                                          .icon-btn.btn-outline-success.button-effect.btn-sm
+                                            i(data-feather='phone')
+                                    li
+                                      .call-box
+                                        .profile.online
+                                            img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                        .details
+                                          h5 Jony Lynetin
+                                          h6  
+                                            i(data-feather='arrow-down-right')
+                                            | 3:00 pm
+                                        .call-status
+                                          .icon-btn.btn-outline-success.button-effect.btn-sm
+                                            i(data-feather='video')
+
+                                    li
+                                      .call-box
+                                        .profile.offline
+                                            img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                        .details
+                                          h5 Jony Lynetin
+                                          h6  
+                                            i(data-feather='arrow-down-right')
+                                            | 3:00 pm
+                                        .call-status
+                                          .icon-btn.btn-outline-success.button-effect.btn-sm
+                                            i(data-feather='phone')
+                                    li
+                                      .call-box
+                                        .profile.online
+                                            img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                        .details
+                                          h5 Jony Lynetin
+                                          h6  
+                                            i(data-feather='arrow-down-right')
+                                            | 3:00 pm
+                                        .call-status
+                                          .icon-btn.btn-outline-success.button-effect.btn-sm
+                                            i(data-feather='video')
+                            
+                            #con4.tab-pane.fade(role='tabpanel' aria-labelledby='con4-tab') 
+                              ul.call-log-main
+                                  li
+                                    .call-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-up-right')
+                                          | 3:10 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='video')
+
+                                  li
+                                    .call-box
+                                      .profile.offline
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-up-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='phone')
+                                  li
+                                    .call-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-up-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='video')
+
+                                  li
+                                    .call-box
+                                      .profile.offline
+                                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-up-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='phone')
+                                  li
+                                    .call-box
+                                      .profile.online
+                                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                                      .details
+                                        h5 Jony Lynetin
+                                        h6  
+                                          i(data-feather='arrow-up-right')
+                                          | 3:00 pm
+                                      .call-status
+                                        .icon-btn.btn-outline-success.button-effect.btn-sm
+                                          i(data-feather='video')
+                           
+                      #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab')
+                        ul.contact-log-main
+                          li
+                            .contact-box
+                              .profile.offline
+                                  img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                              .details
+                                h5 Jony Lynetin
+                                h6 +21 3523 25544 
+                              .contact-action
+                                .icon-btn.btn-outline-primary.btn-sm.button-effect
+                                  i(data-feather='phone')
+                                .icon-btn.btn-outline-success.btn-sm.button-effect
+                                  i(data-feather='video')
+
+                          li.active
+                            .contact-box
+                              .profile.online
+                                  img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                              .details
+                                h5 Jony Lynetin
+                                h6 +54 541447 255 
+                              .contact-action
+                                .icon-btn.btn-outline-primary.btn-sm.button-effect
+                                  i(data-feather='phone')
+                                .icon-btn.btn-outline-success.btn-sm.button-effect
+                                  i(data-feather='video')
+
+                          li
+                            .contact-box
+                              .profile.busy
+                                  img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                              .details
+                                h5 Jony Lynetin
+                                h6 +58 2564 02554
+                              .contact-action
+                                .icon-btn.btn-outline-primary.btn-sm.button-effect
+                                  i(data-feather='phone')
+                                .icon-btn.btn-outline-success.btn-sm.button-effect
+                                  i(data-feather='video')
+
+                          li
+                            .contact-box
+                              .profile.unreachable
+                                  img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                              .details
+                                h5 Jony Lynetin
+                                h6 +44 55124 2524
+                              .contact-action
+                                .icon-btn.btn-outline-primary.btn-sm.button-effect
+                                  i(data-feather='phone')
+                                .icon-btn.btn-outline-success.btn-sm.button-effect
+                                  i(data-feather='video')
+
+                          li
+                            .contact-box
+                              .profile.online
+                                  img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                              .details
+                                h5 Jony Lynetin
+                                h6 +54 541447 255 
+                              .contact-action
+                                .icon-btn.btn-outline-primary.btn-sm.button-effect
+                                  i(data-feather='phone')
+                                .icon-btn.btn-outline-success.btn-sm.button-effect
+                                  i(data-feather='video')
+
+        .fevorite-tab.dynemic-sidebar#favourite
+            .theme-title
+                    .media
+                        div 
+                            h2 Favourite
+                            h4 Last Recent
+                        .media-body.text-right   
+
+                            a.icon-btn.btn-outline-light.btn-sm.m-r-15.search(href='#') 
+                                i(data-feather='search')
+                            form.form-inline.search-form
+                              .form-group
+                                 input.form-control-plaintext(type='search', placeholder='Search..')
+                                 .icon-close.close-search
+                            a.icon-btn.btn-outline-light.btn-sm.m-r-15(href="#",data-toggle='modal' data-target='#addcallmodal')
+                                i(data-feather='plus')                               
+                            a.icon-btn.btn-outline-light.btn-sm.close-panel(href='#')
+                                i(data-feather='x')
+
+            ul.chat-main
+              li
+                .chat-box
+                  .media
+                    .profile.offline
+                        img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                    .details
+                      h5 Josephin water
+                      h6 Alabma , USA
+                    .media-body
+                      a.icon-btn.btn-outline-primary.btn-sm.pull-right.favourite(href='#') 
+                        i(data-feather='star') 
+              li
+                .chat-box
+                  .media
+                    .profile.online
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6 Los Angeles, California
+                    .media-body
+                      a.icon-btn.btn-outline-primary.btn-sm.pull-right.favourite(href='#') 
+                        i(data-feather='star') 
+              li
+                .chat-box
+                  .media
+                    .profile.busy
+                        img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                    .details
+                      h5 Sufiya Elija
+                      h6 Glasgow , Scotland
+                    .media-body
+                      a.icon-btn.btn-outline-primary.btn-sm.pull-right.favourite(href='#') 
+                        i(data-feather='star') 
+              li
+                .chat-box
+                  .media
+                    .profile.unreachable
+                        img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                    .details
+                      h5 Pabelo Mukrani
+                      h6 Leicester , England
+                    .media-body
+                      a.icon-btn.btn-outline-primary.btn-sm.pull-right.favourite(href='#') 
+                        i(data-feather='star') 
+              li
+                .chat-box
+                  .media
+                    .profile.offline
+                        img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                    .details
+                      h5 Josephin water
+                      h6 Alabma , USA
+                    .media-body
+                      a.icon-btn.btn-outline-primary.btn-sm.pull-right.favourite(href='#') 
+                        i(data-feather='star') 
+              li
+                .chat-box
+                  .media
+                    .profile.online
+                        img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                    .details
+                      h5 Josephin water
+                      h6 Alabma , USA
+                    .media-body
+                      a.icon-btn.btn-outline-primary.btn-sm.pull-right.favourite(href='#') 
+                        i(data-feather='star') 
+        .document-tab.dynemic-sidebar#document
+            .theme-title
+                    .media
+                        div 
+                            h2 Document
+                            h4 List of document
+                        .media-body.text-right    
+                            a.icon-btn.btn-outline-light.btn-sm.m-r-15.search(href='#') 
+                                i(data-feather='search')
+                            form.form-inline.search-form
+                              .form-group
+                                 input.form-control-plaintext(type='search', placeholder='Search..')
+                                 .icon-close.close-search                                
+                            a.icon-btn.btn-outline-light.btn-sm.close-panel(href='#')
+                                i(data-feather='x')
+            ul.chat-main
+              li
+                .chat-box
+                  .media
+                    .profile
+                        a.icon-btn.btn-outline-danger.btn-xl.pull-right.rouded15(href='#')
+                          i.fa.fa-file-code-o
+                    .details
+                      h5 messenger.html
+                      h6 2, octomber 2019
+                    .media-body
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right(href='../assets/doc/messenger.html', target="_blank")
+                        i(data-feather='download')
+              li
+                .chat-box
+                  .media
+                    .profile
+                        a.icon-btn.btn-outline-success.btn-xl.pull-right.rouded15(href='#')
+                          i.fa.fa-file-video-o
+                    .details
+                      h5 chapter1.MP4
+                      h6 3, Octomber 2019
+                    .media-body
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right(href='../assets/doc/chapter1.MP4' , target="_blank") 
+                        i(data-feather='download')
+
+              li
+                .chat-box
+                  .media
+                    .profile
+                        a.icon-btn.btn-outline-primary.btn-xl.pull-right.rouded15(href='#')
+                          i.fa.fa-file-word-o
+                    .details
+                      h5 salary.xlsx
+                      h6 5, Octomber 2019
+                    .media-body
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right(href='../assets/doc/salary.xlsx', target="_blank") 
+                        i(data-feather='download')
+              li
+                .chat-box
+                  .media
+                    .profile
+                        a.icon-btn.btn-outline-warning.btn-xl.pull-right.rouded15(href='#')
+                          i.fa.fa-file-pdf-o
+                    .details
+                      h5 document.pdf
+                      h6 7, Octomber 2019
+                    .media-body
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right(href='../assets/doc/document.pdf', target="_blank") 
+                        i(data-feather='download')
+              li
+                .chat-box
+                  .media
+                    .profile
+                        a.icon-btn.btn-outline-danger.btn-xl.pull-right.rouded15(href='#')
+                          i.fa.fa-file-text-o
+                    .details
+                      h5 details.txt
+                      h6 20, Octomber 2019
+                    .media-body
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right(href='../assets/doc/details.txt', target="_blank") 
+                        i(data-feather='download')
+              li
+                .chat-box
+                  .media
+                    .profile
+                        a.icon-btn.btn-outline-success.btn-xl.pull-right.rouded15(href='#')
+                          i.fa.fa-file-code-o
+                    .details
+                      h5 messenger.html
+                      h6 2, octomber 2019
+                    .media-body
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right(href='../assets/doc/messenger.html', target="_blank")
+                        i(data-feather='download')
+
+        .contact-list-tab.dynemic-sidebar.custom-scroll#contact-list
+            .theme-title
+                    .media
+                        div 
+                            h2 Contact
+                            h4 Start talking now
+                        .media-body.text-right    
+                            a.icon-btn.btn-outline-light.btn-sm.m-r-15.search(href='#') 
+                                i(data-feather='search')
+                            form.form-inline.search-form
+                              .form-group
+                                input.form-control-plaintext(type='search', placeholder='Search..')
+                                .icon-close.close-search                                
+                            a.icon-btn.btn-outline-light.btn-sm.close-panel(href='#')
+                                i(data-feather='x')
+            ul.chat-main
+              li
+                .chat-box
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    h5 Josephin water
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    h6 22/10/19
+                    h6.font-success.status  Seen
+              li
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Hello
+                  .date-status
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+              li
+                .chat-box
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    h5 Sufiya Elija
+                    h6 I need job, please help me.
+                  .date-status
+                    h6 15/06/19
+                    h6.font-dark.status  Sending
+              li
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                  .details
+                    h5 Pabelo Mukrani
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+              li
+                .chat-box
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    h5 Josephin water
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    h6 22/10/19
+                    h6.font-success.status  Seen
+              li
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Hello
+                  .date-status
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+              li
+                .chat-box
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    h5 Sufiya Elija
+                    h6 I need job, please help me.
+                  .date-status
+                    h6 15/06/19
+                    h6.font-dark.status  Sending
+              li
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Hello
+                  .date-status
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+              li
+                .chat-box
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    h5 Josephin water
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    h6 22/10/19
+                    h6.font-success.status  Seen
+              li
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Hello
+                  .date-status
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+              li
+                .chat-box
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    h5 Sufiya Elija
+                    h6 I need job, please help me.
+                  .date-status
+                    h6 15/06/19
+                    h6.font-dark.status  Sending
+              li
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                  .details
+                    h5 Pabelo Mukrani
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+              li
+                .chat-box
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    h5 Josephin water
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    h6 22/10/19
+                    h6.font-success.status  Seen
+              li
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Hello
+                  .date-status
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+              li
+                .chat-box
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    h5 Sufiya Elija
+                    h6 I need job, please help me.
+                  .date-status
+                    h6 15/06/19
+                    h6.font-dark.status  Sending
+              li
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Hello
+                  .date-status
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+        .notification-tab.dynemic-sidebar.custom-scroll#notification
+            .theme-title
+                    .media
+                        div 
+                            h2 Notification
+                            h4 List of notification
+                        .media-body.text-right    
+                            a.icon-btn.btn-outline-light.btn-sm.close-panel(href='#')
+                                i(data-feather='x')
+            ul.chat-main
+              li
+                .chat-box.notification
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    span Josephin water
+                    h5 Upload New Photos
+                    p Lorem Ipsum is simply dummy text of the printing.
+                  .date-status
+                    h6 Now
+              li
+                .chat-box.notification
+                  .profile.bg-success.offline
+                      span J
+                  .details
+                    span Jony Today Birthday
+                    h5 Upload New Photos
+                    p Lorem Ipsum is simply dummy text of the printing.
+                  .date-status
+                    h6 1 hour ago
+              li
+                .chat-box.notification
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    span Sufiya Elija
+                    h5 Comment On your Photo
+                    p Lorem Ipsum is simply dummy text of the printing.
+                  .date-status
+                    h6 5 hour ago
+              li
+                .chat-box.notification
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    span Pabelo Mukrani
+                    h5 Invite Your New Friend
+                    p Lorem Ipsum is simply dummy text of the printing.
+                  .date-status
+                    h6 6 hour ago
+              li
+                .chat-box.notification
+                  .profile.bg-success.offline
+                      span PM
+                  .details
+                    span Pabelo Mukrani
+                    h5 Update Profile Picture
+                    p Lorem Ipsum is simply dummy text of the printing.
+                  .date-status
+                    h6 6 hour ago
+        .settings-tab.dynemic-sidebar.custom-scroll#settings
+            .theme-title
+                    .media
+                        div 
+                            h2 Settings
+                            h4 Change your app setting.
+                        .media-body.text-right    
+                            a.icon-btn.btn-outline-light.btn-sm.close-panel(href='#')
+                                i(data-feather='x')
+                    .profile-box
+                      .media
+                        .profile
+                            img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                        .details
+                          h5 Josephin water
+                          h6 Alabma , USA
+                        .details.edit
+                            form.form-radious.form-sm
+                              .form-group.mb-2
+                                input.form-control(type='text', name='username',value='Josephin water')
+                              .form-group.mb-0
+                                input.form-control(type='text', name='address',value='Alabma , USA')
+                        .media-body
+                          a.icon-btn.btn-outline-light.btn-sm.pull-right.edit-btn(href='#') 
+                            i(data-feather='edit')        
+            .setting-block
+                .block                   
+                  .media
+                    .media-body
+                       h3 Account
+                    .media-right
+                        a.icon-btn.btn-outline-light.btn-sm.pull-right.previous(href='#') 
+                            i(data-feather='chevron-left')                 
+                  #accordion.theme-according
+                      .card
+                        #headingTwo.card-header(role='heading' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='true' aria-controls='collapseTwo')
+                          a
+                            | Security
+                            i.fa.fa-angle-down
+                        #collapseTwo.collapse.show(aria-labelledby='headingTwo' data-parent='#accordion')
+                          .card-body
+                            .media
+                              .media-body
+                                 h5 Show Security notification
+                              .media-right  
+                                input.js-switch8(type='checkbox')
+                            p 
+                              b Note : 
+                              | turn on this setting to recive notification when a contact's security code has been changes.
+                      .card
+                        #headingOne.card-header(role='heading' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                          a
+                            | Privacy
+                            i.fa.fa-angle-down
+                        #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordion' style='')
+                          .card-body
+                            ul.privacy
+                              li 
+                                h5 Last seen
+                                input.js-switch10(type='checkbox' checked='')
+                                p 
+                                  b Note : 
+                                  | turn on this setting to whether your contact can see last seen or not.
+                              li 
+
+                                h5 Profile Photo
+                                input.js-switch11(type='checkbox')
+                                p  
+                                  | turn on this setting to whether your contact can see your profile or not.
+
+                              li 
+                                h5 About
+                                input.js-switch12(type='checkbox')
+                                p 
+                                  b Note : 
+                                  | turn on this setting to whether your contact can see about status or not.
+                              li 
+                                h5 Status
+                                input.js-switch14(type='checkbox')
+                                p 
+                                  b Note : 
+                                  | turn on this setting to whether your contact can see your status or not.                          
+                              li 
+                                h5 Read receipts
+                                input.js-switch16(type='checkbox')
+                                p 
+                                  b Note : 
+                                  | If turn off this option you won't be able to see read recipts from contact. read receipts are always sent for group chats.                     
+
+                              li 
+                                h5 Groups
+                                input.js-switch13(type='checkbox' checked='')
+                                p 
+                                  b Note : 
+                                  | turn on this setting to whether your contact can add in groups or not.  
+                              li 
+                                h5 Screen Lock(Require Touch ID)
+                                input.js-switch17(type='checkbox')
+                      .card
+                        #headingThree.card-header(role='heading' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                          a
+                            | Two Step verification
+                            i.fa.fa-angle-down
+
+                        #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordion')
+                          .card-body
+                            .media
+                              .media-body
+                                 h5 Enable
+                              .media-right  
+                                input.js-switch9(type='checkbox')
+                            p 
+                              b Note : 
+                              | For added security, enable two-step verifiation, which will require a PIN when registering your phone number with Chitchat again.
+                      .card
+                        #headingFour.card-header(role='heading' data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+                          a
+                            | Change Number
+                            i.fa.fa-angle-down
+                        #collapseFour.collapse(aria-labelledby='headingFour' data-parent='#accordion')
+                          .card-body.change-number
+                            h5 Your old country code & phone number
+                            .input-group
+                              .input-group-prepend
+                                span.input-group-text.form-control.m-0 +
+                              input.form-control.country-code(type='number', placeholder='01') 
+                              input.form-control(type='number', placeholder='1234567895')
+                            h5 Your new country code & phone number
+                            .input-group
+                              .input-group-prepend
+                                span.input-group-text.form-control.m-0 +
+                              input.form-control.country-code(type='number', placeholder='01') 
+                              input.form-control(type='number', placeholder='')
+                            .text-right   
+                              a.btn.btn-outline-primary.button-effect.btn-sm(href="#") confirm
+                      .card
+                        #headingFive.card-header(role='heading' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+                          a
+                            | Request account info
+                            i.fa.fa-angle-down
+                        #collapseFive.collapse(aria-labelledby='headingFive' data-parent='#accordion')
+                          .card-body
+                            a.p-0.req-info#demo(href='#',onclick='document.getElementById("demo").innerHTML = "Request sent"') Request Info                            
+                            p 
+                              b Note : 
+                              | Create a report of your account information and settings, which you can access ot port to another app.
+                      .card
+                        #headingSix.card-header(role='heading' data-toggle='collapse' data-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix')
+                          a
+                            | Delete My account
+                            i.fa.fa-angle-down
+                        #collapseSix.collapse(aria-labelledby='headingSix' data-parent='#accordion')
+                          .card-body
+                            a.p-0.req-info.font-danger(href='#') Delete Account                            
+                            p 
+                              b Note :
+                              | Deleting your account will delete your account info, profile photo, all groups & chat history.
+                .media
+                  .media-body
+                     h3 Account
+                     h4 Update Your Account Details
+                  .media-right  
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right.next(href='#') 
+                        i(data-feather='chevron-right')        
+            .setting-block
+                .block                   
+                  .media
+                    .media-body
+                       h3 Chat
+                    .media-right
+                        a.icon-btn.btn-outline-light.btn-sm.pull-right.previous(href='#') 
+                            i(data-feather='chevron-left')  
+                  ul.help
+                    li
+                      h5 Chat Backup
+                      ul.switch-list
+                        li
+                          input.js-switch5(type='checkbox' checked='')
+                          h5 Auto Backup
+                        li
+                          input.js-switch6(type='checkbox')
+                          h5 Include document
+                        li
+                          input.js-switch7(type='checkbox')
+                          h5 Include Videos
+                    li
+                      h5 Chat wallpaper
+                      ul.wallpaper
+                        li
+                          img.bg-img(src='../assets/images/wallpaper/2.jpg' alt='Avatar')
+                        li
+                          img.bg-img(src='../assets/images/wallpaper/1.jpg' alt='Avatar')
+                        li
+                          img.bg-img(src='../assets/images/wallpaper/3.jpg' alt='Avatar')
+                        li
+                          img.bg-img(src='../assets/images/wallpaper/4.jpg' alt='Avatar')
+                        li
+                          img.bg-img(src='../assets/images/wallpaper/5.jpg' alt='Avatar')
+                        li
+                          img.bg-img(src='../assets/images/wallpaper/6.jpg' alt='Avatar')
+                    li
+                      h5 
+                        a(href='#') Archive all chat
+                    li
+                      h5 
+                       a(href='#')  Clear all chats
+                    li
+                      h5  
+                        a.font-danger(href='#') Delete all chats
+
+                .media
+                  .media-body
+                     h3 Chat
+                     h4 Control Your Chat Backup
+                  .media-right  
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right.next(href='#') 
+                        i(data-feather='chevron-right')      
+            .setting-block
+                .block                   
+                  .media
+                    .media-body
+                       h3 Integratin
+                    .media-right  
+                        a.icon-btn.btn-outline-light.btn-sm.pull-right.previous(href='#') 
+                            i(data-feather='chevron-left') 
+                  ul.integratin
+                     li
+                      .media
+                          .media-left  
+                            a.fb(href="https://www.facebook.com/login" target="_blank")
+                              i.fa.fa-facebook
+                              h5 Facebook   
+                          .media-right
+                             .profile
+                               img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                     li
+                      .media
+                          .media-left  
+                            a.insta(href="https://www.instagram.com/accounts/login/?hl=en" target="_blank")
+                              i.fa.fa-instagram
+                              h5 instagram
+                          .media-right
+                             .profile
+                               img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                     li
+                      .media
+                          .media-left  
+                            a.twi(href="https://twitter.com/login" target="_blank")
+                              i.fa.fa-twitter
+                              h5 twitter   
+                          .media-right
+                             .profile
+                               img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                     li
+                      .media
+                          .media-left  
+                            a.ggl(href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank")
+                              i.fa.fa-google
+                              h5 google   
+                          .media-right
+                             .profile
+                               img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                     li
+                      .media
+                          .media-left  
+                            a.slc(href="#")
+                              i.fa.fa-slack
+                              h5 Slack   
+                          .media-right
+                             .profile
+                                a(href="https://slack.com/get-started#/" target="_blank")
+                                  i(data-feather='plus-circle')
+
+                .media
+                  .media-body
+                     h3 Integratin
+                     h4 Sync Your Other Social Account
+                  .media-right  
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right.next(href='#') 
+                        i(data-feather='chevron-right')        
+
+            .setting-block
+                .block                   
+                  .media
+                    .media-body
+                       h3 Help
+                    .media-right  
+                        a.icon-btn.btn-outline-light.btn-sm.pull-right.previous(href='#') 
+                            i(data-feather='chevron-left') 
+                  ul.help
+                    li
+                      h5 
+                        a(href='#') FAQ
+                    li
+                      h5 
+                       a(href='#')  Contact Us
+                    li
+                      h5  
+                        a(href='#') Terms and Privacy Policy
+                    li
+                      h5 
+                       a(href='#') Licenses
+                    li 
+                      h5 
+                       a(href='#') 2019 - 20 Powered by Pixelstrap
+                .media
+                  .media-body
+                     h3 Help
+                     h4 You are Confusion, Tell me
+                  .media-right  
+                      a.icon-btn.btn-outline-light.btn-sm.pull-right.next(href='#') 
+                        i(data-feather='chevron-right')
+        .status-tab.custom-scroll.dynemic-sidebar#status
+          .my-status-box
+            .status-content
+              .media
+                .img-status
+                  div.user-status.two
+                    img.img-fluid.bg-img(src="../assets/images/avtar/girls.jpg" alt="status")
+                  .upload-img
+                    input(type="file")
+                .media-body
+                  h3 my status
+                  p tap to add status Update
+                div
+                  a.icon-btn.btn-outline-light.btn-sm.close-panel(href='#')
+                    i(data-feather='x')
+          .contact-status-box
+            .theme-title
+                h3 Recent Update
+            .status-content
+              ul
+                li.user-status
+                  a.lightbox.img-status.status(href='#statusbox')
+                    img.img-fluid.bg-img(src="../assets/images/status-img/small/sm-1.jpg" alt="status")
+                  #statusbox.lightbox-target
+                    img(src="../assets/images/status-img/large/lg-1.jpg" alt="status")
+                    a.lightbox-close(href='#')
+                li
+                  h5 Josephin water
+                  p today , 8:30am
+            .status-content
+              ul
+                li.user-status
+                  a.lightbox.img-status.status(href='#statusbox2')
+                    img.img-fluid.bg-img(src="../assets/images/status-img/small/sm-2.jpg" alt="status")
+                  #statusbox2.lightbox-target
+                    img(src="../assets/images/status-img/large/lg-2.jpg" alt="status")
+                    a.lightbox-close(href='#')
+                li
+                  h5 Jony Lynetin
+                  p today , 10:30am
+            .status-content
+              ul
+                li.user-status
+                  a.lightbox.img-status.status(href='#statusbox3')
+                    img.img-fluid.bg-img(src="../assets/images/status-img/small/sm-3.jpg" alt="status")
+                  #statusbox3.lightbox-target
+                    img(src="../assets/images/status-img/large/lg-3.jpg" alt="status")
+                    a.lightbox-close(href='#')
+                li
+                  h5 Sufiya Elija
+                  p today , 11:00am
+            .status-content
+              ul
+                li.user-status
+                  a.lightbox.img-status.status(href='#statusbox4')
+                    img.img-fluid.bg-img(src="../assets/images/status-img/small/sm-4.jpg" alt="status")
+                  #statusbox4.lightbox-target
+                    img(src="../assets/images/status-img/large/lg-4.jpg" alt="status")
+                    a.lightbox-close(href='#')
+                li
+                  h5 Mukrani Pabelo 
+                  p today , 9:55am
+            .status-content
+              ul
+                li.user-status
+                  a.lightbox.img-status.status(href='#statusbox5')
+                    img.img-fluid.bg-img(src="../assets/images/status-img/small/sm-5.jpg" alt="status")
+                  #statusbox5.lightbox-target
+                    img(src="../assets/images/status-img/large/lg-5.jpg" alt="status")
+                    a.lightbox-close(href='#')
+                li
+                  h5 Pabelo Mukrani
+                  p today , 12:05am
+            .status-content
+              ul
+                li.user-status
+                  a.lightbox.img-status.status(href='#statusbox6')
+                    img.img-fluid.bg-img(src="../assets/images/status-img/small/sm-3.jpg" alt="status")
+                  #statusbox6.lightbox-target
+                    img(src="../assets/images/status-img/large/lg-3.jpg" alt="status")
+                    a.lightbox-close(href='#')
+                li
+                  h5 Sufiya Elija
+                  p today , 11:00am

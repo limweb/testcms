@@ -1,0 +1,18 @@
+- var feathericon             = true;
+- var index                   = true;
+- var datepicker              = true;
+- var ckeditor                = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+  body.sidebar-active
+    +loader    
+    .chitchat-container.sidebar-toggle
+      +sidebar    
+      +content
+      +right-sidebar
+      +app-sidebar    
+    +modal    
+    include ../components/footer-files

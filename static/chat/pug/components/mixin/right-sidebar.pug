@@ -1,0 +1,219 @@
+mixin right-sidebar
+  aside.chitchat-right-sidebar(id='slide-menu')
+          .custom-scroll.right-sidebar            
+            .contact-profile
+                .theme-title
+                    .media
+                        div 
+                            h2 Profile
+                            h4 Personal Information
+                        .media-body.text-right    
+                          a.icon-btn.btn-outline-light.btn-sm.close-profile.ml-3(href='#') 
+                              i(data-feather='x') 
+                .details
+                    .contact-top
+                       img.bg-img(src='../assets/images/avtar/2.jpg' , alt="")
+                    .name
+                      h3 Josephin water
+                      h6 Add Description
+                    ul.medialogo
+                          li
+                            a.icon-btn.btn-danger.button-effect(href='#')
+                              i.fa.fa-google
+                          li
+                            a.icon-btn.btn-primary.button-effect(href='#')
+                              i.fa.fa-twitter
+                          li
+                            a.icon-btn.btn-facebook.button-effect(href='#')
+                              i.fa.fa-facebook-f
+            .document
+              .filter-block
+                .collapse-block.open
+                  h5.block-title Shared Document 
+                      label.badge.badge-success.sm.ml-2 3
+                  .block-content
+                      ul.document-list
+                        li
+                         i.ti-folder.font-danger
+                         h5 Simple_practice_project-zip
+                        li
+                         i.ti-write.font-success
+                         h5 Word_Map-jpg
+                        li
+                         i.ti-zip.font-primary
+                         h5 Latest_Design_portfolio.pdf
+            .media-gallery.portfolio-section.grid-portfolio
+              .collapse-block.open
+                h5.block-title Shared Media
+                  label.badge.badge-primary.sm.ml-2 2
+                .block-content
+                    .row.share-media.zoom-gallery
+                      .col-12
+                        h6.mb-2 22/03/2019
+                      .col-4.isotopeSelector.filter
+                        div.media-big
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/1.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/1.jpg' alt='portfolio-image')
+
+                      .col-4
+                         div.media-small.isotopeSelector.filter
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/2.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/2.jpg' alt='portfolio-image')
+                         div.media-small.isotopeSelector.filter
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/3.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/3.jpg' alt='portfolio-image')
+                      .col-4
+                         div.media-small.isotopeSelector.filter
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/4.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/4.jpg' alt='portfolio-image')
+                         div.media-small.isotopeSelector.filter.fashion
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/5.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/5.jpg' alt='portfolio-image')
+                      .col-12
+                        h6.mb-2.mt-2 20/04/2019
+                      .col-4
+                         div.media-small.isotopeSelector.filter
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/2.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/2.jpg' alt='portfolio-image')
+                      .col-4
+                         div.media-small.isotopeSelector.filter
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/3.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/3.jpg' alt='portfolio-image')
+                      .col-4
+                         div.media-small.isotopeSelector.filter
+                          .overlay
+                            .border-portfolio
+                              a(href='../assets/images/gallery/4.jpg')
+                                .overlay-background
+                                  i.ti-plus(aria-hidden='true')
+                                img.img-fluid.bg-img(src='../assets/images/gallery/4.jpg' alt='portfolio-image')
+            .status
+              .collapse-block.open
+                h5.block-title Starred Messages
+                  label.badge.badge-outline-dark.sm.ml-2 2
+                .block-content
+                  .contact-chat.p-0.m-0
+                    ul.str-msg
+                      li
+                        .media
+                          .profile.mr-4
+                            img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                          .media-body
+                            .contact-name
+                              h5 Alan josheph
+                              h6 01:35 AM
+                              ul.msg-box
+                                li 
+                                  h5 Hi I am Alan,
+                             
+                      li
+                        .media
+                          .profile.mr-4
+                            img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                          .media-body
+                            .contact-name
+                              h5 Josephin water
+                              h6 01:35 AM
+                              ul.msg-box
+                                li 
+                                  h5 Can you help me to find best chat app?.
+            .status
+              .collapse-block.open
+                h5.block-title Common groups 
+                  label.badge.badge-outline-dark.sm.ml-2 3
+                .block-content
+                  ul.group-main
+                    li
+                      .group-box
+                        .profile
+                            img.bg-img(src='../assets/images/avtar/teq.jpg' alt='Avatar')
+                        .details
+                          h5 Tech Ninjas
+                          h6 johan, deo, Sufiya Elija, Pabelo & you
+
+                    li
+                      .group-box
+                        .profile
+                            img.bg-img(src='../assets/images/avtar/family.jpg' alt='Avatar')
+                        .details
+                          h5 Family Ties
+                          h6 Mukrani, deo & you
+            .status.other
+                h5.block-title.p-b-25 Contact info
+                ul
+                  li
+                    h5 
+                      a(href='#') 
+                        i(data-feather='smartphone')
+                        | +12 3456789587
+                  li
+                    h5
+                      a(href='https://themeforest.net/user/pixelstrap/portfolio') 
+                        i(data-feather='crosshair')
+                        | https://pixelstrap
+                  li
+                    h5
+                      a(href='#') 
+                        i(data-feather='map-pin')
+                        | 1766  Fidler Drive Texas, 78238.
+            .status  
+              ul
+                li
+                  input.js-switch(type='checkbox')
+                  h5 Block  
+                li
+                  input.js-switch1(type='checkbox')
+                  h5 Mute  
+                li
+                  input.js-switch2(type='checkbox' checked='')
+                  h5 Get Notification
+            .status.other
+              ul
+                li
+                  h5 
+                    a(href='#') 
+                      i(data-feather='share-2')
+                      | share Contact
+                li
+                  h5
+                    a(href='#') 
+                      i(data-feather='trash-2')
+                      | Clear Chat
+                li
+                  h5
+                    a(href='#') 
+                      i(data-feather='external-link')
+                      | Export Chat
+                li
+                  h5
+                    a(href='#') 
+                      i(data-feather='alert-circle')
+                      | Report Contact             

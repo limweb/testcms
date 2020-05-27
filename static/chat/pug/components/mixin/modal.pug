@@ -1,0 +1,575 @@
+mixin modal    
+    #exampleModalCenter.modal.fade.add-popup.add-contact-modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title 
+                | Add Contact
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            form.default-form
+              .form-group
+                h5 Email  or  Username
+                input#exampleInputEmail1.form-control(type='text', placeholder='Josephin water')
+              .form-group.mb-0
+                h5 Contact number
+                input#examplemsg.form-control(type='number', placeholder='12345678912')
+          .modal-footer
+             button.btn.btn-danger.button-effect.btn-sm(type='button' data-dismiss='modal') Cancel
+             button.btn.btn-primary.button-effect.btn-sm(type='button') Add contact
+    #pollModal.modal.pol-modal-main.add-popup(tabindex='-1' role='dialog'  aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title
+                i(data-feather='bar-chart-2')
+                | poll
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+             form.default-form
+                h3 create poll
+                .form-group
+                  input.form-control(type="text" placeholder="ask que")
+                  input.form-control(type="text" placeholder="add commatn")
+                .form-group
+                  input.form-control(type="text" placeholder="option 1")
+                  input.form-control(type="text" placeholder="option 2")
+                  a.add-option(href="#") add an option
+                .form-group
+                  .post-poll
+                    ul
+                      li post poll in
+                        p.pt-0 test name
+                      li poll expier in 7 days
+                        p.pt-0 test name
+                .form-group
+                  .allow-group
+                    input.allow-check(type='checkbox')
+                    | Allow users to vote anonymously
+                .creat-poll-btn
+                  a(href='#' data-dismiss='modal' aria-label='Close').btn.btn-primary.button-effect.btn-sm Create poll
+    #notesModal.modal.notes-modal-main.add-popup(tabindex='-1' role='dialog'  aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title
+             i.ti-bookmark-alt
+             | notes
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body.custom-scroll
+            .card
+              .card-header
+                h5 Inline Editor
+              .card-body
+                #area1.cke_editable.cke_editable_inline.cke_contents_ltr.cke_show_borders(contenteditable='true' tabindex='0' spellcheck='false' role='textbox' aria-label='Rich Text Editor, area1' title='Rich Text Editor, area1')
+                  h1 Your title
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at vulputate urna, sed dignissim arcu. Aliquam at ligula imperdiet, faucibus ante a, interdum enim. Sed in mauris a lectus lobortis condimentum. Sed in nunc magna. Quisque massa urna, cursus vitae commodo eget, rhoncus nec erat. Sed sapien turpis, elementum sit amet elit vitae, elementum gravida eros. In ornare tempus nibh ut lobortis. Nam venenatis justo ex, vitae vulputate neque laoreet a.
+              .card-footer
+                button.btn.btn-danger.button-effect.btn-sm(type='button' ) Save
+                button.btn.btn-primary.button-effect.btn-sm(type='button' data-dismiss='modal') Cancel
+    #setReminder.modal.reminder-modal-main.add-popup(tabindex='-1' role='dialog'  aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title           
+             | Set redminders
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            form.form.default-form
+              .lable Reminder for (Groups or contacts)
+              .form-group
+                input.form-control(type="text" placeholder="contact or channel")
+              .lable Remind about
+              .form-group
+                textarea.form-control.dib(rows='3' placeholder='Some details about task')
+              .lable Remind about
+              .form-group
+                ul.reminder-count
+                  li.active
+                    .reminder-box
+                      h3.remi-num 15
+                      h5.remi-val minutes
+                  li
+                    .reminder-box
+                      h3.remi-num 1
+                      h5.remi-val hour
+                  li
+                    .reminder-box
+                      h3.remi-num 5 PM
+                      h5.remi-val today
+              .form-group.mb-0
+                .lable select custom time
+                .custom-remider-main
+                  .custom-remider-content
+                    .custom-reminder-inline
+                      input.form-control(type="date")
+                      input.form-control(type="time")
+                    .custom-reminder-block
+                      select 
+                        option Do not repeat
+                        option Weekdays (Mon-Fri)
+                        option Daily
+                        option Weekly (Custom)
+              .reminder-btn
+                a.btn.btn-primary.button-effect set reminder
+    #snippetModal.modal.snippet-modal-main.add-popup(tabindex='-1' role='dialog'  aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title
+               i.fa.fa-code
+               | code snippets
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            form.default-form
+              h3 creat snippets
+              .form-group
+                input.form-control(type='text' placeholder="title(optional)")
+              .form-group
+                select.mb-0
+                  option ebnf
+                  option c++
+                  option diff
+                  option dart
+              .form-group
+                textarea.form-control(rows="5")
+              .form-group
+                input.form-control.mb-0(type='text' placeholder="add commant (optional)")
+              .form-group.mb-0
+                div.btn-snipate
+                  a(href='#' data-dismiss='modal' aria-label='Close').btn.btn-danger.button-effect.btn-sm.mr-3 Cancel
+                  a(href='#' data-dismiss='modal' aria-label='Close').btn.btn-primary.button-effect.btn-sm Create & post
+    #audiocall.modal.fade(tabindex='-1' role='dialog'  aria-hidden='true')
+           .modal-dialog.modal-dialog-centered(role='document')
+              .modal-body
+                .audiocall1.call-modal
+                    img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                    .center-con.text-center
+                       .title2 Josephin water
+                       h6 log angelina california
+                       ul
+                        li
+                          a.icon-btn.btn-success.button-effect.btn-xl.is-animating(href='#',data-toggle='modal',data-target='#audiorcvcall',data-dismiss="modal") 
+                            i(data-feather='phone')
+                        li      
+                          a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.cancelcall(href='#',data-dismiss="modal") 
+                            i(data-feather='phone')
+    #videocall.viddiolog.modal.fade(tabindex='-1' role='dialog'  aria-hidden='true')
+           .modal-dialog.modal-dialog-centered(role='document')
+              .modal-body
+                .videocall.call-modal
+                  img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                  .small-image
+                    img.bg-img(src='../assets/images/avtar/big/videocall.jpg' alt='Avatar')
+                  .media.videocall-details
+                      .usersprof
+                          .profile
+                            img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar') 
+                          .profile
+                            img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                      .media-body
+                          h5 Josephin water
+                          h6 America ,California
+                      #basicUsage 00:00:00
+                      .zoomcontent
+                         a.text-dark(href='#!' onclick='javascript:toggleFullScreen()',data-tippy-content='Zoom Screen')
+                          img(src='../assets/images/logo/maximize.svg' alt='zoom screen')
+                  .center-con.text-center
+                       ul
+                        li
+                          a.icon-btn.btn-light.button-effect.pause(href="#",data-tippy-content='Hold')
+                                  i.ti-control-pause
+                        li
+                          a.icon-btn.btn-danger.button-effect.btn-xl.is-animating(href='#',data-dismiss="modal",data-tippy-content='Hangup') 
+                                  i(data-feather='phone')
+                        li
+                          a.icon-btn.btn-light.button-effect.mic(href="#",data-tippy-content='Mute')
+                                  i.fa.fa-microphone
+    #confercall.modal.fade(tabindex='-1' role='dialog'  aria-hidden='true')
+           .modal-dialog.modal-dialog-centered(role='document')
+              .modal-body
+                .conferencecall.call-modal
+                    img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                    .center-con.text-center
+                       .usersprof
+                          .profile
+                            img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                          .profile
+                            img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                          .profile
+                            img.bg-img(src='../assets/images/avtar/5.jpg' alt='Avatar')
+                          .profile
+                            img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                       p Incoming Call
+                       h3 Conference Call
+                       ul
+                        li      
+                          a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.cancelcall(href='#',data-dismiss="modal") 
+                            i(data-feather='phone')
+                        li
+                          a.icon-btn.btn-success.button-effect.btn-xl.is-animating(href='#') 
+                            i(data-feather='video')
+    #confvideocl.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+          .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content 
+              .modal-body
+                .row.confimg
+                  .col-6
+                    div.vclimg
+                     img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                  .col-6
+                    div.vclimg
+                     img.bg-img(src='../assets/images/avtar/5.jpg' alt='Avatar')
+                  .col-6
+                    div.vclimg
+                     img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                  .col-6
+                    div.vclimg
+                     img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+              .modal-footer.clfooter
+                      #basicUsage3 00:00:00
+                      ul  
+                        li
+                            a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='speaker')
+                                    i(data-feather='volume-2')
+                        li
+                            a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='Camera')
+                                    i(data-feather='camera-off')
+                        
+                        li
+                            a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='Add Call')
+                                    i(data-feather='user-plus')
+                        li
+                            a.icon-btn.btn-danger.button-effect.btn-sm.is-animating(href='#',data-dismiss='modal',data-tippy-content='Hangup')
+                                    i(data-feather='phone')
+                        li
+                            a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='Disable Video')
+                                    i(data-feather='video-off')
+                        li
+                            a.icon-btn.btn-light.button-effect.mic(href="#",data-tippy-content='Mute')
+                                  i(data-feather='mic-off')
+                        li
+                            a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='Hold')
+                                    i(data-feather='pause')
+    #audiorcvcall.modal.fade.audiorcvcall(tabindex='-1' role='dialog' aria-hidden='true')
+           .modal-dialog.modal-dialog-centered(role='document')
+              .modal-body
+                .audiocall2.call-modal
+                    img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                    .center-con.text-center
+                       #basicUsage2 00:00:00
+                       .title2 Josephin water
+                       h6 log angelina california
+                       ul
+                        li
+                          a.icon-btn.btn-light.button-effect.mute(href="#",data-tippy-content='Mute')
+                                  i.fa.fa-microphone
+                        li
+                          a.icon-btn.btn-light.button-effect.mute(href="#",data-tippy-content='Speaker')
+                                  i.fa.fa-volume-up
+                        li
+                          a.icon-btn.btn-danger.button-effect.btn-xl.is-animating(href='#',data-tippy-content='Hangup',data-dismiss='modal') 
+                                  i(data-feather='phone')
+                        li
+                          a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='Add Call')
+                                    i(data-feather='user-plus')
+                        li
+                          a.icon-btn.btn-light.button-effect(href="#",data-tippy-content='Pause')
+                                  i(data-feather='pause')
+    #addcallmodal.modal.fade.fev-addcall-main.add-popup(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title 
+                | Add Contact
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            form.default-form
+              .form-group
+                h5 Email  or  Username
+                input#exampleInputEmail12.form-control(type='text', placeholder='Josephin water')
+              .form-group
+                h5 Contact number
+                input#examplemsg2.form-control(type='number', placeholder='12345678912')
+
+          .modal-footer
+            button.btn.btn-danger.button-effect.btn-sm(type='button' data-dismiss='modal') Cancel
+            button.btn.btn-primary.button-effect.btn-sm(type='button') Add contact
+    #todoModal.modal.fade.add-popup.todo-main-modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title 
+                | Welcome to Chitchat
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            form.default-form
+                .todo-task
+                      h5 Felling Lonely
+                      div.todo-main-content
+                        .form-group
+                            input(type='checkbox' aria-label='Checkbox for following text input')
+                            input#user_input123.w-100(type='text' placeholder="Fill Your Fillings ")
+                        div.drop-picker
+                          .dropdown.currency(tabindex='1')
+                            .select
+                              span Assign To
+                            input(type='hidden' name='currency')
+                            ul.dropdown-menu
+                                li.dropdown-divider
+                                    .fa.fa-user.text-muted
+                                    h5.text-muted Assign To
+                                li Josephin john
+                                li Lynetin john
+                                li Sufiya john
+                                li Jhon john
+                          input.datepicker-here.form-control.digits(type='url' data-language='en' placeholder="Due date")       
+          .modal-footer
+            button.btn.btn-danger.button-effect.btn-sm(type='button' ) Save
+            button.btn.btn-primary.button-effect.btn-sm(type='button' data-dismiss='modal') Cancel
+    #createtodoModal.modal.fade.add-popup.create-todo-main-modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title 
+                | Today's ToDo
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            form.default-form
+                .todo-task
+                      h5 Felling Lonely
+                      div.todo-main-content
+                        .form-group
+                            input(type='checkbox' aria-label='Checkbox for following text input')
+                            input#user_input123.w-100(type='text' placeholder="Fill Your Fillings ")
+                        div.drop-picker
+                          .dropdown.currency(tabindex='1')
+                            .select
+                              span Assign To
+                            input(type='hidden' name='currency')
+                            ul.dropdown-menu
+                                li.dropdown-divider
+                                    .fa.fa-user.text-muted
+                                    h5.text-muted Assign To
+                                li Josephin john
+                                li Lynetin john
+                                li Sufiya john
+                                li Jhon john
+                          input.datepicker-here.form-control.digits(type='url' data-language='en' placeholder="Due date")
+          .modal-footer
+            button.btn.btn-danger.button-effect.btn-sm(type='button') Save
+            button.btn.btn-primary.button-effect.btn-sm(type='button' data-dismiss='modal') Cancel
+
+    #msgchatModal.modal.fade.add-popup.msg-chat-modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title 
+                | Create New Message
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            .chat-msg-search
+              .input-group
+                input.form-control(type='text' placeholder="Search" aria-label="Recipient's username" aria-describedby='basic-addon21')
+                .input-group-append
+                  span#basic-addon21.input-group-text @
+            ul.chat-main.custom-scroll
+              li(data-to='blank')
+                .chat-box
+                  .profile.offline
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    h5 Josephin water
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    i.ti-pin2
+                    h6 22/10/19
+                    h6.font-success.status  Seen
+              li.active(data-to='chating')
+                .chat-box
+                  .profile.online
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jony Lynetin
+                    h6 Typing................
+                  .date-status
+                    i.ti-pin2
+                    h6 30/11/19
+                    .badge.badge-primary.sm 8
+              li(data-to='blank')
+                .chat-box
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    h5 Sufiya Elija
+                    h6 I need job, please help me.
+                  .date-status
+                    i.ti-pin2
+                    h6 15/06/19
+                    h6.font-dark.status  Sending
+              li(data-to='blank')
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                  .details
+                    h5 Mukrani Pabelo
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    i.ti-pin2
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+              li(data-to='blank')
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jhon Deo
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    i.ti-pin2
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+              li(data-to='blank')
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                  .details
+                    h5 Pabelo Mukrani
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    i.ti-pin2
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+
+              li(data-to='blank')
+                .chat-box
+                  .profile.unreachable
+                      img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                  .details
+                    h5 Sufiya Elija
+                    h6 I need job, please help me.
+                  .date-status
+                    i.ti-pin2
+                    h6 15/06/19
+                    h6.font-dark.status  Sending
+              li(data-to='blank')
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                  .details
+                    h5 Mukrani Pabelo
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    i.ti-pin2
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+              li(data-to='blank')
+                .chat-box
+                  .profile.busy
+                      img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                  .details
+                    h5 Jhon Deo
+                    h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                  .date-status
+                    i.ti-pin2
+                    h6 04/06/19
+                    h6.font-danger.status  Failed
+    #msgcallModal.modal.fade.add-popup.msg-chat-modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h2.modal-title 
+                | Create New Message
+            button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') &times;
+          .modal-body
+            .chat-msg-search
+              .input-group
+                input.form-control(type='text' placeholder="Search" aria-label="Recipient's username" aria-describedby='basic-addon20')
+                .input-group-append
+                    span#basic-addon20.input-group-text @
+            ul.call-log-main.custom-scroll
+                li.active
+                  .call-box
+                    .profile.offline
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6  
+                        i(data-feather='arrow-down-left')
+                        | 3:30 pm
+                    .call-status
+                      .icon-btn.btn-outline-success.button-effect.btn-sm
+                        i(data-feather='phone')
+                li
+                  .call-box
+                    .profile.online
+                        img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6  
+                        i(data-feather='arrow-down-right')
+                        | 3:10 pm
+                    .call-status
+                      .icon-btn.btn-outline-success.button-effect.btn-sm
+                        i(data-feather='video')
+
+                li
+                  .call-box
+                    .profile.offline
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6  
+                        i(data-feather='corner-left-down').missed
+                        | 3:00 pm
+                    .call-status
+                      .icon-btn.btn-outline-danger.button-effect.btn-sm
+                        i(data-feather='phone')
+                li
+                  .call-box
+                    .profile.online
+                        img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6  
+                        i(data-feather='arrow-down-right')
+                        | 3:00 pm
+                    .call-status
+                      .icon-btn.btn-outline-success.button-effect.btn-sm
+                        i(data-feather='video')
+
+                li
+                  .call-box
+                    .profile.offline
+                        img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6  
+                        i(data-feather='arrow-down-right')
+                        | 3:00 pm
+                    .call-status
+                      .icon-btn.btn-outline-success.button-effect.btn-sm
+                        i(data-feather='phone')
+                li
+                  .call-box
+                    .profile.online
+                        img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                    .details
+                      h5 Jony Lynetin
+                      h6  
+                        i(data-feather='arrow-down-right')
+                        | 3:00 pm
+                    .call-status
+                      .icon-btn.btn-outline-success.button-effect.btn-sm
+                        i(data-feather='video')

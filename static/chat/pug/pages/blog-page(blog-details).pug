@@ -1,0 +1,29 @@
+- var feathericon  = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+  body
+    .inner-page
+      +header
+      +breadcrumb('blog','home')
+
+    section.blog-detail-page.section-py-space.blog-page      
+      ul.page-decore
+        li.top
+          img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+        li.bottom
+          img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+      .custom-container
+        .row
+          .col-xl-3.col-lg-4.col-md-5
+            .blog-sidebar
+              +blog-sidebar
+          .col-xl-9.col-lg-8.col-md-7.order-sec
+            .row
+              +blog-details             
+   
+    +footer
+    +taptop  
+    include ../components/footer-files

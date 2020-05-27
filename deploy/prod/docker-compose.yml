@@ -1,0 +1,29 @@
+version: '2.1'
+
+services:
+  eventpass-cms-prod:
+    image: eventpass-cms-prod
+    build: 
+      context: .
+      dockerfile: deploy/dev/Dockerfile
+    container_name: eventpass-cms-prod
+    environment:
+      REACT_APP_API_ENDPOINT: services.eventpass.co
+      PREVIEW_ENDPOINT: eventpass.co
+      VIRTUAL_HOST: manage.eventpass.co
+      VIRTUAL_PORT: 3000
+    # ports:
+    #   - 3002:3000
+#     volumes:
+#       - ./components:/usr/src/app/components
+#       - ./pages:/usr/src/app/pages
+#       - ./public:/usr/src/app/public
+#       - ./redux:/usr/src/app/redux
+#       - ./static:/usr/src/app/static
+#       - ./utils:/usr/src/app/utils
+#       - ./.next:/usr/src/app/.next
+#       - ./deploy:/usr/src/app/deploy
+networks:
+  default:
+    external:
+      name: eventpass-network

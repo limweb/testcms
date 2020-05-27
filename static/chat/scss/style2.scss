@@ -1,0 +1,57 @@
+// vendors
+@import "vendors/bootstrap.scss";
+@import "vendors/font-awesome.scss";
+@import "vendors/themify.scss";
+@import "vendors/feather-icon.scss";
+@import "vendors/animate.scss";
+@import "vendors/owl.carousel.scss";
+
+
+@import "utils/variables.scss";
+$primary-color :#064c3c;
+$primary-light: #f4faf9;
+$gray1 : #e1f1ee;
+
+@import "utils/helpers.scss";
+
+//base
+@import "base/typography.scss";
+@import "base/reset.scss";
+
+// components
+@import "components/buttons.scss";
+@import "components/tabs.scss";
+@import "components/msg.scss";
+@import "components/dropdown.scss";
+@import "components/chat-box.scss";
+@import "components/tootip.scss";
+@import "components/loader.scss";
+@import "components/switchery.scss";
+@import "components/collapse.scss";
+@import "components/call.scss";
+@import "components/call-list.scss";
+@import "components/according.scss";
+@import "components/tour.scss";
+
+//layout
+
+@import "layout/grid.scss";
+@import "layout/sidebar.scss";
+@import "layout/content.scss";
+@import "layout/dark.scss";
+@import "layout/rtl.scss";
+@import "layout/login.scss";
+@import "layout/forms.scss";
+@import "layout/customizer.scss";
+
+//pages
+@import "pages/inner-pages";
+@import "pages/landing";
+@import "pages/inner-pages-responsive";
+@import "pages/landing-responsive";
+@import "pages/landing-page";
+
+// themes
+@import "themes/admin.scss";
+@import "themes/theme.scss";
+@import "themes/responsive.scss";

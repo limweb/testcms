@@ -1,0 +1,854 @@
+- var feathericon             = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+  body
+    .inner-page
+      +header
+      section.breadcrumb-main
+        .custom-container
+          h2 Elements
+          ul
+            li 
+              a(href="messenger.html") Home
+            li 
+              a(href="#") Elements
+    ul.page-decore
+      li.top
+        img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+      li.bottom
+        img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+
+    .container
+      section.header-typography
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 H1 to H6 Headings
+              .element-card-body.typography
+                h1 This is heading
+                h2 This is heading
+                h3 This is heading
+                h4 This is heading
+                h5 This is heading
+                h6 This is heading
+      section.element-span-prag
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Span and Paragraph
+              .element-card-body.typography
+                span.small_prag This is span
+                p Lorem Ipsum is simply dummy text printing and typesetting industry.
+      section
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Images
+              .element-card-body.typography
+                img.img-10.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-20.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-30.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-40.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-50.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-60.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-70.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-80.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-90.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                img.img-100.img-fluid(src='../assets/images/avtar/1.jpg' alt='Avatar')
+      section.element-span-prag
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Fonts
+              .element-card-body.typography
+                .font-primary.fonts font-primary
+                .font-success.fonts font-success
+                .font-danger.fonts font-danger
+                .font-light.fonts font-light
+                .font-warning.fonts font-warning 
+      section
+        .row
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Fonts
+              .element-card-body.typography
+                .badge.badge-primary.fonts.font_label  label-primary
+                .badge.badge-success.fonts.font_label label-success
+                .badge.badge-danger.fonts.font_label label-danger
+                .badge.badge-light.fonts.font_label label-light
+                .badge.badge-warning.fonts.font_label label-warning
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Fonts
+              .element-card-body.typography
+                .badge.badge-outline-primary.fonts.font_label  label-primary
+                .badge.badge-outline-success.fonts.font_label label-success
+                .badge.badge-outline-danger.fonts.font_label label-danger
+                .badge.badge-outline-light.fonts.font_label label-light
+                .badge.badge-outline-warning.fonts.font_label label-warning
+      section
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                a.badge.badge-outline-primary.font_label(href='#')  label-primary
+                a.badge.badge-success.font_label(href='#')  label-success
+        .row
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .badge.badge-outline-primary.xl.font_label  label-primary
+                .badge.badge-success.xl.font_label label-success
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .badge.badge-outline-primary.xl.rounded.font_label  label-primary
+                .badge.badge-success.xl.rounded.font_label label-success
+      section
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .badge.badge-outline-primary.xl.font_label
+                  i.ti-settings
+                  | label-primary
+                .badge.badge-outline-success.xl.font_label
+                  i(data-feather='star')
+                  | label-success
+                .badge.badge-primary.xl.font_label
+                  i.ti-settings
+                  | label-primary
+                .badge.badge-success.xl.font_label
+                  i(data-feather='star')
+                  | label-success 
+      section
+        .row
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .badge.badge-outline-primary.fonts.font_label
+                  i.ti-settings
+                  | label-primary
+                .badge.badge-outline-success.fonts.font_label
+                  i(data-feather='star')
+                  | label-success
+                .badge.badge-primary.fonts.font_label
+                  i.ti-settings
+                  | label-primary
+                .badge.badge-success.fonts.font_label
+                  i(data-feather='star')
+                  | label-success
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .badge.badge-outline-primary.sm.fonts.font_label
+                  i.ti-settings
+                  | label-primary
+                .badge.badge-outline-success.sm.fonts.font_label
+                  i(data-feather='star')
+                  | label-success
+                .badge.badge-primary.sm.fonts.font_label
+                  i.ti-settings
+                  | label-primary
+                .badge.badge-success.sm.fonts.font_label
+                  i(data-feather='star')
+                  | label-success
+      section
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .badge.badge-outline-primary.sm.font_label R
+                .badge.badge-primary.sm.font_label E
+                .badge.badge-outline-success.sm.font_label R
+                .badge.badge-success.sm.font_label E
+                .badge.badge-outline-danger.sm.font_label R
+                .badge.badge-danger.sm.font_label E
+                .badge.badge-outline-warning.sm.font_label R
+                .badge.badge-warning.sm.font_label E
+                .badge.badge-outline-primary.sm.font_label R
+                .badge.badge-info.sm.font_label E
+                .badge.badge-outline-light.sm.font_label R
+                .badge.badge-light.sm.font_label E
+                .badge.badge-outline-dark.sm.font_label R
+                .badge.badge-dark.sm.font_label E
+      section
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Badge
+              .element-card-body.typography
+                .dot-btn.dot-primary.grow.font_label
+                  .badge.badge-outline-primary.xl  label-primary
+                .dot-btn.dot-danger.grow.font_label
+                  .badge.badge-success.xl label-success
+                .dot-btn.dot-danger.font_label
+                  .badge.badge-outline-primary.xl  label-primary
+                .dot-btn.dot-success.font_label
+                  .badge.badge-success.xl label-success
+      section.background
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Background Color
+              .element-card-body.typography
+                .bg-primary.p-15 bg-primary
+                .bg-success.p-15 bg-success
+                .bg-danger.p-15 bg-danger
+                .bg-light.p-15 bg-light
+                .bg-warning.p-15 bg-warning
+      section.background
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Button Background
+              .element-card-body.typography
+                a.btn.btn-primary.button-effect.fonts.font_label(href='#') btn-primary
+                a.btn.btn-success.button-effect.fonts.font_label(href='#') btn-success
+                a.btn.btn-danger.button-effect.fonts.font_label(href='#') btn-danger
+                a.btn.btn-light.button-effect.fonts.font_label(href='#') btn-light
+                a.btn.btn-warning.button-effect.fonts.font_label(href='#') btn-warning
+                a.btn.btn-outline-primary.button-effect.fonts.font_label(href='#') btn-primary
+                a.btn.btn-outline-success.button-effect.fonts.font_label(href='#') btn-success
+                a.btn.btn-outline-danger.button-effect.fonts.font_label(href='#') btn-danger
+                a.btn.btn-outline-light.button-effect.fonts.font_label(href='#') btn-light
+                a.btn.btn-outline-warning.button-effect.fonts.font_label(href='#') btn-warning
+      section.Icons
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Icons
+              .element-card-body.typography
+                .fonts
+                  a.icon-btn.btn-primary.button-effect(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-danger.button-effect(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-light.button-effect(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-warning.button-effect(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-primary.button-effect(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-outline-success.button-effect(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-outline-danger.button-effect(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-light.button-effect(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-warning.button-effect(href='#')
+                    i(data-feather='star')
+              .element-card-body.typography
+                .fonts
+                  .dot-btn.dot-primary
+                    a.icon-btn.btn-primary.button-effect(href='#')
+                      i(data-feather='circle')
+                  .dot-btn.dot-success
+                    a.icon-btn.btn-success.button-effect(href='#')
+                      i(data-feather='users')
+                  .dot-btn.dot-danger
+                    a.icon-btn.btn-danger.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-light
+                    a.icon-btn.btn-light.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-warning
+                    a.icon-btn.btn-warning.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-primary
+                    a.icon-btn.btn-outline-primary.button-effect(href='#')
+                      i(data-feather='circle')
+                  .dot-btn.dot-success
+                    a.icon-btn.btn-outline-success.button-effect(href='#')
+                      i(data-feather='users')
+                  .dot-btn.dot-danger
+                    a.icon-btn.btn-outline-danger.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-light
+                    a.icon-btn.btn-outline-light.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-warning
+                    a.icon-btn.btn-outline-warning.button-effect(href='#')
+                      i(data-feather='star')
+              .element-card-body.typography
+                .fonts
+                  a.icon-btn.btn-primary.button-effect.btn-xl(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect.btn-xl(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-danger.button-effect.btn-xl(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-light.button-effect.btn-xl(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-warning.button-effect.btn-xl(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-primary.button-effect.btn-xl(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-outline-success.button-effect.btn-xl(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-outline-danger.button-effect.btn-xl(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-light.button-effect.btn-xl(href='#')
+                    i(data-feather='star')
+              .element-card-body.typography
+                .fonts
+                  a.icon-btn.btn-primary.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-danger.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-light.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-warning.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-primary.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-outline-success.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-outline-danger.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-light.button-effect.btn-xl.rouded15(href='#')
+                    i(data-feather='star')
+              .element-card-body.typography
+                .fonts
+                  .dot-btn.dot-primary.grow
+                    a.icon-btn.btn-primary.button-effect(href='#')
+                      i(data-feather='circle')
+                  .dot-btn.dot-success.grow
+                    a.icon-btn.btn-success.button-effect(href='#')
+                      i(data-feather='users')
+                  .dot-btn.dot-danger.grow
+                    a.icon-btn.btn-danger.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-light.grow
+                    a.icon-btn.btn-light.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-warning.grow
+                    a.icon-btn.btn-warning.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-primary.grow
+                    a.icon-btn.btn-outline-primary.button-effect(href='#')
+                      i(data-feather='circle')
+                  .dot-btn.dot-success.grow
+                    a.icon-btn.btn-outline-success.button-effect(href='#')
+                      i(data-feather='users')
+                  .dot-btn.dot-danger.grow
+                    a.icon-btn.btn-outline-danger.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-light.grow
+                    a.icon-btn.btn-outline-light.button-effect(href='#')
+                      i(data-feather='star')
+                  .dot-btn.dot-danger.grow
+                    a.icon-btn.btn-outline-light.button-effect(href='#')
+                      i(data-feather='star')
+              .element-card-body.typography
+                .fonts
+                  a.icon-btn.btn-primary.button-effect.btn-sm(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect.btn-sm(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-danger.button-effect.btn-sm(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-light.button-effect.btn-sm(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-warning.button-effect.btn-sm(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-primary.button-effect.btn-sm(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-outline-success.button-effect.btn-sm(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-outline-danger.button-effect.btn-sm(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-light.button-effect.btn-sm(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-warning.button-effect.btn-sm(href='#')
+                    i(data-feather='star')
+              .element-card-body.typography
+                .fonts
+                  a.icon-btn.btn-primary.button-effect.btn-xs(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect.btn-xs(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-danger.button-effect.btn-xs(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-light.button-effect.btn-xs(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-warning.button-effect.btn-xs(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-primary.button-effect.btn-xs(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-outline-success.button-effect.btn-xs(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-outline-danger.button-effect.btn-xs(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-light.button-effect.btn-xs(href='#')
+                    i(data-feather='star')
+                  a.icon-btn.btn-outline-warning.button-effect.btn-xs(href='#')
+                    i(data-feather='star')
+      section.theme_btn_group
+        .row
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Theme Buttons
+              .element-card-body.typography
+                .theme-btn-group.fonts
+                  .dot-btn.dot-success.grow
+                    a.icon-btn.btn-primary.button-effect.btn-sm(href='#')
+                      i(data-feather='circle')
+                  .dot-btn.dot-success.grow
+                    a.icon-btn.btn-success.button-effect.btn-sm(href='#')
+                      i(data-feather='users')
+                .theme-btn-group.fonts
+                  a.icon-btn.btn-primary.button-effect.btn-sm(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect.btn-sm(href='#')
+                    i(data-feather='users')
+                  a.icon-btn.btn-success.button-effect.btn-sm(href='#')
+                    i(data-feather='users')
+                .theme-btn-group.fonts
+                  a.icon-btn.btn-primary.button-effect(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect(href='#')
+                    i(data-feather='users')
+                .theme-btn-group.fonts
+                  a.icon-btn.btn-primary.button-effect(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-primary.button-effect(href='#')
+                    i(data-feather='circle')
+                  a.icon-btn.btn-success.button-effect(href='#')
+                    i(data-feather='users')
+
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Theme Tab &amp; Content
+              .element-card-body.typography
+                .theme-tab
+                  ul#myTab.nav.nav-tabs(role='tablist')
+                    li.nav-item
+                      a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') Home
+                    li.nav-item
+                      a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Profile
+                  #myTabContent.tab-content
+                    #home1.tab-pane.fade.button-effect.show.active(role='tabpanel' aria-labelledby='home-tab') HOme
+                    #profile.tab-pane.button-effect.fade(role='tabpanel' aria-labelledby='profile-tab') Profile 
+      section.massage_box
+        .col-12.p-0
+          .element-card
+            .element-card-header.heading
+              h2 Massage Box
+            .element-card-body.typography
+              ul.msg-box.fonts
+                li
+                  h5 Hi Alan, Please send me document.
+                li
+                  h5 Imigiatly.
+              ul.msg-box.fonts
+                li
+                  h5 Hi Alan, Please send me document.
+                li
+                  h5 Imigiatly.
+              ul.msg-box.fonts
+                li
+                  h5 Hi Alan, Please send me document.
+                li
+                  h5 Hi Alan, Please .
+                li
+                  h5 Imigiatly.
+              ul.msg-box.fonts
+                li
+                  h5 Imigiatly.                                                                                                                   
+      section.massage_box
+        .col-12.p-0
+          .element-card
+            .element-card-header.heading
+              h2 Main Chat
+            .element-card-body.typography
+              ul.chat-main
+                li
+                  .chat-box
+                    .profile.offline
+                      img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                    .details
+                      h5 Josephin water
+                      h6 Hi, i am josephin. How are you.. ! There are many variations of passages.
+                    .date-status
+                      h6 22/10/19
+                      h6.font-success.status  Seen   
+      section.massage_box
+        .row
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Shared Document
+              .element-card-body.typography
+                .document
+                  .filter-block
+                    .collapse-block.open
+                      h5.block-title Shared Document
+                      .block-content
+                        ul.document-list
+                          li
+                            i.ti-folder.font-danger
+                            h5 Simple_practice_project-zip
+                          li
+                            i.ti-write.font-success
+                            h5 Word_Map-jpg
+                          li
+                            i.ti-zip.font-primary
+                            h5 Latest_Design_portfolio.pdf
+          .col-md-6.col-sm-12
+            .element-card
+              .element-card-header.heading
+                h2 Shared Document
+              .element-card-body.typography
+                .collapse-block.open
+                  h5.block-title Shared Media
+                  .block-content
+                    .share-media
+                      .row
+                        .col-4
+                          .media-big
+                            img.bg-img(src='../assets/images/avtar/1.jpg' alt='Avatar')
+                        .col-4
+                          .media-small
+                            img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                          .media-small
+                            img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                        .col-4
+                          .media-small
+                            img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                          .media-small
+                            img.bg-img(src='../assets/images/avtar/5.jpg' alt='Avatar')
+      section
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Buttons
+              .element-card-body.typography
+                a.icon-btn.btn-success.button-effect.btn-xl.is-animating.font_label(href='#')
+                  i(data-feather='phone')
+                a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.font_label(href='#')
+                  i(data-feather='phone')
+      section.mb-5
+        .row
+          .col-12
+            .element-card
+              .element-card-header.heading
+                h2 Buttons
+              .element-card-body.popup-group
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#audiocall') Audio call
+                // Modal
+                #audiocall.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .audiocall1.call-modal
+                        img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                        .center-con.text-center
+                          .title2 Josephin water
+                          h6 log angelina california
+                          ul
+                            li
+                              a.icon-btn.btn-success.button-effect.btn-xl.is-animating(href='#')
+                                i(data-feather='phone')
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.cancelcall(href='#')
+                                i(data-feather='phone')
+                .custom-dropdown.add-chat.custom-scroll
+                  h3 Start new conversation
+                  ul.contact-log-main
+                    li
+                      .contact-box
+                        .profile.offline
+                          img.bg-img(src='../assets/images/contact/2.jpg' alt='Avatar')
+                        .details
+                          h5 Jony Lynetin
+                          h6 +21 3523 25544
+                        .contact-action
+                          .icon-btn.btn-outline-primary.btn-sm.button-effect
+                            i(data-feather='message-square')
+                    li.active
+                      .contact-box
+                        .profile.online
+                          img.bg-img(src='../assets/images/contact/1.jpg' alt='Avatar')
+                        .details
+                          h5 Jony Lynetin
+                          h6 +54 541447 255
+                        .contact-action
+                          .icon-btn.btn-outline-primary.btn-sm.button-effect
+                            i(data-feather='message-square')
+                    li
+                      .contact-box
+                        .profile.busy
+                          img.bg-img(src='../assets/images/contact/3.jpg' alt='Avatar')
+                        .details
+                          h5 Jony Lynetin
+                          h6 +58 2564 02554
+                        .contact-action
+                          .icon-btn.btn-outline-primary.btn-sm.button-effect
+                            i(data-feather='message-square')
+                    li
+                      .contact-box
+                        .profile.unreachable
+                          img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                        .details
+                          h5 Jony Lynetin
+                          h6 +44 55124 2524
+                        .contact-action
+                          .icon-btn.btn-outline-primary.btn-sm.button-effect
+                            i(data-feather='message-square')
+                    li
+                      .contact-box
+                        .profile.online
+                          img.bg-img(src='../assets/images/contact/4.jpg' alt='Avatar')
+                        .details
+                          h5 Jony Lynetin
+                          h6 +54 541447 255
+                        .contact-action
+                          .icon-btn.btn-outline-primary.btn-sm.button-effect
+                            i(data-feather='message-square')
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#audiorcvcall') Receive Audio Call
+                // Modal
+                #audiorcvcall.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .audiocall2.call-modal
+                        img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                        .center-con.text-center
+                          #basicUsage2 00:00:00
+                          .title2 Josephin water
+                          h6 log angelina california
+                          ul
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href='#' data-tippy-content='Mute')
+                                i.fa.fa-microphone
+                            li
+                              a.icon-btn.btn-light.button-effect.mute(href='#' data-tippy-content='Speaker')
+                                i.fa.fa-volume-up
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-xl.is-animating(href='#' data-tippy-content='Hangup' data-dismiss='modal')
+                                i(data-feather='phone')
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='Add Call')
+                                i(data-feather='user-plus')
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='Disable Video')
+                                i(data-feather='pause')
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#confercall') conference call
+                // Modal
+                #confercall.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .conferencecall.call-modal
+                        img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                        .center-con.text-center
+                          .usersprof
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/5.jpg' alt='Avatar')
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                          p Incoming Call
+                          h3 Conference Call
+                          ul
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.cancelcall(href='#')
+                                i(data-feather='phone')
+                            li
+                              a.icon-btn.btn-success.button-effect.btn-xl.is-animating(href='#')
+                                i(data-feather='video')
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#onecall') One Person call
+                // Modal
+                #onecall.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .conferencecall.call-modal
+                        img.bg-img(src='../assets/images/avtar/big/audiocall.jpg' alt='Avatar')
+                        .center-con.text-center
+                          .usersprof
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                          p Incoming Call
+                          h3 Jack p angulo
+                          p Product Manager
+                          ul
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.cancelcall(href='#')
+                                i(data-feather='phone')
+                            li
+                              a.icon-btn.btn-success.button-effect.btn-xl.is-animating(href='#')
+                                i(data-feather='video')
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#nointernetmodal') No Internet
+                // Modal
+                #nointernetmodal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .no-internet.animat-rate
+                        .connection-img
+                          img.left-img(src='../assets/images/disconnect/3.png' alt='Disconnected')
+                          img.right-img(src='../assets/images/disconnect/2.png' alt='Disconnected internet')
+                        .quarterCircle
+                          .close-btn(data-dismiss='modal')
+                            span(aria-hidden='true') &times;
+                        .bg_circle
+                          div
+                          div
+                          div
+                          div
+                          div
+                        .cross
+                        .cross1
+                        .dot
+                        .dot1
+                        .content.text-center
+                          a.icon-btn.btn-danger.button-effect.btn-sm.is-animating(href='#')
+                            i.fa.fa-wifi
+                          h5 Internet issue
+                          .title2 Disconnected
+                          button.btn.reconnect-btn(type='button' data-dismiss='modal') Reconnect
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#videocall') video call
+                // Modal
+                #videocall.viddiolog.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .videocall.call-modal
+                        img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                        .small-image
+                          img.bg-img(src='../assets/images/avtar/big/videocall.jpg' alt='Avatar')
+                        .media.videocall-details
+                          .usersprof
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                          .media-body
+                            h5 Josephin water
+                            h6 America ,California
+                          #basicUsage1 00:00:00
+                          .zoomcontent
+                            a.text-dark(href='#!' onclick='javascript:toggleFullScreen()')
+                              img(src='../assets/images/logo/maximize.svg' alt='zoom screen')
+                        .center-con.text-center
+                          ul
+                            li
+                              a.icon-btn.btn-light.button-effect.pause(href='#')
+                                i.ti-control-pause
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-xl.is-animating(href='#')
+                                i(data-feather='phone')
+                            li
+                              a.icon-btn.btn-light.button-effect.mic(href='#')
+                                i.fa.fa-microphone
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#videocallhang') video call hang
+                // Modal
+                #videocallhang.viddiolog.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-body
+                      .videocallhang.call-modal
+                        img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                        .media.videocall-details
+                          .usersprof
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                            .profile
+                              img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                          .media-body
+                            h5 Josephin water
+                            h6 America ,California
+                          .red-notification
+                            .dot-btn.dot-danger.grow
+                            h6 Ringing
+                          .zoomcontent
+                            a.text-dark(href='#!' onclick='javascript:toggleFullScreen()')
+                              img(src='../assets/images/logo/maximize.svg' alt='zoom screen')
+                        .center-con.text-center
+                          ul
+                            li
+                              a.icon-btn.btn-success.button-effect.btn-xl.is-animating(href='#')
+                                i(data-feather='video')
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-xl.is-animating.cancelcall(href='#')
+                                i(data-feather='phone')
+                button.btn.btn-primary.fonts.font_label(type='button' data-toggle='modal' data-target='#confvideocl') video call conference
+                // Modal
+                #confvideocl.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+                  .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content
+                      .modal-body
+                        .row.confimg
+                          .col-6
+                            .vclimg
+                              img.bg-img(src='../assets/images/avtar/big/videocall_bg.jpg' alt='Avatar')
+                          .col-6
+                            .vclimg
+                              img.bg-img(src='../assets/images/avtar/5.jpg' alt='Avatar')
+                          .col-6
+                            .vclimg
+                              img.bg-img(src='../assets/images/avtar/2.jpg' alt='Avatar')
+                          .col-6
+                            .vclimg
+                              img.bg-img(src='../assets/images/avtar/3.jpg' alt='Avatar')
+                      .modal-footer.clfooter
+                        #basicUsage3
+                          | 00:00:00
+                          ul
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='speaker')
+                                i(data-feather='volume-2')
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='Camera')
+                                i(data-feather='camera-off')
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='Add Call')
+                                i(data-feather='user-plus')
+                            li
+                              a.icon-btn.btn-danger.button-effect.btn-sm.is-animating(href='#' data-dismiss='modal' data-tippy-content='Hangup')
+                                i(data-feather='phone')
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='Disable Video')
+                                i(data-feather='video-off')
+                            li
+                              a.icon-btn.btn-light.button-effect.mic(href='#' data-tippy-content='Mute')
+                                i(data-feather='mic-off')
+                            li
+                              a.icon-btn.btn-light.button-effect(href='#' data-tippy-content='Hold')
+                                i(data-feather='pause')                                                         
+    +footer
+    +taptop
+
+    include ../components/footer-files

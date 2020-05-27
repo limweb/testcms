@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+  virtualevent-cms-demo:
+    image: virtualevent-cms-demo
+    # build: 
+    #   context: .
+    #   dockerfile: deploy/demo/Dockerfile
+    container_name: virtualevent-cms-demo
+    environment:
+      # REACT_APP_API_ENDPOINT: api-dev.eventpass.co
+      # PREVIEW_ENDPOINT: web-dev.eventpass.co
+      VIRTUAL_HOST: virtual-event-cms-demo.eventpass.co
+      LETSENCRYPT_HOST : virtual-event-cms-demo.eventpass.co
+      LETSENCRYPT_EMAIL : limweb@hotmail.com
+      VIRTUAL_PORT: 3000
+    # volumes:
+    #   - ./components:/usr/src/app/components
+networks:
+  default:
+    external:
+      name: eventinsight

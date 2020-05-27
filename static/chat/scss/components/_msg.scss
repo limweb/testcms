@@ -1,0 +1,322 @@
+// msg list
+.msg-box{
+	> li{
+		> h5,.document,.auto-gallery{
+			display: inline-block;
+			padding: 16px 25px;
+			background-color: $primary-color;
+			color: $white;
+			border-radius: 0 25px 25px 0;
+			font-weight: 600;
+		}
+		.refresh-block {
+			display: inline-grid;
+			justify-content: center;
+			align-items: center;
+			.refresh{
+				margin-bottom: 10px;
+				transition: all 0.3s ease;
+				&:hover{
+					color: $white !important;
+					background-color: $primary-color !important;
+					transition: all 0.3s ease;
+					cursor: pointer;
+				}
+				&.refreshed{
+					color: $white !important;
+					background-color: $primary-color !important;
+					svg{
+						transform: rotate(360deg);
+						transition: all 3s ease;
+					}
+				}
+			}
+			>div {
+				&:last-child {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		&:first-child{
+			h5{
+				border-radius: 30px 25px 25px 0;
+			}
+		}
+		&:last-child{
+			h5,.document,.auto-gallery{
+				border-radius: 0 25px 25px 30px;
+
+			}
+		}
+		&+li{
+			margin-top: 12px;
+			position: relative;
+		}
+	}
+}
+.contact-chat{
+	padding: $contant-spacing 30px 0;
+	margin-top: 100px;
+	> ul{
+		&.str-msg{
+			h5{
+				font-size: 13px;
+			}
+			h6{
+				font-size: 9px;
+			}
+			li{
+				padding-left: 0 !important;
+				width: 100%;
+				.media{
+					.profile{
+						margin-left: 0.7rem !important;
+					}
+				}
+				.contact-name{
+					.msg-box{
+						margin-top: 5px;
+					}
+				}
+				.msg-box > li > h5{
+					padding: 8px 25px;
+					font-size: 12px;
+					line-height: 1.6;
+					color: $dark-color;
+					background-color: $border-color1;
+				}
+				.profile{
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+		&.chatappend{
+			display: flex;
+			flex-direction: column;
+			> li{
+				&:last-child{
+					.msg-box{
+						> li{
+							.msg-dropdown{								
+								bottom: 50px !important;
+								top: unset !important;
+							}
+						}
+					}
+				}				
+			}
+			.last{
+				order: 999;
+			}
+		}
+		> li{
+			&.sent{
+				.document{
+					border-radius: 0 50px  50px 50px;
+					.icon-btns{
+						a{
+							background-color: darken($primary-color, 3%) !important;
+						}
+					}
+					.details{
+						h5,h6{
+							color: $light-color;
+						}
+					}
+					i{
+						color: $white !important;
+					}
+					.details,.icon-btns{
+						display: inline-block;
+					}
+					.icon-btns{
+						display: inline-block;
+					}
+				}
+			}
+			&.sent,&.replies{
+				width: 80%;
+				.auto-gallery{
+					background-color: rgba($primary-color, 0.15) !important;
+					padding: 16px 25px 0 15px;
+					li{
+						display: inline-block !important;
+						height: 85px;
+						width: 85px;
+						border-radius: $radious20;
+						margin-left: 10px;
+						margin-bottom: 10px;
+					}
+				}
+				.document{
+					padding: 25px 35px;
+					display: flex;
+					align-items: center;
+					.icon-btns{
+						a{
+							background-color: darken($gray1, 3%) !important;
+							&+a{
+								margin-left: 10px;
+							}
+						}
+					}
+					.details{
+						padding-left: 15px;
+						padding-right: 30px;
+						text-align: left;
+						h5{
+							display: block;
+							padding-bottom: 5px;
+						}
+					}
+					i{
+						font-size: 40px;
+					}
+					.details,.icon-btns{
+						display: inline-block;
+					}
+					.icon-btns{
+						display: inline-block;
+					}
+				}
+			}
+			&.replies{
+				margin-left: auto;
+				text-align: right;
+				.document{
+					border-radius: 50px 0 50px 50px;
+				}
+				.auto-gallery{
+					padding: 16px 25px 5px 15px;
+					li{
+						float: right;
+					}
+				}
+				.msg-box{
+					li{
+						display: inline-flex;
+						&:first-child{
+							h5{
+								border-radius: 30px 25px 0 30px;
+							}
+						}
+						&:last-child{
+							display: flex;
+							flex-direction: row-reverse;
+							align-items: center;
+							margin-left: auto;
+							h5,.auto-gallery{
+								border-radius: 30px 0 25px 30px;
+							}
+						}
+						> h5,.document,.auto-gallery{
+							background-color: $gray1;
+							color: $dark-color;
+						}
+						.badge{
+							margin-left: 0 !important;
+							margin-right: 0.5rem !important;
+						}
+					}
+				}
+				.media{
+					flex-direction: row-reverse;
+					.profile{
+						margin-left: 1.5rem !important;
+						margin-right: 0 !important;
+					}
+				}
+				.msg-setting-main  {
+					.msg-dropdown-main  {
+						.msg-setting {
+							margin-right: 10px;
+							margin-left: unset;
+						}
+					}
+				}
+			}
+			&+li{
+				margin-top: 10px;
+			}
+			.contact-name{
+				.msg-box{
+					margin-top: 15px;
+					img{
+						width: 130px;
+					}
+				}
+				h5{
+					display: inline-block;
+					padding-right: 20px;
+					line-height: 1.4;
+				}
+				h6{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+.msg-setting-main {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	transition: all 0.5s ease;
+	.msg-dropdown-main {
+		position: relative;
+		display: none;
+		transition: all 0.5s ease;
+		.msg-setting {
+			background-color: $gray1;
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 10px;
+		}
+		.msg-dropdown {
+			background-color: $white;
+			border: 2px solid $border-color;
+			padding: 15px;
+			border-radius: 15px;
+			position: absolute;
+			top: 50px;
+			left: 0;
+			z-index: 1;
+			text-align: left;
+			display: none;
+			transition: all 0.5s ease;
+			ul {
+				li {
+					font-size: 14px;
+					font-weight: 600;
+					text-transform: capitalize;
+					margin-bottom: 10px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					a {
+						color: $black1;
+						width: 100%;
+						i {
+							font-size: 16px;
+							display: inline;
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		.msg-dropdown-main {
+			display: inline-block;
+			order: 0;
+		}
+	}
+}

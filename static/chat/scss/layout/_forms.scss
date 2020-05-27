@@ -1,0 +1,55 @@
+.default-form{
+	.form-group{
+		margin: 0;
+		input{
+			height: 45px;
+			border-radius: 15px;
+			background-color: $primary-light;
+			border: none;
+		}
+		textarea{
+			border-radius: 15px;
+			background-color: $primary-light;
+			border: none
+		}
+		h5{
+			margin-bottom: 15px;
+		}
+		&+.form-group{
+			margin-top: 15px;
+		}
+		a{
+			text-align: center;
+		}
+		p{
+			padding-top: 10px;
+		}
+	}
+	select {
+		-webkit-appearance: none;
+		width: 100%;
+		border: 1px solid rgba(0,0,0,0.15);
+		padding: 12px 20px;
+		text-transform: capitalize;
+		font-size: 15px;
+		line-height: 1;
+		background-color: transparent;
+		height: 50px;
+		border-radius: 15px;
+		color: $muted-font;
+		border: none;
+		background: url(../images/drop-1.png)  $primary-light no-repeat scroll 94% center;
+		margin-bottom: 30px;
+	}
+}
+.form-radious{
+	input{
+		border-radius: 15px;
+	}
+}
+.form-sm{
+	input{
+		height: 32px;
+		font-size: 13px;
+	}
+}

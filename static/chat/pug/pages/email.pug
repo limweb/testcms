@@ -1,0 +1,163 @@
+doctype html
+html(lang='en')
+  head
+    title Chitchat - chat messenger html templlete
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(name='description' content='Chitchat')
+    meta(name='keywords' content='Chitchat')
+    meta(name='author' content='Chitchat')
+    link(rel='icon' href='../assets/images/favicon/favicon.png' type='image/x-icon')
+    link(rel='shortcut icon' href='../assets/images/favicon/favicon.png' type='image/x-icon')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,600&display=swap' rel='stylesheet')
+    style.
+      body{
+      width: 650px;
+      font-family: work-Sans, sans-serif;
+      background-color: #f6f7fb;
+      display: block;
+      margin:0 auto ;
+      padding-top:50px;
+      }
+      a{
+      text-decoration: none;
+      }
+      span {
+      font-size: 14px;
+      }
+      p {
+      font-size: 13px;
+      line-height: 1.7;
+      letter-spacing: 0.7px;
+      margin-top: 0;
+      }
+      .text-center{
+      text-align: center
+      }
+      .template-sosial {
+      display:flex ;
+      align-items:center ;
+      justify-content:center ;
+      }
+      .template-sosial  li  {
+        background-color:#eff1f2 ;
+        width:35px;
+        height:35px;
+        border-radius:50% ;
+        display:flex ;
+        align-items:center ;
+        justify-content:center ;
+        margin-right:15px;
+        } 
+      .template-sosial  li:last-child {
+        margin-right: 0 ;
+        }
+      .template-sosial  li:hover  {
+        background-color :#1c9dea;
+        }
+      .template-sosial  li:hover a {
+      color:$white ;
+      }
+      .template-sosial  li a i {
+      font-size:14px;
+      }
+      ul.chat-icon {
+            display:flex ;
+            justify-content:center ;
+            padding-left:0 ;
+      }
+      ul.chat-icon li {
+          width:40px;
+          height:40px;
+          border:1px solid black ;
+          border-radius:50% ;
+          display:flex ;
+          align-items:center ;
+          justify-content:center ;
+          margin-right:10px;
+      }
+    
+      ul.chat-icon li:last-child {
+        margin-right:0 ;
+      }
+
+      .template-sosial li:hover a{
+          color: #fff;
+      }
+  table(style='width: 100%')
+    tbody
+      tr
+        td
+          table(style='background-color: #f6f7fb; width: 100%')
+            tbody
+              tr
+                td
+                  table(style='width: 650px; margin: 0 auto; margin-bottom: 30px')
+                    tbody
+                      tr
+                        td
+                          img(src='../assets/images/logo/landing-logo.png' alt='logo')
+                        td(style='text-align: right; color:#999')
+                          span Some Description
+                  table(style='width: 650px; margin: 0 auto; background-color: #fff;')
+                    tbody
+                      tr
+                        td(style='padding: 30px')
+                          p Hi There,
+                          p
+                            | Sometimes you just want to send a simple HTML email with a simple design and clear call to action.
+                          a(href='#' style='padding: 10px; background-color: #4466f2; color: #fff; display: inline-block; border-radius: 4px; margin-bottom: 18px') Call To Action 
+                          p
+                            | This is a really simple email template. It&apos;s sole purpose is to get the recipient to click the button with no distractions.
+                          p(style='margin-bottom: 0') Good luck! Hope it works.
+                  table(border='0' cellpadding='0' cellspacing='0' style='max-width:650px;background-color:white;' width='100%')
+                    tr
+                      td(align='center' valign='top')
+                        table.footer(style="border:1px solid #E5E5E5; width:100% ; padding-bottom:30px;")
+                          tr
+                            td.socialLinks(align='center' valign='top' )
+                              ul.template-sosial(style="margin-top:30px;")
+                                li
+                                  a(href="#")
+                                    i.fa.fa-facebook
+                                li
+                                  a(href="#")
+                                    i.fa.fa-twitter
+                                li
+                                  a(href="#")
+                                    i.fa.fa-pinterest-p
+                                li
+                                  a(href="#")
+                                    i.fa.fa-instagram
+                                li
+                                  a(href="#")
+                                    i.fa.fa-linkedin-square
+                          tr
+                            td(align='center' valign='top' style='padding-top:10px;padding-bottom:5px;padding-left:10px;padding-right:10px;')
+                              p.text(style="color:#777777; font-family:'Open Sans', Helvetica, Arial, sans-serif; font-size:12px; font-weight:400; font-style:normal; letter-spacing:normal; line-height:20px; text-transform:none; text-align:center; padding:0; margin:0;")
+                                | &copy;&nbsp; chitcaht. | 800 Broadway, Suite 1500 | New York, NY 000123, USA.
+                          tr
+                            td(align='center' valign='top' style='padding-top:0px;padding-bottom:20px;padding-left:10px;padding-right:10px;')
+                              p(style="color:#777777; font-family:'Open Sans', Helvetica, Arial, sans-serif; font-size:12px; font-weight:400; font-style:normal; letter-spacing:normal; line-height:20px; text-transform:none; text-align:center; padding:0; margin:0;")
+                                a(href='#' style='color:#777777;text-decoration:underline;' target='_blank') View Web Version 
+                                | &nbsp;|&nbsp;
+                                a(href='#' style='color:#777777;text-decoration:underline;' target='_blank')  Email Preferences 
+                                | &nbsp;|&nbsp;
+                                a(href='#' style='color:#777777;text-decoration:underline;' target='_blank')  Privacy Policy 
+                          tr
+                            td(align='center' valign='top' style='padding-top:0px;padding-bottom:10px;padding-left:10px;padding-right:10px;')
+                              p.text(style="color:#777777; font-family:'Open Sans', Helvetica, Arial, sans-serif; font-size:12px; font-weight:400; font-style:normal; letter-spacing:normal; line-height:20px; text-transform:none; text-align:center; padding:0; margin:0;")
+                                | If you have any quetions please contact us 
+                                a(href='#' style='color:#777777;text-decoration:underline;' target='_blank') support@mail.com.
+                                br
+                                a(href='#' style='color:#777777;text-decoration:underline;' target='_blank') Unsubscribe
+                                |  from our mailing lists
+                          tr
+                            td.appLinks(align='center' valign='top' style='padding-top:10p;padding-left:10px;padding-right:10px;')
+                              a(href='#Play-Store-Link' target='_blank' style='display:inline-block;')
+                                img(src='http://weekly.grapestheme.com/notify/img/app/play-store.png' alt='' width='120' border='0' style='height:auto;margin:5px;width:100%;max-width:120px;')
+                              a.app-store(href='#App-Store-Link' target='_blank' style='display:inline-block;')
+                                img(src='http://weekly.grapestheme.com/notify/img/app/app-store.png' alt='' width='120' border='0' style='height:auto;margin:5px;width:100%;max-width:120px;')                                

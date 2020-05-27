@@ -1,0 +1,50 @@
+.theme-according{
+  padding-top: 20px;
+  h5{
+    padding-top: 4px;
+    font-size: calc(13px + (13 - 13) * ((100vw - 320px) / (1920 - 320)));
+    color: $primary-color;
+  }
+  p{
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+  .card{
+   border: none;
+   margin-bottom: 1rem !important;
+   a{
+    font-weight: 600;
+    padding-left: 25px;
+  }
+
+  .card-header{
+    border-radius: $radious25;    
+    border-bottom: none;
+    &[aria-expanded="true"] {
+      a {
+        i:before {
+          content: "\f106";
+          transition: all 0.3s ease;
+        }
+      }
+    }
+    i{
+      padding: 8px 10px;
+      position: absolute;
+      top: 7px;
+      border-radius: 100%;
+      background-color: $primary-color;
+      color: $white;
+      left: 10px;
+      font-weight: 900;
+    }
+  }
+  .card-body{
+   border-radius: $radious25;   
+   padding: 1.2rem 1.25rem;
+   background-color: #f7f7f9;
+   margin-top: 10px;
+ }
+}
+}

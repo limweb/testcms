@@ -1,0 +1,38 @@
+- var feathericon  = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+
+  body
+      .inner-page
+        +header      
+        +taptop
+        +breadcrumb(404)
+
+      //- error start //
+      section.error-main
+        ul.page-decore
+          li.top
+            img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+          li.bottom
+            img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+        .container
+          .row
+            .col-12
+              .error-contain
+                h1 404
+                h2 Page Not Found
+                h4 The Page You Are Attempting To Reach Is Not Available. 
+                  br
+                  | This May Be Because The Page Does Not Exist Or Has Been Moved.
+                a.btn.btn-primary(href="messenger.html") back to home
+                .animated-bg
+                  i
+                  i
+                  i
+
+      //-footer start //
+      +footer
+      include ../components/footer-files

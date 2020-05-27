@@ -1,0 +1,33 @@
+.switchery {
+  background-color: $white;
+  border: 1px solid #dfdfdf;
+  cursor: pointer;
+  border-radius: 20px;
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+  user-select: none;
+  box-sizing: content-box;
+  background-clip: content-box;
+  >small {
+    background: $white;
+    border-radius: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    height: 30px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+}
+.switchery-small {
+  border-radius: 20px;
+  height: 18px;
+  width: 33px;
+  >small {
+    height: 14px;
+    width: 14px;
+    top: 2px
+  }
+}

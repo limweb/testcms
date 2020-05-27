@@ -1,0 +1,753 @@
+.chitchat-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    .main-nav{
+        min-width: $main-nav-width;
+        width: $main-nav-width;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-right:1px solid $border-color;
+        padding: $sidebar-spacing 0;
+    }
+    .chitchat-left-sidebar{
+        min-width: $left-sidebar-width;
+        width: $left-sidebar-width;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+    .chitchat-main{
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        z-index: 1;
+        transition: all 0.7s;
+        background-color: $white;
+    }
+    .chitchat-right-sidebar{
+        min-width: $right-sidebar-width;
+        width: $right-sidebar-width;
+        height: 100vh;
+        max-height:100vh;
+        position:fixed;
+        right:-200px;
+        background-color: $white;
+        opacity: 0;
+        transition: all 0.7s;
+    }
+}
+.app-sidebar{
+    width: 0;
+    right: -520px;
+    z-index: 9;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    background-color: $white;
+    display:table;
+    transition: all 0.3s ease;
+    animation: fadeInRight 300ms ease-in-out;
+    &.active{
+        width: auto;
+        right: 0;
+        transition: all 0.3s ease;
+        animation: fadeInRight 300ms ease-in-out;
+        .apps-ul{
+            > li{
+                width: 300px;
+                height: 100vh;
+                opacity: 0;
+                position: absolute;
+                padding: 20px;
+                &.active{
+                    right: 90px;
+                    opacity: 1;
+                    animation: fadeInRight 300ms ease-in-out;
+                    transition: all 0.3s ease;
+                    background-color: $white;
+                }
+            }
+            .theme-title{
+                margin-top: 10px;
+                margin-bottom: 30px;
+                h2{
+                    font-size: calc(22px + (22 - 20) * ((100vw - 320px) / (1920 - 320)));
+                }
+            }
+        }
+    }
+    .apps-ul{
+        >li{
+            .theme-tab{
+                .nav-tabs{
+                    .nav-item{
+                        .nav-link{
+                            min-width: 60px;
+                            padding: 7px 15px;
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        + li{
+                            margin-left : 15px;
+                        }
+                    }
+                }
+            }
+            .file-tab {
+                .block-content{
+                    padding-bottom: 0;
+                    border-bottom: 1px solid $primary-light;
+                    margin-bottom: 20px;
+                }
+                .block-title{
+                    padding-bottom: 15px;
+                }
+                .tab-content {
+                    margin-right: -20px;
+                    padding-right: 20px;
+                    height: calc(100vh - 160px);
+                    overflow: auto;
+                    ul {
+                        li {
+                            width: auto;
+                            transform: translateX(0);
+                            opacity: 1;
+                            list-style: none;
+                            display: contents;
+                        }
+                    }
+                    .link-group {
+                        margin-bottom: 15px;
+                        border: 1px solid $border-color;
+                        padding: 15px;
+                        border-radius: 15px;
+                        box-shadow: -1px 10px 16px -10px $light-color;
+                        img {
+                            margin-right: 10px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                        .media-body {
+                            word-break: break-word;
+                            a {
+                                color: $muted-font;
+                            }
+                            h5{
+                                margin-bottom: 5px;
+                            }
+                            h6{
+                                font-size: 10px;
+                                line-height: 1.3;
+                            }
+                        }
+                        .media{
+                            margin-bottom: 10px;
+                            svg{
+                                margin-right: 10px;
+                                border: 1px solid $border-color;
+                                padding: 6px;
+                                background-color: #ede6e6;
+                                width: 15%;
+                                height: 15%;
+                            }
+                            &:nth-last-child(1){
+                                margin-top : 10px;
+                                margin-bottom: 0;
+                                border-left: 4px solid $primary-color;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 15px;
+                                background-color: $primary-light;
+                                border-radius: 5px;
+                            }
+                        }
+                        a{
+                            word-wrap: break-word;
+                        }
+                    }
+                    .docs-group {
+                        padding: 15px;
+                        border: 1px solid $border-color;
+                        margin-bottom: 15px;
+                    }
+                    .chat-main {
+                        li {
+                            display: block;
+                        }
+                    }
+                    ul.chat-main {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        li {
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            .chat-box {
+                                .media {
+                                    .profile {
+                                        width: 40px;
+                                        height: 40px;
+                                        .icon-btn{
+                                            &.btn-xl {
+                                                width: 40px;
+                                                height: 40px;
+                                                i {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .details {
+                                    padding-top: 0;
+                                    padding-left: 55px;
+                                    padding-bottom: 0;
+                                    h5 {
+                                        text-transform: capitalize;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .todo-main{
+                .todo-tab{
+                    >.nav-tabs{
+                        justify-content: flex-start;
+                        position: relative;
+                        .nav-item{
+                            margin-right: 10px;
+                        }
+                        li{
+                            &:last-child{
+                                position: absolute;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+                .todo-tab {
+                    .tab-content {
+                        padding-bottom: 15px;
+                        h3{
+                            font-weight: 600;
+                            padding-bottom: 15px;
+                        }
+                        .todo-task{
+                            &+.todo-task{
+                                margin-top: 10px;
+                                padding-top: 10px;
+                                border-top: 1px solid $border-color;
+                            }
+                            h5{
+                                font-weight: 500;
+                                font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1920 - 320)));
+                                margin-bottom: 5px;
+                            }
+                            form{
+                                display: inline-block;
+                                select,input{
+                                    border: 0;
+                                    background-color: transparent;
+                                    font-size: calc(12px + (13 - 12) * ((100vw - 320px) / (1920 - 320)));
+                                    color: $gray;
+                                    font-weight: 400;
+                                }
+                            }
+                            span{
+                                a{
+                                    font-size: calc(12px + (13 - 12) * ((100vw - 320px) / (1920 - 320)));
+                                    color: $dark-color;
+                                    font-weight: 400;
+                                }
+                                &+span{
+                                    padding-left: 10px;
+                                    margin-left: 10px;
+                                    border-left: 1px solid $gray;
+                                }
+                            }
+                        }
+                        .converstaion-docs {
+                            i {
+                                font-size: 50px;
+                                margin-bottom: 10px;
+                                color: $primary-color;
+                            }
+                            h6 {
+                                color: $dark-color;
+                                margin-bottom: 10px;
+                            }
+                            p {
+                                margin-bottom: 12px;
+                                color: $dark-color;
+                            }
+                        }
+                        .default-form{
+                            .form-group{
+                                display  :flex;
+                                align-items:center !important;
+                                input{
+                                    margin-bottom : 15px;
+                                    +input{
+                                        margin-left : 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .todo-main-content{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid $light-color;
+                    input{
+                        border:none;
+                        cursor : pointer;
+                        font-size:15px;
+                        font-weight:500;
+                        &::plaeholder{
+                            color:$black;
+                        }
+                        +input{
+                            margin-left : 10px;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .input-text{
+                        margin-bottom : 10px;
+                        align-items: center;
+                        display: flex;
+                    }
+                    .todo-list {
+                        .add-to-do {
+                            cursor: pointer ;
+                            display: block;
+                            margin-top: 5px;
+                        }
+                        .todo-buttons {
+                            i{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0 ;
+                    }
+                }
+            }
+            .notes-main {
+                .notes-input {
+                    input {
+                        padding: 15px;
+                        margin-bottom: 20px;
+                        width : 100%;
+                    }
+                }
+                .notes-content{
+                    display: flex;
+                    align-items: baseline;
+                    ul{
+                        li{
+                            margin-left : 15px;
+                        }
+                    }
+                }
+                .notes-list{
+                    padding:20px;
+                    border:1px solid $border-color2;
+                    border-radius : $radious15;
+                    .media{
+                        align-items: center;
+                        margin-bottom : 10px;
+                        img{
+                            height:30px;
+                        }
+                    }
+                }
+                a{
+                    font-size: 15px;
+                    &.line{
+                        border-top: 1px solid #ededed;
+                        padding-top: 12px;
+                            margin-top: 15px;
+                        content: "";
+                        display: block;
+                        font-weight: 600;
+                        font-family: $font-1;
+                    }
+                    &:before{
+                        margin-right: 5px;
+                        font-size: 12px;
+                        font-family: fontawesome;
+                    }
+                }
+            }
+            .reminder-main {
+                .reminder-content {
+                    margin-bottom: 20px;
+                    i {
+                        font-size: 50px;
+                        margin-bottom: 25px;
+                        color: $primary-color;
+                        display: block;
+                    }
+                    p {
+                        margin-bottom: 15px;
+                    }
+                    .setreminder {
+                        color: $white;
+                    }
+                }
+                .reminder-list{
+                    .target-reminder-list{
+                        display:none;
+                        border:2px solid $border-color;
+                        border-left-width : 5px;
+                        border-left-color:rgba(28, 157, 234, 0.3);
+                        border-radius : $radious15;
+                        padding:15px;
+                        position : relative;
+                        .reminder-disp{
+                            .reminder-toggle{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+                            .reminder-content-toggle{
+                                display : none;
+                                ul{
+                                    li{
+                                        display  :flex;
+                                        align-items:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .Hide-reminder{
+                        display:none;
+                    }
+                    button{
+                        border:none;
+                        background : unset;
+                        padding : 15px;
+                        font-size : 15px;
+                        &:focus{
+                            outline:none;
+                        }
+                    }
+                }
+                .reminder-list-disp{
+                    border:2px solid $border-color;
+                    border-left-width : 5px;
+                    border-left-color:rgba(28, 157, 234, 0.3);
+                    border-radius : $radious15;
+                    padding:15px;
+                    position : relative;
+                    .reminder-disp{
+                        .reminder-list-toggle{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                        .reminder-contentlist-toggle{
+                            display : none;
+                            ul{
+                                li{
+                                    display  :flex;
+                                    align-items:center;
+                                }
+                            }
+                        }
+                    }
+                    button{
+                        border:none;
+                        background : unset;
+                        padding : 15px;
+                        font-size : 15px;
+                        &:focus{
+                            outline:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .app-list{
+        display: table-cell;
+        max-width: 90px;
+        width: 90px;
+        border-left: 2px solid $border-color;
+        ul.app-list-ul {
+            height: 100%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            position: relative;
+            li {
+                h5 {
+                    margin-top: 15px;
+                    opacity: 0.7;
+                }
+            }
+            .close-app {
+                margin-bottom: 10px;
+                position: absolute;
+                bottom:0;
+                left: 0;
+                right: 0;
+                border-bottom: 1px solid $border-color;
+            }
+            h5 {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+.dropdown{
+    transition: all .5s ease;
+    color: #b2b6be;
+    &.currency {
+        width: 150%;
+        &:focus{
+            outline:none;
+        }
+    }
+    .select{
+        cursor: pointer;
+        span {
+            font-size: 15px;
+            font-weight: 400;
+            color:$primary-color;
+        }
+    }
+    .dropdown-menu{
+        padding: 5px 0;
+        min-width: 14rem;
+        border-radius: 0;
+        li{
+            padding: 6px 15px;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            display: block;
+            color: #333333;
+        }
+        .dropdown-divider{
+            height:40px;
+            border-bottom: 1px solid $border-color2;
+            background-color:$white;
+            display: flex;
+            padding: 10px;
+            margin:unset;
+            h5{
+                margin-left : 10px;
+            }
+        }
+    }
+}
+.sidebar-active{
+    .chitchat-container{
+        .main-nav{
+            &~.chitchat-main{
+                .messages{
+                    .contact-details{
+                        width: 56vw;
+                    }
+                }
+            }
+        }
+    }
+}
+.todo-main-modal{
+    .todo-task{
+        h5{
+            margin-bottom : 10px;
+        }
+        .todo-main-content{
+            .drop-picker{
+                display: flex;
+                align-items:center;
+                margin: 20px;
+                margin-left:32px;
+            }
+            input{
+                border:none;
+                cursor : pointer;
+                &::placeholder {
+                    color:$primary-color;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            .form-group{
+                display : flex;
+                align-items:center;
+                input{
+                    width:18px;
+                    +input{
+                        margin-left : 15px;
+                        padding-left:10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.create-todo-main-modal{
+    .todo-task{
+        h5{
+            margin-bottom : 10px;
+        }
+        .todo-main-content{
+            .drop-picker{
+                display: flex;
+                align-items:center;
+                margin: 20px;
+                margin-left:45px;
+            }
+            input{
+                border:none;
+                cursor : pointer;
+                &::placeholder {
+                    color:$primary-color;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            .form-group{
+                display : flex;
+                align-items:center;
+                input{
+                    width:18px;
+                    +input{
+                        margin-left : 15px;
+                        padding-left:10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.app-sidebar {
+    .todo-main {
+        .todo-task {
+            position: relative;
+            .input-text {
+                input {
+                    &::placeholder {
+                        text-transform:capitalize;
+                        color: $dark-color ;
+                        font-weight: 500;
+                    }
+                }
+            }
+            h4 {
+                color: $dark-color;
+                font-weight: 600;
+                letter-spacing: 0.03em;
+                margin-bottom: 20px;
+            }
+            .drop-picker {
+                display: flex;
+                align-items: baseline;
+                font-size: 13px;
+
+                .form-control {
+                    padding: 0 ;
+                    &::placeholder {
+                        color: $muted-font ;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: $muted-font ;
+                    }               
+                    
+                }
+                .dropdown{
+                    .select{
+                        span{
+                            font-size: 13px;
+                            color: $muted-font ;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                .dropdown-menu {
+                    .dropdown-divider 
+                    i{
+                        color:$dark-color;
+                    }
+                    h5  {
+                        color:$dark-color!important;
+                        font-weight: 500;
+                    }
+                    li {
+                        margin-left: 0 ;
+                        line-height: 1;
+                        a {
+                            font-size: 12px;
+                            color: $muted-font;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .notes-main {
+        .notes-list {
+            h6 {
+                line-height: 1.2;
+            }
+        }
+    }
+    .reminder-main {
+        h5 {
+            margin-bottom: 15px;
+            
+        }
+        h6 {
+            margin-bottom: 5px;
+            
+        }
+    }
+}
+
+// reminder modal css /
+
+.reminder-modal-main {
+ .lable {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    display: block;
+    color: $dark-color;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group  {
+    .form-control {
+        &::placeholder {
+            font-size:14px;
+        }
+    }
+    .reminder-count {
+        .reminder-box {
+            .remi-val {
+                text-transform: capitalize;
+                font-weight: 600;
+            }
+        }
+    }
+} 
+}

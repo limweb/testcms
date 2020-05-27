@@ -1,0 +1,420 @@
+.chitchat-main{
+	.messages{
+		padding: $contant-spacing;
+		height: calc(100vh - 95px);
+		min-height: calc(100vh - 95px);
+		overflow: auto;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-blend-mode: overlay;
+		top: 0;
+		background-color: $primary-light;
+		display: none;
+		animation: fadeInLeft 300ms ease-in-out;
+		&.active{
+			display: block;
+			animation: fadeInLeft 300ms ease-in-out;
+		}
+		.contact-details{
+			padding: 20px 30px;
+			background-color: $white;
+			box-shadow: 0 -55px 0px 0px rgba($primary-light, 1);
+			position: fixed;
+			width: calc(100vw - 500px);
+			z-index: 999;
+			transition: all 0.9s;
+			.col{
+				position: unset;
+			}
+			.search-form{
+				z-index: 9;
+				top: -10px;
+				left: 0px;
+				position: absolute;
+				height: 80px;
+				width: 100%;
+				transform: scale(0);
+				transition: all 0.3s ease;
+				&.open{
+					transform: scale(1);
+					transition: all 0.3s ease;
+					top: 0;
+					height: 100px;
+				}
+				input{
+					border: none;
+				}
+			}
+			ul{
+				li{
+					display: inline-block;
+					padding-left: 17px;
+				}
+			}
+			.left{
+				&.media{
+					align-items: center;
+					.media-left{
+						height: 60px;
+					}
+					.media-body{
+						max-width: 150px;
+						margin-right: 10px;
+						position: relative;
+						.badge{
+							margin-top: 7px;
+						}
+						&:before{
+							content: "";
+							position: absolute;
+							right: 0;
+							height: 30px;
+							width: 1px;
+							background-color: rgba($dark-color, 0.5);
+							top: 5px;
+						}
+					}
+					.media-right{
+						.mute{
+							i{
+								&:after{
+									content: "";
+									position: absolute;
+									height: 2px;
+									width: 24px;
+									top: 19px;
+									left: 11px;
+									opacity: 0;
+									border-radius: 100%;
+									background-color: $dark-color;
+									transform: rotate(45deg);
+									transition: opacity 0.3s ease;
+								}
+								&.off{
+									&:after{
+										opacity: 1;
+										transition: opacity 0.3s ease;
+									}
+								}
+							}
+						}
+						.icon-btn{
+							i{
+								font-size: 20px;
+							}
+						}
+					}
+				}
+			}
+			.media-body{
+				h5{
+					margin-bottom:7px;
+				}
+			}
+		}
+		.calls{
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			> li{
+				.bg-transparent{
+					svg{
+						stroke-width: 3px;
+					}
+				}
+				> a{
+					> svg{
+						fill: $dark-color;
+						stroke-width: 1px;
+					}
+				}
+			}
+		}
+	}
+	.message-input{
+		height: 95px;
+		position: fixed;
+		background-color: $white;
+		width: calc(100% - 400px);
+		transition: all 0.5s;
+		padding: 26px $contant-spacing;
+		z-index: 9;
+		bottom: 0;
+		input{
+			width: calc(100% - 300px);
+			border: 0;
+			font-size: 16px;
+			color: $muted-font;
+			font-family: $font-1;
+			&:focus{
+				box-shadow: none;
+				outline-color: transparent !important;
+			}
+		}
+	}
+	.chat-content{
+		position: relative;
+	}
+	.contact-content {
+		.contact-sub-content {
+			.user-profile {
+				background-color: $white;
+				margin-bottom: 20px;
+				.user-content {
+					img {
+						width: 100px;
+						height: 100px;
+						border-radius: 50%;
+					}
+				}
+			}
+			h3 {
+				text-transform: capitalize;
+				color: $primary-color;
+				margin-bottom: 20px;
+			}
+			.personal-info-group {
+				margin-bottom: 20px;
+				padding: 30px;
+				background-color: $white;
+				border-radius: $radious15;
+				position: relative;
+				overflow: hidden;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				h3 {
+					color: $dark-color;
+					text-transform: capitalize;
+					border-bottom: 2px solid $border-color;
+					padding-bottom: 15px;
+					margin-bottom: 15px;
+					i {
+						margin-right: 10px;
+					}
+				}
+				ul.basic-info {
+					li {
+						padding-bottom: 10px;
+						border-bottom: 1px dashed $border-color;
+						margin-bottom: 10px;
+						&:last-child {
+							margin-bottom: 0;
+							border-bottom: 0;
+							padding-bottom: 0;
+						}
+						p{
+							margin-bottom: 0;
+						}
+						h5{
+							text-transform: capitalize;
+							display: inline-block;
+							margin-bottom: 5px;
+							color: rgba($dark-color, 0.8);
+							&.details{
+								float: right;
+								font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
+								color: $muted-font;
+								margin-bottom: 0;
+								margin-top: 4px;
+								text-transform: lowercase;
+								font-weight: 400;
+								font-family: $font-2;
+							}
+						}
+					}
+					&.edu {
+						li {
+							.media {
+								align-items: center;
+								img {
+									width: 50px;
+									height: 50px;
+									border-radius: 50%;
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.social-info-group {
+				.integratin  {
+					li {
+						&:first-child{
+							padding-top: 0;
+						}
+						&:last-child{
+							padding-bottom: 0;
+							border-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.contact-content,.call-content,.chat-content{
+		opacity: 0;
+		&.active{
+			opacity: 1;
+			z-index: 3;
+			animation: fadeInLeft 300ms ease-in-out;
+		}
+	}
+	.contact-content,.call-content{
+		position: absolute;
+		padding: 45px;
+		min-height: calc(100vh);
+		overflow: auto;
+		overflow-x: hidden;
+		top: 0;
+		background-color: $primary-light;
+		z-index: 2;
+		transition: all 0.3s ease;
+		&.active{
+			width: calc(100% - 00px);
+		}
+		.user-profile {
+			box-shadow: 0  0 5px $border-color;
+			padding: 30px;
+			background-color: $white;
+			border-radius: $radious15;
+			max-width: 700px;
+			margin: 0 auto;
+			.user-content {
+				text-align: center;
+				img {
+					border-radius: 50%;
+					width: 100px;
+				}
+				h3 {
+					margin-top: 15px;
+				}
+				ul {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-top: 15px;
+					li {
+						font-size: 14px;
+						margin-right: 15px 15px 0;
+						text-transform: capitalize;
+						line-height:1 ;
+						transition: all 0.05s ease;
+						padding: 15px;
+						font-weight:700 ;
+						&:first-child {
+							color:$danger-color;
+							i {
+								background-color:rgba($danger-color,0.15);
+								color: $danger-color;
+							}
+						}
+						&:nth-child(2) {
+							color:$primary-color;
+							i {
+								background-color:rgba($primary-color,0.15);
+								color: $primary-color;
+							}
+						}
+						&:last-child {
+							margin-right: 0;
+							color: $success-color;
+							i {
+								background-color:rgba($success-color,0.15);
+								color: $success-color;
+							}
+						}
+						i {
+							width: fit-content;
+							margin-right: auto;
+							margin-left: auto;
+							margin-bottom: 10px;
+							font-size: 16px;
+							display: block;
+							border-radius: 50%;
+							padding: 10px;
+							background-color: $border-color;
+							transition: all 0.05s ease;
+						}
+
+					}
+				}
+			}
+		}
+		.call-log-main {
+			height: 415px;
+			overflow: overlay;
+			margin: 0 auto 15px;
+			padding-right: 10px;
+			.coll-log-group {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: white;
+				padding: 20px 30px;
+				margin-bottom: 15px;
+				border-radius: $radious15;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.log-content-left {
+					.media {
+						align-items: center;
+						svg {
+							width: 18px;
+							margin-right: 10px;
+						}
+						.media-body {
+							h5 {
+								text-transform: capitalize;
+							}
+							p {
+								text-transform: capitalize;
+							}
+						}
+					}
+				}
+				.log-content-right {
+					h6 {
+						color: $dark-color;
+					}
+				}
+			}
+		}
+		.call-log-clear {
+			background-color: $white;
+			padding: 20px;
+			position: absolute;
+			left: 10px;
+			right: 0;
+			text-transform: capitalize;
+			text-align: center;
+			border-radius: $radious15;
+			cursor: pointer;
+			width: calc(100% - 30px);
+			i {
+				font-size: 24px;
+			}
+			span {
+				display: block;
+				font-size: 16px;
+			}
+		}
+	}
+}
+.menu-active{
+	.chitchat-main{
+		.message-input {
+			width: calc(100% - 850px);
+			transition: all 0.9s;
+		}
+		.messages {
+			.contact-details {
+				width: 50vw !important;
+				transition: all 0.9s ease;
+			}
+		}
+	}
+}

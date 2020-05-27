@@ -1,0 +1,103 @@
+- var feathericon  = true;
+- var counter      = true;
+
+include ../components/mixin
+doctype html
+html(lang='en')
+  include ../components/header-files
+
+  body
+    .inner-page
+      +header
+      +breadcrumb('about','home')
+     
+
+    div
+      ul.page-decore
+        li.top
+          img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+        li.bottom
+          img.img-fluid.inner2(src='../assets/images/landing/footer/2.png' alt='footer-back-img')
+
+      section.about-page.section-py-space
+        .custom-container
+          .row
+            .col-sm-8.offset-sm-2.text-center
+              img.img-fluid.w-100.pb-4(src="../assets/images/about/1.jpg" alt="about")
+              .row
+                div.col-md-10.offset-md-1
+                  p On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
+
+      // secure-app start //
+
+      // testimonial start//
+      section.section-py-space
+        +testimonial
+      // testimonial end //
+
+      //app section start //
+      section.section-pb-space.secure-app-main
+        .custom-container
+          .row
+            .col-xl-5.offset-xl-7.col-lg-5.offset-lg-7
+              .secure-app-content
+                div
+                  .ply-main
+                      .ply-content
+                          i.ti-shield
+                      h3 Secure Your 
+                        span Messages
+                  h1 The world's top secure App
+                  h4
+                    span Desktop App 
+                    | – Easy to use our chat app, Attractive and clean design, with many Features :- Dark & light, Recent Chat And many more....... 
+                  a.btn.pricing-btn(href="#") learn more
+      //app section end //
+
+        
+      // counter section  start//
+      section.counter-sec.section-py-space.counter-main
+        .container
+          .counter-title
+                h4.title-line Counters
+          .row
+              .col-12
+                .counter-slider.owl-carousel.owl-theme.pt-0
+                  .item  
+                    .counter-box-second
+                      .counter-box
+                        div
+                          i.counter-icon.fa.fa-user-o
+                          h6.counter-no.count 80
+                          span Happy Clients
+                  
+                  .item  
+                    .counter-box-second
+                      .counter-box
+                        div
+                          i.counter-icon.fa.fa-square-o
+                          h6.counter-no.count 120
+                          span Project Completed
+                  
+                  .item  
+                    .counter-box-second
+                      .counter-box
+                        div
+                          i.counter-icon.fa.fa-heart-o
+                          h6.counter-no.count 90
+                          span Photo Capture
+                  
+                  .item  
+                    .counter-box-second
+                      .counter-box
+                        div
+                          i.counter-icon.fa.fa-comments-o
+                          h6.counter-no.count 140
+                          span Telephonic Talk     
+          //- .secure-back-content
+          //-   img.img-fluid.secure-img1(src="../assets/images/landing/parallax/1.png" alt="parellex-img1")
+      // counter section  end//
+    +footer
+    +taptop    
+    include ../components/footer-files
+  //- about end //

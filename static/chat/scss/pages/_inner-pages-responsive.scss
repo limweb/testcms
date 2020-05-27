@@ -1,0 +1,258 @@
+@media (max-width: 1367px){
+  // header //
+  .header-inner {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width:1199px){
+  // blog pages css //
+  .blog-media {
+    >div {
+      &:first-child {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  //counter css //
+  .counter-box-second {
+    width: 165px;
+    height: 165px;
+
+    .counter-box  {
+      .counter-icon {
+        font-size: 30px;
+      }
+      h6 {
+        font-size: 22px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px ){
+  // blog pages //
+  .blog-detail-page  {
+    .blog-commant {
+      margin-top: 30px;
+    }
+    .blog-contact {
+      margin-top: 30px;
+    }
+  }
+
+  .blog-page  {
+    .blog-sidebar  {
+      .blog-card  {
+        .blog-follow  {
+          li {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // about main //
+  .about-page {
+    .about-title  {
+      h1 {
+        margin-bottom: 15px;
+      }
+    }
+    .about-img {
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .team .owl-nav  {
+    top: -60px;
+    button.owl-prev ,button.owl-next{
+      height: 30px;
+      width: 30px;
+      &:before {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 767px){
+  // breadcrumb //
+  .breadcrumb-main {
+    .breadcrumb-content {
+      display: unset;
+      text-align: center;
+      .breadcrumb-left {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  // blog-pages css //
+  .blog-page {
+    .blog-list {
+      margin-top: 30px;
+    }
+    .blog-sidebar  {
+      margin-top: 30px;
+    
+      .blog-card {
+        padding: 15px;
+      }
+    }
+    .order-sec {
+      order: -1;
+    }
+    .blog-contact {
+      .btn-solid {
+        padding: 13px 25px;
+      }
+    }
+  }
+
+  // faq css //
+  .faq-block {
+    >div {
+      &:nth-child(n+3) {
+        margin-top: 15px;
+      }
+    }
+  }
+  .faq-section  {
+    .faq-search-box  {
+      .input-group  {
+        .form-control {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  // error section //
+  .error-main  {
+    .error-contain {
+      .error-btn {
+        padding: 15px 25px;
+      }
+    }
+  }
+
+  // about //
+  .team  {
+    .team-content  {
+      .text-content  {
+        h4 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+        ul {
+          li {
+            width: 30px;
+            height: 30px;
+            a {
+              i {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px){
+  // header css //
+  .header-inner {
+    padding-bottom: 20px;
+  }
+
+  // error section //
+  .error-main  {
+    .error-contain  {
+      .error-btn {
+        padding: 12px 18px;
+      }
+    }
+  }
+
+  
+
+}
+@media (max-width: 480px) {
+  // about //
+  .team  {
+    .team-content {
+      display: unset;
+      .text-content {
+        margin-top: 15px;
+        padding-left: 0;
+      }
+    }
+  }
+  .about-page  {
+    .about-tab {
+      display: block;
+      text-align: center;
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .nav-pills  {
+        .nav-link {
+          padding: 0;
+          font-weight: 600;
+        }
+      }
+      .tab-content {
+        border-top: 1px solid $border-color;
+        margin-top: 10px;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 360px){
+
+  // blog-pages css //
+  .blog-page  {
+    .blog-media {
+      .blog-right  {
+        ul  {
+          display: flex;
+          li {
+            display: block;
+            +li {
+              padding-left: 0;
+              margin-left: 0;
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // about page //
+  .about-page  {
+    .about-tab  {
+      ul  {
+        li {
+          &:last-child {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

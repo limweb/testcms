@@ -1,0 +1,250 @@
+/**=====================
+     Reset css start
+==========================**/
+
+/*====== Padding css starts ======*/
+$i:0;
+@while $i<=50 {
+  .p-#{$i} {
+    padding:#{$i}px;
+  }
+  $i:$i+5;
+}
+/*====== Padding css ends ======*/
+
+/*====== Padding-left css starts ======*/
+$i:0;
+@while $i<=50 {
+  .p-l-#{$i} {
+    padding-left:#{$i}px;
+  }
+  $i:$i+5;
+
+}
+/*====== Padding-left css ends ======*/
+
+/*====== Padding-top css starts ======*/
+$i:0;
+@while $i<=50 {
+  .p-t-#{$i} {
+    padding-top:#{$i}px !important;
+  }
+  $i:$i+5;
+}
+/*====== Padding-top css ends ======*/
+
+
+/*====== Padding-bottom css starts ======*/
+$i:0;
+@while $i<=50 {
+  .p-b-#{$i} {
+    padding-bottom:#{$i}px !important;
+  }
+  $i:$i+5;
+}
+/*====== Padding-bottom css ends ======*/
+
+/*====== Padding-right css starts ======*/
+$i:0;
+@while $i<=50 {
+  .p-r-#{$i} {
+    padding-right:#{$i}px;
+  }
+  $i:$i+5;
+}
+/*====== Padding-right css ends ======*/
+
+
+/*====== Margin css starts ======*/
+$i:0;
+@while $i<=50 {
+  .m-#{$i} {
+    margin:#{$i}px !important;
+  }
+  $i:$i+5;
+}
+/*====== Margin css ends ======*/
+
+/*====== Margin-top css starts ======*/
+$i:0;
+@while $i<=50 {
+  .m-t-#{$i} {
+    margin-top:#{$i}px !important;
+  }
+  $i:$i+5;
+}
+/*====== Margin-top css ends ======*/
+
+/*====== Margin-Bottom css starts ======*/
+$i:0;
+@while $i<=50 {
+  .m-b-#{$i} {
+    margin-bottom:#{$i}px !important;
+  }
+  $i:$i+5;
+}
+/*====== Margin-Bottom css ends ======*/
+
+/*====== Margin-left css starts ======*/
+$i:0;
+@while $i<=50 {
+  .m-l-#{$i} {
+    margin-left:#{$i}px !important;
+  }
+  $i:$i+5;
+}
+/*====== Margin-left css ends ======*/
+
+/*====== Margin-right css starts ======*/
+$i:0;
+@while $i<=50 {
+  .m-r-#{$i} {
+    margin-right:#{$i}px;
+  }
+  $i:$i+5;
+}
+/*====== Margin-right css ends ======*/
+
+/*====== Image-sizes css starts ======*/
+$i:10;
+@while $i<=100 {
+  .img-#{$i} {
+    width:#{$i}px !important;
+  }
+  $i:$i+10;
+}
+/*====== Image-sizes css ends ======*/
+
+.rounded{
+  border-radius: $radious5 !important;
+}
+.rouded15{
+  border-radius: $radious15 !important;
+}
+
+/*======= Text css starts ===========*/
+$text-name:
+        primary,
+        success,
+        danger,
+        light,
+        warning;
+$text-color : $primary-color,
+$success-color,
+$danger-color,
+$light-color,
+$warning-color;
+@each $var in $text-name {
+  $i: index($text-name, $var);
+  .font-#{$var} {
+    color: nth($text-color, $i) !important;
+  }
+}
+/*======= Text css ends ===========*/
+
+/*======= Badge-color css starts  ======= */
+
+
+@each $badge-name, $badge-color in  (primary, $primary-color),
+        (success, $success-color),
+        (danger, $danger-color),
+        (light, $light-color),
+        (dark, $dark-color),
+        (warning, $warning-color) {
+  .badge-#{$badge-name}{
+    background-color: $badge-color !important;
+  }
+
+  .badge-outline-#{$badge-name}{
+    background-color: rgba($badge-color, 0.15) !important;
+    color: $badge-color;
+    transition: all 0.3s ease;
+    &:hover{
+      transition: all 0.3s ease;
+      background-color: rgba($badge-color, 0.25) !important;
+      color: $badge-color !important;
+    }
+    @if($badge-name == "light"){
+      background-color: rgba($dark-color, 0.15) !important;
+      color: $dark-color;
+      &:hover{
+        transition: all 0.3s ease;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.badge-light{
+  color: $dark-color;
+}
+.badge{
+  font-size: 12px;
+  font-family: $font-2;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: $btn-radious;
+  display: inline-flex;
+  align-items: center;
+  i{
+    font-weight: 800;
+    margin-right: 5px;
+  }
+  svg{
+    height: 13px;
+  }
+  &.xl{
+    font-size: 108%;
+    font-family: $font-1;
+    font-weight: 700;
+    border-radius: $radious25;
+    padding: 11px 20px;
+    svg{
+      height: 14px;
+    }
+  }
+  &.sm{
+    font-size: 81%;
+    padding: 4px 4px 2px;
+    border-radius: $radious5;
+    font-weight: 600;
+    svg{
+      height: 11px;
+      width: 11px;
+    }
+  }
+}
+/*======= Badge-color css end  ======= */
+
+
+/*======= Background-color css starts  ======= */
+
+$background-name:primary,
+success,
+danger,
+light,
+warning;
+$background-color:
+        $primary-color,
+        $success-color,
+        $danger-color,
+        $light-color,
+        $warning-color;
+@each $var in $background-name {
+  $i: index($background-name, $var);
+  .bg-#{$var} {
+    background-color: nth($background-color, $i) !important;
+  }
+}
+.bg-transparent{
+  background-color: transparent !important;
+}
+
+/*======= Background-color css end  ======= */
+/**=====================
+     Reset css ends
+==========================**/
+

@@ -1,0 +1,105 @@
+.colorfull{
+	.sidebar-top,.sidebar-bottom{
+		li{
+			$colors: $primary-color, $success-color, $danger-color, $warning-color, $dark-color;
+			$repeat: 100 ;
+			@for $i from 1 through $repeat {
+				&:nth-child(#{length($colors)}n+#{$i}) {
+					a{
+						i{
+							color: darken(nth($colors, random(length($colors))), 10%) !important;
+						}
+						svg{
+							fill: darken(nth($colors, random(length($colors))), 10%) !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.calls{
+		> li{
+			$colors: $primary-color, $success-color, $danger-color, $warning-color, $dark-color;
+			$repeat: 100 ;
+			@for $i from 1 through $repeat {
+				&:nth-child(#{length($colors)}n+#{$i}) {
+					> a{
+						> svg{
+							$random: nth($colors, random(length($colors)));
+							fill: darken($random, 10%) !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.media-right{
+		li{
+			$colors: $primary-color, $success-color, $danger-color, $warning-color, $dark-color;
+			$repeat: 100 ;
+			@for $i from 1 through $repeat {
+				&:nth-child(#{length($colors)}n+#{$i}) {
+					a{
+						svg{
+							stroke: darken(nth($colors, random(length($colors))), 10%) !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	.replies,.sent{
+		.msg-box , .msg-box, .msg-box > li{
+			> li,.auto-gallery{
+				$colors: $primary-color, $success-color, $danger-color, $warning-color, $dark-color;
+				$repeat: 100 ;
+				@for $i from 1 through $repeat {
+					&:nth-child(#{length($colors)}n+#{$i}) {
+						> h5{
+							color: darken(nth($colors, random(length($colors))), 13%) !important;
+							background-color: $gray1;
+						}
+					}
+				}
+			}
+		}
+	}
+	.theme-tab.tab-sm > .nav-tabs > .nav-item .nav-link.active{
+		background-color: darken($success-color , 13%) !important;
+		box-shadow: -1px 10px 16px -10px $success-color;
+	}
+	.theme-tab{
+		.chat-main li.active{
+			$colors: $primary-color, $success-color, $danger-color, $warning-color, $dark-color;
+			$repeat: 100 ;
+			@for $i from 1 through $repeat {
+				&:nth-child(#{length($colors)}n+#{$i}) {
+					&:before{
+						border-left : 4px solid $colors;
+					}
+				}
+			}
+		}
+	}
+}
+.bg-default{
+	background-image: linear-gradient($primary-light);
+}
+.grediant-1{
+	background-image: linear-gradient( 359.3deg,  rgba($primary-color, 0.10) 1%, rgba(187,187,187,0) 70.9% );
+}
+.grediant-2{
+	background-image: radial-gradient( circle 328px at 2.9% 15%,  rgba(191,224,251,1) 0%, rgba(232,233,251,1) 25.8%, rgba(252,239,250,1) 50.8%, rgba(234,251,251,1) 77.6%, rgba(240,251,244,1) 100.7% );
+}
+.grediant-3{
+	background-image: linear-gradient( 109.6deg,  rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1% );
+}
+.grediant-4{
+	background-image: linear-gradient( -109.6deg,  rgba(204,228,247,1) 11.2%, rgba(237,246,250,1) 100.2% );
+}
+.grediant-5{
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,246,249,1) 0%, rgba(206,239,253,1) 90% );
+}
+.grediant-6{
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(226,240,254,1) 0%, rgba(255,247,228,1) 90% );
+}
